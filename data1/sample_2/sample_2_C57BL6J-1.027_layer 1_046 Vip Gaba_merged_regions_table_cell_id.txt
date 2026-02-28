@@ -1,0 +1,5 @@
+slide	sample	layer	region	merge_regions	total_cell_num	subclass	enrich_subclass_cell_ids_num	enrich_subclass_cell_ids	Glut_Neruon_cell_ids_num	Glut_Neruon_cell_ids	GABA_Neruon_cell_ids_num	GABA_Neruon_cell_ids
+C57BL6J-1.027	sample_2	layer 1	Secondary motor area, layer 1,Frontal pole, layer 1	regions_1	44	046 Vip Gaba	2	1.75581782242542e+38,3.13843170949443e+38	4	1.16831933685386e+38,1.23616956614256e+38,1.56168784114295e+38,1.81583531202879e+38	4	5.00961788445283e+36,8.31490693828261e+37,1.75581782242542e+38,3.13843170949443e+38
+C57BL6J-1.027	sample_2	layer 1	Prelimbic area, layer 1,Frontal pole, layer 1	regions_2	7	046 Vip Gaba	1	3.80585698850288e+37	0		1	3.80585698850288e+37
+C57BL6J-1.027	sample_2	layer 1	Orbital area, ventrolateral part, layer 1	regions_3	36	046 Vip Gaba	2	7.24153317683256e+37,2.66412220319777e+38	3	2.02328483392584e+37,3.63860506396126e+37,1.29422932412213e+38	4	7.24153317683256e+37,8.48370770500361e+37,2.32693946568605e+38,2.66412220319777e+38
+C57BL6J-1.027	sample_2	layer 1	Orbital area, medial part, layer 1	regions_4	8	046 Vip Gaba	1	1.44420981629129e+38	0		1	1.44420981629129e+38

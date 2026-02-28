@@ -1,0 +1,36 @@
+brain_section_label	ccf_region_name1	layer	n_glut	n_gaba	n_total	proportion_glut	proportion_gaba
+C57BL6J-1.074	Agranular insular area	layer 1	0	2	2	0	1
+C57BL6J-1.074	Agranular insular area	layer 2/3	60	5	65	0.923076923076923	0.0769230769230769
+C57BL6J-1.074	Agranular insular area	layer 5	33	19	52	0.634615384615385	0.365384615384615
+C57BL6J-1.074	Agranular insular area	layer 6a	29	13	42	0.69047619047619	0.30952380952381
+C57BL6J-1.074	Agranular insular area	layer 6b	0	2	2	0	1
+C57BL6J-1.074	Anterior cingulate area	layer 1	1	1	2	0.5	0.5
+C57BL6J-1.074	Anterior cingulate area	layer 2/3	8	1	9	0.888888888888889	0.111111111111111
+C57BL6J-1.074	Anterior cingulate area	layer 5	3	1	4	0.75	0.25
+C57BL6J-1.074	Anterior cingulate area	layer 6a	23	2	25	0.92	0.08
+C57BL6J-1.074	Anterior cingulate area	layer 6b	2	0	2	1	0
+C57BL6J-1.074	Primary somatosensory area	layer 1	62	21	83	0.746987951807229	0.253012048192771
+C57BL6J-1.074	Primary somatosensory area	layer 2/3	630	81	711	0.886075949367089	0.113924050632911
+C57BL6J-1.074	Primary somatosensory area	layer 4	583	54	637	0.915227629513344	0.0847723704866562
+C57BL6J-1.074	Primary somatosensory area	layer 5	246	93	339	0.725663716814159	0.274336283185841
+C57BL6J-1.074	Primary somatosensory area	layer 6a	526	56	582	0.903780068728522	0.0962199312714777
+C57BL6J-1.074	Primary somatosensory area	layer 6b	47	3	50	0.94	0.06
+C57BL6J-1.074	Retrosplenial area	layer 1	56	12	68	0.823529411764706	0.176470588235294
+C57BL6J-1.074	Retrosplenial area	layer 2/3	426	38	464	0.918103448275862	0.0818965517241379
+C57BL6J-1.074	Retrosplenial area	layer 5	109	25	134	0.813432835820896	0.186567164179104
+C57BL6J-1.074	Retrosplenial area	layer 6a	16	2	18	0.888888888888889	0.111111111111111
+C57BL6J-1.074	Retrosplenial area	layer 6b	0	1	1	0	1
+C57BL6J-1.074	Secondary motor area	layer 5	16	3	19	0.842105263157895	0.157894736842105
+C57BL6J-1.074	Secondary motor area	layer 6a	33	11	44	0.75	0.25
+C57BL6J-1.074	Secondary motor area	layer 6b	3	0	3	1	0
+C57BL6J-1.074	Supplemental somatosensory area	layer 1	53	9	62	0.854838709677419	0.145161290322581
+C57BL6J-1.074	Supplemental somatosensory area	layer 2/3	239	25	264	0.90530303030303	0.0946969696969697
+C57BL6J-1.074	Supplemental somatosensory area	layer 4	107	20	127	0.84251968503937	0.15748031496063
+C57BL6J-1.074	Supplemental somatosensory area	layer 5	91	36	127	0.716535433070866	0.283464566929134
+C57BL6J-1.074	Supplemental somatosensory area	layer 6a	204	15	219	0.931506849315068	0.0684931506849315
+C57BL6J-1.074	Supplemental somatosensory area	layer 6b	10	2	12	0.833333333333333	0.166666666666667
+C57BL6J-1.074	Visceral area	layer 1	9	5	14	0.642857142857143	0.357142857142857
+C57BL6J-1.074	Visceral area	layer 2/3	86	14	100	0.86	0.14
+C57BL6J-1.074	Visceral area	layer 4	12	3	15	0.8	0.2
+C57BL6J-1.074	Visceral area	layer 5	41	10	51	0.803921568627451	0.196078431372549
+C57BL6J-1.074	Visceral area	layer 6a	54	10	64	0.84375	0.15625

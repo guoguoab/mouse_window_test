@@ -1,0 +1,36 @@
+brain_section_label	ccf_region_name1	layer	n_glut	n_gaba	n_total	proportion_glut	proportion_gaba
+C57BL6J-2.050	Lateral visual area	layer 1	4	1	5	0.8	0.2
+C57BL6J-2.050	Lateral visual area	layer 2/3	98	14	112	0.875	0.125
+C57BL6J-2.050	Lateral visual area	layer 4	60	10	70	0.857142857142857	0.142857142857143
+C57BL6J-2.050	Lateral visual area	layer 5	50	14	64	0.78125	0.21875
+C57BL6J-2.050	Lateral visual area	layer 6a	68	6	74	0.918918918918919	0.0810810810810811
+C57BL6J-2.050	Lateral visual area	layer 6b	9	1	10	0.9	0.1
+C57BL6J-2.050	Laterointermediate area	layer 1	0	3	3	0	1
+C57BL6J-2.050	Laterointermediate area	layer 2/3	37	3	40	0.925	0.075
+C57BL6J-2.050	Laterointermediate area	layer 4	17	5	22	0.772727272727273	0.227272727272727
+C57BL6J-2.050	Laterointermediate area	layer 5	23	11	34	0.676470588235294	0.323529411764706
+C57BL6J-2.050	Laterointermediate area	layer 6a	9	2	11	0.818181818181818	0.181818181818182
+C57BL6J-2.050	Perirhinal area	layer 2/3	15	5	20	0.75	0.25
+C57BL6J-2.050	Perirhinal area	layer 5	3	1	4	0.75	0.25
+C57BL6J-2.050	Postrhinal area	layer 1	0	4	4	0	1
+C57BL6J-2.050	Postrhinal area	layer 2/3	99	15	114	0.868421052631579	0.131578947368421
+C57BL6J-2.050	Postrhinal area	layer 4	45	3	48	0.9375	0.0625
+C57BL6J-2.050	Postrhinal area	layer 5	103	21	124	0.830645161290323	0.169354838709677
+C57BL6J-2.050	Postrhinal area	layer 6a	103	9	112	0.919642857142857	0.0803571428571429
+C57BL6J-2.050	Postrhinal area	layer 6b	22	1	23	0.956521739130435	0.0434782608695652
+C57BL6J-2.050	Primary visual area	layer 1	105	6	111	0.945945945945946	0.0540540540540541
+C57BL6J-2.050	Primary visual area	layer 2/3	370	29	399	0.927318295739348	0.0726817042606516
+C57BL6J-2.050	Primary visual area	layer 4	197	33	230	0.856521739130435	0.143478260869565
+C57BL6J-2.050	Primary visual area	layer 5	186	44	230	0.808695652173913	0.191304347826087
+C57BL6J-2.050	Primary visual area	layer 6a	249	16	265	0.939622641509434	0.060377358490566
+C57BL6J-2.050	Primary visual area	layer 6b	21	0	21	1	0
+C57BL6J-2.050	Retrosplenial area	layer 1	53	10	63	0.841269841269841	0.158730158730159
+C57BL6J-2.050	Retrosplenial area	layer 2/3	279	17	296	0.942567567567568	0.0574324324324324
+C57BL6J-2.050	Retrosplenial area	layer 5	313	22	335	0.934328358208955	0.0656716417910448
+C57BL6J-2.050	Retrosplenial area	layer 6a	117	20	137	0.854014598540146	0.145985401459854
+C57BL6J-2.050	Retrosplenial area	layer 6b	2	0	2	1	0
+C57BL6J-2.050	Temporal association areas	layer 1	2	1	3	0.666666666666667	0.333333333333333
+C57BL6J-2.050	Temporal association areas	layer 2/3	15	0	15	1	0
+C57BL6J-2.050	posteromedial visual area	layer 1	8	2	10	0.8	0.2
+C57BL6J-2.050	posteromedial visual area	layer 2/3	26	2	28	0.928571428571429	0.0714285714285714
+C57BL6J-2.050	posteromedial visual area	layer 5	0	1	1	0	1

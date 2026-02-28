@@ -1,0 +1,2 @@
+slide	sample	layer	region	merge_regions	total_cell_num	subclass	enrich_subclass_cell_ids_num	enrich_subclass_cell_ids	Glut_Neruon_cell_ids_num	Glut_Neruon_cell_ids	GABA_Neruon_cell_ids_num	GABA_Neruon_cell_ids
+C57BL6J-1.029	sample_2	layer 5	Frontal pole, layer 5	regions_1	20	047 Sncg Gaba	1	2.85468168899072e+38	7	4.17435462184176e+37,6.49310827840663e+37,7.17910500882664e+37,7.73377032420731e+37,1.53457747347809e+38,1.81484190894916e+38,2.65697412309095e+38	1	2.85468168899072e+38

@@ -1,0 +1,35 @@
+brain_section_label	ccf_region_name1	layer	n_glut	n_gaba	n_total	proportion_glut	proportion_gaba
+C57BL6J-1.057	Agranular insular area	layer 2/3	44	6	50	0.88	0.12
+C57BL6J-1.057	Agranular insular area	layer 5	43	9	52	0.826923076923077	0.173076923076923
+C57BL6J-1.057	Agranular insular area	layer 6a	45	12	57	0.789473684210526	0.210526315789474
+C57BL6J-1.057	Agranular insular area	layer 6b	0	1	1	0	1
+C57BL6J-1.057	Anterior cingulate area	layer 1	12	12	24	0.5	0.5
+C57BL6J-1.057	Anterior cingulate area	layer 2/3	163	24	187	0.871657754010695	0.128342245989305
+C57BL6J-1.057	Anterior cingulate area	layer 5	112	37	149	0.751677852348993	0.248322147651007
+C57BL6J-1.057	Anterior cingulate area	layer 6a	105	12	117	0.897435897435897	0.102564102564103
+C57BL6J-1.057	Anterior cingulate area	layer 6b	1	2	3	0.333333333333333	0.666666666666667
+C57BL6J-1.057	Gustatory areas	layer 1	0	4	4	0	1
+C57BL6J-1.057	Gustatory areas	layer 2/3	48	7	55	0.872727272727273	0.127272727272727
+C57BL6J-1.057	Gustatory areas	layer 4	14	6	20	0.7	0.3
+C57BL6J-1.057	Gustatory areas	layer 5	50	13	63	0.793650793650794	0.206349206349206
+C57BL6J-1.057	Gustatory areas	layer 6a	63	6	69	0.91304347826087	0.0869565217391304
+C57BL6J-1.057	Gustatory areas	layer 6b	1	3	4	0.25	0.75
+C57BL6J-1.057	Primary somatosensory area	layer 1	96	27	123	0.780487804878049	0.219512195121951
+C57BL6J-1.057	Primary somatosensory area	layer 2/3	649	68	717	0.905160390516039	0.0948396094839609
+C57BL6J-1.057	Primary somatosensory area	layer 4	475	49	524	0.906488549618321	0.0935114503816794
+C57BL6J-1.057	Primary somatosensory area	layer 5	158	57	215	0.734883720930233	0.265116279069767
+C57BL6J-1.057	Primary somatosensory area	layer 6a	507	64	571	0.887915936952715	0.112084063047285
+C57BL6J-1.057	Primary somatosensory area	layer 6b	39	1	40	0.975	0.025
+C57BL6J-1.057	Secondary motor area	layer 1	8	7	15	0.533333333333333	0.466666666666667
+C57BL6J-1.057	Secondary motor area	layer 2/3	115	14	129	0.891472868217054	0.108527131782946
+C57BL6J-1.057	Secondary motor area	layer 5	79	21	100	0.79	0.21
+C57BL6J-1.057	Secondary motor area	layer 6a	85	13	98	0.86734693877551	0.13265306122449
+C57BL6J-1.057	Secondary motor area	layer 6b	2	0	2	1	0
+C57BL6J-1.057	Supplemental somatosensory area	layer 1	11	4	15	0.733333333333333	0.266666666666667
+C57BL6J-1.057	Supplemental somatosensory area	layer 2/3	155	29	184	0.842391304347826	0.157608695652174
+C57BL6J-1.057	Supplemental somatosensory area	layer 4	51	7	58	0.879310344827586	0.120689655172414
+C57BL6J-1.057	Supplemental somatosensory area	layer 5	53	15	68	0.779411764705882	0.220588235294118
+C57BL6J-1.057	Supplemental somatosensory area	layer 6a	107	13	120	0.891666666666667	0.108333333333333
+C57BL6J-1.057	Supplemental somatosensory area	layer 6b	0	3	3	0	1
+C57BL6J-1.057	Visceral area	layer 2/3	8	1	9	0.888888888888889	0.111111111111111
+C57BL6J-1.057	Visceral area	layer 4	1	1	2	0.5	0.5

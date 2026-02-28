@@ -1,0 +1,2 @@
+slide	sample	layer	region	merge_regions	total_cell_num	subclass	enrich_subclass_cell_ids_num	enrich_subclass_cell_ids	Glut_Neruon_cell_ids_num	Glut_Neruon_cell_ids	GABA_Neruon_cell_ids_num	GABA_Neruon_cell_ids
+C57BL6J-1.029	sample_2	layer 1	Secondary motor area, layer 1	regions_1	72	320 Astro-OLF NN	1	2.99737070738976e+38	6	1.9954542019644e+37,1.1475528084341e+38,1.1978704136408e+38,1.95247235451081e+38,2.33289033224208e+38,3.0597390740619e+38	2	1.13848276471275e+38,2.70275206673629e+38

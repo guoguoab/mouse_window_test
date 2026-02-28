@@ -1,0 +1,2 @@
+slide	sample	layer	region	merge_regions	total_cell_num	subclass	enrich_subclass_cell_ids_num	enrich_subclass_cell_ids	Glut_Neruon_cell_ids_num	Glut_Neruon_cell_ids	GABA_Neruon_cell_ids_num	GABA_Neruon_cell_ids
+C57BL6J-1.026	sample_1	layer 2/3	Frontal pole, layer 2/3	regions_1	8	334 Microglia NN	2	1.21137225540723e+38,2.25362694465353e+38	2	1.14600202277699e+38,1.38415801403153e+38	1	4.21317174631582e+37

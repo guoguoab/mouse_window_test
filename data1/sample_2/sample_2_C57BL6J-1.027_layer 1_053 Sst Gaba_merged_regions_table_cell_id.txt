@@ -1,0 +1,2 @@
+slide	sample	layer	region	merge_regions	total_cell_num	subclass	enrich_subclass_cell_ids_num	enrich_subclass_cell_ids	Glut_Neruon_cell_ids_num	Glut_Neruon_cell_ids	GABA_Neruon_cell_ids_num	GABA_Neruon_cell_ids
+C57BL6J-1.027	sample_2	layer 1	Orbital area, ventrolateral part, layer 1,Orbital area, lateral part, layer 1	regions_1	33	053 Sst Gaba	1	8.48370770500361e+37	3	3.63860506396126e+37,5.3341991067694e+37,8.11984908169563e+37	4	8.48370770500361e+37,1.62564070026333e+38,2.32693946568605e+38,2.66412220319777e+38

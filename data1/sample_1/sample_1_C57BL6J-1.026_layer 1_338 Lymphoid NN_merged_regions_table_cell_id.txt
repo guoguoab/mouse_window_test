@@ -1,0 +1,3 @@
+slide	sample	layer	region	merge_regions	total_cell_num	subclass	enrich_subclass_cell_ids_num	enrich_subclass_cell_ids	Glut_Neruon_cell_ids_num	Glut_Neruon_cell_ids	GABA_Neruon_cell_ids_num	GABA_Neruon_cell_ids
+C57BL6J-1.026	sample_1	layer 1	Frontal pole, layer 1,Orbital area, ventrolateral part, layer 1	regions_1	23	338 Lymphoid NN	1	1.3027246005317e+38	3	4.9728669721201e+37,1.88302497740818e+38,2.99128958209829e+38	1	1.36008186639043e+38
+C57BL6J-1.026	sample_1	layer 1	Secondary motor area, layer 1,Frontal pole, layer 1	regions_2	20	338 Lymphoid NN	1	3.07731542268551e+38	0		1	8.25225574970259e+37

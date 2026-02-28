@@ -1,0 +1,5 @@
+slide	layer	cluster.1	cluster.2	nearby_dist	label
+C57BL6J-1.025	layer 1	layer 1_035 OB Eomes Ms4a15 Glut_regions_1	layer 1_035 OB Eomes Ms4a15 Glut_regions_2	0.0356390943300255	layer 1_035 OB Eomes Ms4a15 Glut_regions_1-layer 1_035 OB Eomes Ms4a15 Glut_regions_2
+C57BL6J-1.025	layer 1	layer 1_035 OB Eomes Ms4a15 Glut_regions_1	layer 1_039 OB Meis2 Thsd7b Gaba_regions_1	0	layer 1_035 OB Eomes Ms4a15 Glut_regions_1-layer 1_039 OB Meis2 Thsd7b Gaba_regions_1
+C57BL6J-1.025	layer 1	layer 1_035 OB Eomes Ms4a15 Glut_regions_1	layer 1_039 OB Meis2 Thsd7b Gaba_regions_2	0	layer 1_035 OB Eomes Ms4a15 Glut_regions_1-layer 1_039 OB Meis2 Thsd7b Gaba_regions_2
+C57BL6J-1.025	layer 1	layer 1_035 OB Eomes Ms4a15 Glut_regions_1	layer 1_040 OB Trdn Gaba_regions_1	0	layer 1_035 OB Eomes Ms4a15 Glut_regions_1-layer 1_040 OB Trdn Gaba_regions_1

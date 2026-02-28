@@ -1,0 +1,5 @@
+brain_section_label	ccf_region_name1	layer	n_glut	n_gaba	n_total	proportion_glut	proportion_gaba
+C57BL6J-1.025	Frontal pole	layer 1	101	281	382	0.264397905759162	0.735602094240838
+C57BL6J-1.025	Orbital area	layer 1	27	71	98	0.275510204081633	0.724489795918367
+C57BL6J-1.025	Prelimbic area	layer 1	5	42	47	0.106382978723404	0.893617021276596
+C57BL6J-1.025	Secondary motor area	layer 1	1	6	7	0.142857142857143	0.857142857142857

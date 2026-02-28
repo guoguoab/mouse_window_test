@@ -1,0 +1,3 @@
+slide	sample	layer	region	merge_regions	total_cell_num	subclass	enrich_subclass_cell_ids_num	enrich_subclass_cell_ids	Glut_Neruon_cell_ids_num	Glut_Neruon_cell_ids	GABA_Neruon_cell_ids_num	GABA_Neruon_cell_ids
+C57BL6J-1.026	sample_2	layer 1	Prelimbic area, layer 1,Orbital area, medial part, layer 1	regions_1	4	335 BAM NN	1	3.04251646390212e+37	0		0	
+C57BL6J-1.026	sample_2	layer 1	Orbital area, lateral part, layer 1,Secondary motor area, layer 1,Frontal pole, layer 1	regions_2	52	335 BAM NN	2	2.17801721833889e+38,2.87061642254603e+38	5	2.57107497970157e+36,3.44329820120674e+37,5.33124516519955e+37,8.25225574970259e+37,1.17328199728401e+38	3	1.03810990350369e+38,2.07109203073951e+38,2.6366703209819e+38

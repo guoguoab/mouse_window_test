@@ -1,0 +1,57 @@
+brain_section_label	ccf_region_name1	layer	n_glut	n_gaba	n_total	proportion_glut	proportion_gaba
+C57BL6J-2.045	Anterolateral visual area	layer 1	6	5	11	0.545454545454545	0.454545454545455
+C57BL6J-2.045	Anterolateral visual area	layer 2/3	141	17	158	0.892405063291139	0.107594936708861
+C57BL6J-2.045	Anterolateral visual area	layer 4	43	4	47	0.914893617021277	0.0851063829787234
+C57BL6J-2.045	Anterolateral visual area	layer 5	40	7	47	0.851063829787234	0.148936170212766
+C57BL6J-2.045	Anterolateral visual area	layer 6a	25	3	28	0.892857142857143	0.107142857142857
+C57BL6J-2.045	Anterolateral visual area	layer 6b	4	1	5	0.8	0.2
+C57BL6J-2.045	Lateral visual area	layer 4	3	0	3	1	0
+C57BL6J-2.045	Lateral visual area	layer 5	20	7	27	0.740740740740741	0.259259259259259
+C57BL6J-2.045	Lateral visual area	layer 6a	27	3	30	0.9	0.1
+C57BL6J-2.045	Lateral visual area	layer 6b	8	1	9	0.888888888888889	0.111111111111111
+C57BL6J-2.045	Perirhinal area	layer 1	4	1	5	0.8	0.2
+C57BL6J-2.045	Perirhinal area	layer 2/3	32	4	36	0.888888888888889	0.111111111111111
+C57BL6J-2.045	Perirhinal area	layer 5	8	1	9	0.888888888888889	0.111111111111111
+C57BL6J-2.045	Perirhinal area	layer 6a	7	0	7	1	0
+C57BL6J-2.045	Perirhinal area	layer 6b	2	0	2	1	0
+C57BL6J-2.045	Posterior auditory area	layer 1	2	1	3	0.666666666666667	0.333333333333333
+C57BL6J-2.045	Posterior auditory area	layer 2/3	88	8	96	0.916666666666667	0.0833333333333333
+C57BL6J-2.045	Posterior auditory area	layer 4	30	5	35	0.857142857142857	0.142857142857143
+C57BL6J-2.045	Posterior auditory area	layer 5	37	11	48	0.770833333333333	0.229166666666667
+C57BL6J-2.045	Posterior auditory area	layer 6a	33	6	39	0.846153846153846	0.153846153846154
+C57BL6J-2.045	Posterior auditory area	layer 6b	9	0	9	1	0
+C57BL6J-2.045	Primary auditory area	layer 1	4	3	7	0.571428571428571	0.428571428571429
+C57BL6J-2.045	Primary auditory area	layer 2/3	81	7	88	0.920454545454545	0.0795454545454545
+C57BL6J-2.045	Primary auditory area	layer 4	19	0	19	1	0
+C57BL6J-2.045	Primary auditory area	layer 5	31	9	40	0.775	0.225
+C57BL6J-2.045	Primary auditory area	layer 6a	39	4	43	0.906976744186046	0.0930232558139535
+C57BL6J-2.045	Primary auditory area	layer 6b	4	0	4	1	0
+C57BL6J-2.045	Primary visual area	layer 1	85	12	97	0.876288659793814	0.123711340206186
+C57BL6J-2.045	Primary visual area	layer 2/3	322	32	354	0.909604519774011	0.0903954802259887
+C57BL6J-2.045	Primary visual area	layer 4	176	22	198	0.888888888888889	0.111111111111111
+C57BL6J-2.045	Primary visual area	layer 5	132	44	176	0.75	0.25
+C57BL6J-2.045	Primary visual area	layer 6a	199	14	213	0.934272300469484	0.0657276995305164
+C57BL6J-2.045	Primary visual area	layer 6b	26	3	29	0.896551724137931	0.103448275862069
+C57BL6J-2.045	Retrosplenial area	layer 1	232	27	259	0.895752895752896	0.104247104247104
+C57BL6J-2.045	Retrosplenial area	layer 2/3	670	42	712	0.941011235955056	0.0589887640449438
+C57BL6J-2.045	Retrosplenial area	layer 5	493	38	531	0.928436911487759	0.0715630885122411
+C57BL6J-2.045	Retrosplenial area	layer 6a	175	15	190	0.921052631578947	0.0789473684210526
+C57BL6J-2.045	Retrosplenial area	layer 6b	6	0	6	1	0
+C57BL6J-2.045	Temporal association areas	layer 1	3	0	3	1	0
+C57BL6J-2.045	Temporal association areas	layer 2/3	57	3	60	0.95	0.05
+C57BL6J-2.045	Temporal association areas	layer 4	13	2	15	0.866666666666667	0.133333333333333
+C57BL6J-2.045	Temporal association areas	layer 5	61	10	71	0.859154929577465	0.140845070422535
+C57BL6J-2.045	Temporal association areas	layer 6a	34	7	41	0.829268292682927	0.170731707317073
+C57BL6J-2.045	Temporal association areas	layer 6b	7	0	7	1	0
+C57BL6J-2.045	Ventral auditory area	layer 1	4	2	6	0.666666666666667	0.333333333333333
+C57BL6J-2.045	Ventral auditory area	layer 2/3	59	4	63	0.936507936507937	0.0634920634920635
+C57BL6J-2.045	Ventral auditory area	layer 4	29	3	32	0.90625	0.09375
+C57BL6J-2.045	Ventral auditory area	layer 5	34	9	43	0.790697674418605	0.209302325581395
+C57BL6J-2.045	Ventral auditory area	layer 6a	40	4	44	0.909090909090909	0.0909090909090909
+C57BL6J-2.045	Ventral auditory area	layer 6b	3	0	3	1	0
+C57BL6J-2.045	posteromedial visual area	layer 1	65	3	68	0.955882352941177	0.0441176470588235
+C57BL6J-2.045	posteromedial visual area	layer 2/3	81	9	90	0.9	0.1
+C57BL6J-2.045	posteromedial visual area	layer 4	33	3	36	0.916666666666667	0.0833333333333333
+C57BL6J-2.045	posteromedial visual area	layer 5	56	9	65	0.861538461538462	0.138461538461538
+C57BL6J-2.045	posteromedial visual area	layer 6a	53	6	59	0.898305084745763	0.101694915254237
+C57BL6J-2.045	posteromedial visual area	layer 6b	13	0	13	1	0

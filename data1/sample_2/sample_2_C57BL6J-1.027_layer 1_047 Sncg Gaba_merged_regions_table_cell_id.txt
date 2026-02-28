@@ -1,0 +1,2 @@
+slide	sample	layer	region	merge_regions	total_cell_num	subclass	enrich_subclass_cell_ids_num	enrich_subclass_cell_ids	Glut_Neruon_cell_ids_num	Glut_Neruon_cell_ids	GABA_Neruon_cell_ids_num	GABA_Neruon_cell_ids
+C57BL6J-1.027	sample_2	layer 1	Secondary motor area, layer 1	regions_1	45	047 Sncg Gaba	1	3.07412201303519e+38	4	2.74576751538966e+37,1.16831933685386e+38,1.56168784114295e+38,1.81583531202879e+38	3	1.55171663106399e+38,1.75581782242542e+38,3.07412201303519e+38

@@ -1,0 +1,12 @@
+brain_section_label	ccf_region_name1	layer	n_glut	n_gaba	n_total	proportion_glut	proportion_gaba
+C57BL6J-1.114	Posterolateral visual area	layer 1	9	9	18	0.5	0.5
+C57BL6J-1.114	Posterolateral visual area	layer 2/3	175	21	196	0.892857142857143	0.107142857142857
+C57BL6J-1.114	Posterolateral visual area	layer 4	5	2	7	0.714285714285714	0.285714285714286
+C57BL6J-1.114	Posterolateral visual area	layer 5	43	8	51	0.843137254901961	0.156862745098039
+C57BL6J-1.114	Postrhinal area	layer 1	0	4	4	0	1
+C57BL6J-1.114	Postrhinal area	layer 2/3	44	4	48	0.916666666666667	0.0833333333333333
+C57BL6J-1.114	Primary visual area	layer 1	26	10	36	0.722222222222222	0.277777777777778
+C57BL6J-1.114	Primary visual area	layer 2/3	269	26	295	0.911864406779661	0.088135593220339
+C57BL6J-1.114	Primary visual area	layer 4	30	2	32	0.9375	0.0625
+C57BL6J-1.114	Retrosplenial area	layer 1	41	9	50	0.82	0.18
+C57BL6J-1.114	Retrosplenial area	layer 2/3	134	12	146	0.917808219178082	0.0821917808219178

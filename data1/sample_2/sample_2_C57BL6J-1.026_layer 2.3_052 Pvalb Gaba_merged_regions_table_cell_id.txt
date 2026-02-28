@@ -1,0 +1,2 @@
+slide	sample	layer	region	merge_regions	total_cell_num	subclass	enrich_subclass_cell_ids_num	enrich_subclass_cell_ids	Glut_Neruon_cell_ids_num	Glut_Neruon_cell_ids	GABA_Neruon_cell_ids_num	GABA_Neruon_cell_ids
+C57BL6J-1.026	sample_2	layer 2/3	Frontal pole, layer 2/3	regions_1	3	052 Pvalb Gaba	1	2.39429654008659e+38	0		1	2.39429654008659e+38

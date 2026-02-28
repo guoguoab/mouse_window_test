@@ -1,0 +1,2 @@
+slide	sample	layer	region	merge_regions	total_cell_num	subclass	enrich_subclass_cell_ids_num	enrich_subclass_cell_ids	Glut_Neruon_cell_ids_num	Glut_Neruon_cell_ids	GABA_Neruon_cell_ids_num	GABA_Neruon_cell_ids
+C57BL6J-1.026	sample_2	layer 1	Secondary motor area, layer 1,Frontal pole, layer 1	regions_1	41	044 OB Dopa-Gaba	1	2.07109203073951e+38	5	3.44329820120674e+37,5.33124516519955e+37,8.25225574970259e+37,1.17328199728401e+38,2.75207950864515e+38	1	2.07109203073951e+38
