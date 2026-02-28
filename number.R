@@ -3,73 +3,74 @@ library(readr)
 library(stringr)
 
 ## ===============================
-## 1. 基础路径
+## 1. 基础路径（默认使用当前项目下 data1）
 ## ===============================
-base_dir <- "/picb/neurosys/chenrenrui/Mouse_ST/A molecularly defined and spatially resolved cell atlas of the whole mouse brain/subclass_10K/neocortex_sample_subclass/merge_region"
+args <- commandArgs(trailingOnly = TRUE)
+base_dir <- ifelse(length(args) >= 1, args[1], "data1")
+
+if (!dir.exists(base_dir)) {
+  stop("base_dir 不存在: ", base_dir)
+}
 
 ## ===============================
-## 2. 遍历所有 slide (C57BL6J-*)
+## 2. 遍历所有 sample 目录（通用，不限制 sample 个数）
 ## ===============================
-slide_dirs <- list.dirs(
+sample_dirs <- list.dirs(
   base_dir,
   recursive = FALSE,
   full.names = TRUE
 )
 
-slide_dirs <- slide_dirs[file.info(slide_dirs)$isdir]
+sample_dirs <- sample_dirs[grepl("^sample_", basename(sample_dirs))]
+
+if (length(sample_dirs) == 0) {
+  stop("在 ", base_dir, " 下没有找到 sample_* 目录")
+}
 
 ## ===============================
-## 3. 读取所有 cell_id.txt
+## 3. 读取所有 *cell_id.txt 文件
 ## ===============================
 df_list <- list()
 
-for (slide_path in slide_dirs) {
-  
-  slide_name <- basename(slide_path)
-  
-  sample_dirs <- list.dirs(
-    slide_path,
-    recursive = FALSE,
+for (sample_path in sample_dirs) {
+  txt_files <- list.files(
+    sample_path,
+    pattern = "cell_id\\.txt$",
     full.names = TRUE
   )
-  
-  sample_dirs <- sample_dirs[grepl("^sample_", basename(sample_dirs))]
-  
-  for (sample_path in sample_dirs) {
-    
-    sample_name <- basename(sample_path)
-    
-    txt_files <- list.files(
-      sample_path,
-      pattern = "cell_id\\.txt$",
-      full.names = TRUE
+
+  if (length(txt_files) == 0) next
+
+  for (f in txt_files) {
+    tmp <- tryCatch(
+      read.delim(f, stringsAsFactors = FALSE),
+      error = function(e) NULL
     )
-    
-    if (length(txt_files) == 0) next
-    
-    for (f in txt_files) {
-      
-      tmp <- tryCatch(
-        read.delim(f, stringsAsFactors = FALSE),
-        error = function(e) NULL
+
+    if (is.null(tmp) || nrow(tmp) == 0) next
+
+    needed_cols <- c(
+      "slide", "sample", "subclass", "layer", "region",
+      "enrich_subclass_cell_ids_num",
+      "Glut_Neruon_cell_ids_num",
+      "GABA_Neruon_cell_ids_num"
+    )
+
+    if (!all(needed_cols %in% colnames(tmp))) next
+
+    tmp <- tmp %>%
+      mutate(
+        enrich_subclass_cell_ids_num = as.numeric(enrich_subclass_cell_ids_num),
+        Glut_Neruon_cell_ids_num = as.numeric(Glut_Neruon_cell_ids_num),
+        GABA_Neruon_cell_ids_num = as.numeric(GABA_Neruon_cell_ids_num)
       )
-      
-      if (is.null(tmp)) next
-      
-      ## ===============================
-      ## ★ 核心：统一 enrich_subclass_cell_ids 为 character
-      ## ===============================
-      if ("enrich_subclass_cell_ids" %in% colnames(tmp)) {
-        tmp$enrich_subclass_cell_ids <- as.character(tmp$enrich_subclass_cell_ids)
-      }
-      
-      tmp$slide  <- slide_name
-      tmp$sample <- sample_name
-      
-      df_list[[length(df_list) + 1]] <- tmp
-      
-    }
+
+    df_list[[length(df_list) + 1]] <- tmp
   }
+}
+
+if (length(df_list) == 0) {
+  stop("没有读取到有效的 *cell_id.txt 数据")
 }
 
 ## ===============================
@@ -78,61 +79,53 @@ for (slide_path in slide_dirs) {
 df_all <- bind_rows(df_list)
 
 ## ===============================
-## 5. 类型转换（非常关键）
-## ===============================
-df_all <- df_all %>%
-  mutate(
-    enrich_subclass_cell_ids_num = as.numeric(enrich_subclass_cell_ids_num),
-    Glut_Neruon_cell_ids_num     = as.numeric(Glut_Neruon_cell_ids_num),
-    GABA_Neruon_cell_ids_num     = as.numeric(GABA_Neruon_cell_ids_num)
-  )
-
-## ===============================
-## 6. sample 级别汇总
+## 5. sample 级别汇总
 ## ===============================
 df_sample_level <- df_all %>%
-  group_by(
-    slide,
-    sample,
-    subclass,
-    layer
-  ) %>%
+  group_by(slide, sample, subclass, layer) %>%
   summarise(
     region_num = n_distinct(region),
     enrich_num = mean(enrich_subclass_cell_ids_num, na.rm = TRUE),
-    glut_num   = mean(Glut_Neruon_cell_ids_num, na.rm = TRUE),
-    gaba_num   = mean(GABA_Neruon_cell_ids_num, na.rm = TRUE),
+    glut_num = mean(Glut_Neruon_cell_ids_num, na.rm = TRUE),
+    gaba_num = mean(GABA_Neruon_cell_ids_num, na.rm = TRUE),
+    glut_gaba_ratio = ifelse(gaba_num == 0, NA_real_, glut_num / gaba_num),
     .groups = "drop"
-  ) %>%
-  mutate(
-    glut_gaba_ratio = glut_num / gaba_num
   )
 
 ## ===============================
-## 7. 500 sample 取平均（最终结果）
+## 6. 所有 sample 的平均值（最终结果）
 ## ===============================
 df_final <- df_sample_level %>%
-  group_by(
-    slide,
-    subclass,
-    layer
-  ) %>%
+  group_by(slide, subclass, layer) %>%
   summarise(
-    mean_region_num         = mean(region_num, na.rm = TRUE),
-    mean_enrich_num         = mean(enrich_num, na.rm = TRUE),
-    mean_glut_gaba_ratio    = mean(glut_gaba_ratio, na.rm = TRUE),
-    mean_enrich_num_again   = mean(enrich_num, na.rm = TRUE), # 按你要求保留
-    sample_n                = n(),
+    mean_region_num = mean(region_num, na.rm = TRUE),
+    mean_enrich_num = mean(enrich_num, na.rm = TRUE),
+    mean_glut_num = mean(glut_num, na.rm = TRUE),
+    mean_gaba_num = mean(gaba_num, na.rm = TRUE),
+    mean_glut_gaba_ratio = mean(glut_gaba_ratio, na.rm = TRUE),
+    sample_n = n(),
     .groups = "drop"
   )
 
 ## ===============================
-## 8. 保存结果
+## 7. 保存结果
 ## ===============================
 write.table(
-  df_final,
-  file = "slide_subclass_layer_summary.txt",
+  df_sample_level,
+  file = "sample_level_summary.txt",
   sep = "\t",
   quote = FALSE,
   row.names = FALSE
 )
+
+write.table(
+  df_final,
+  file = "all_sample_mean_summary.txt",
+  sep = "\t",
+  quote = FALSE,
+  row.names = FALSE
+)
+
+cat("完成：\n")
+cat("- sample 级别结果: sample_level_summary.txt\n")
+cat("- 所有 sample 平均结果: all_sample_mean_summary.txt\n")
