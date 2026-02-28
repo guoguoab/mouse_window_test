@@ -58,8 +58,14 @@ for (sample_path in sample_dirs) {
 
     if (!all(needed_cols %in% colnames(tmp))) next
 
+    ## 只保留后续统计必需列，并统一类型，避免 bind_rows 的类型冲突
     tmp <- tmp %>%
-      mutate(
+      transmute(
+        slide = as.character(slide),
+        sample = as.character(sample),
+        subclass = as.character(subclass),
+        layer = as.character(layer),
+        region = as.character(region),
         enrich_subclass_cell_ids_num = as.numeric(enrich_subclass_cell_ids_num),
         Glut_Neruon_cell_ids_num = as.numeric(Glut_Neruon_cell_ids_num),
         GABA_Neruon_cell_ids_num = as.numeric(GABA_Neruon_cell_ids_num)
