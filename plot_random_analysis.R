@@ -42,6 +42,22 @@ if (file.exists(presence_file)) {
   if (length(sample_cols) == 0) {
     warning("未在 true_loc_presence_by_sample.tsv 中检测到0/1样本列，跳过图1。")
   } else {
+    # 50%截断：统计每个真实loc在所有sample中的匹配比例
+    loc_match_stats <- presence_df %>%
+      mutate(match_rate = rowMeans(across(all_of(sample_cols)), na.rm = TRUE)) %>%
+      mutate(match_group = ifelse(match_rate >= 0.5, ">=50%", "<50%"))
+
+    match_count_df <- loc_match_stats %>%
+      count(match_group, name = "true_region_count") %>%
+      complete(match_group = c(">=50%", "<50%"), fill = list(true_region_count = 0L)) %>%
+      mutate(percent = true_region_count / sum(true_region_count))
+
+    write.table(
+      match_count_df,
+      file = file.path(out_dir, "plot1_threshold50_region_count.tsv"),
+      sep = "\t", row.names = FALSE, quote = FALSE
+    )
+
     sample_presence <- presence_df %>%
       summarise(across(all_of(sample_cols), ~ mean(.x, na.rm = TRUE))) %>%
       pivot_longer(cols = everything(), names_to = "sample", values_to = "presence_rate") %>%
@@ -67,6 +83,29 @@ if (file.exists(presence_file)) {
 
     ggsave(file.path(out_dir, "plot1_true_loc_presence_rate_by_sample.png"), p1,
       width = 9, height = 7, dpi = 300
+    )
+
+    # 50%阈值统计图
+    p1_threshold <- ggplot(match_count_df, aes(x = match_group, y = true_region_count, fill = match_group)) +
+      geom_col(width = 0.62, color = "grey25") +
+      geom_text(aes(label = paste0(true_region_count, " (", percent(percent, accuracy = 0.1), ")")),
+                vjust = -0.25, size = 4.2) +
+      scale_fill_manual(values = c(">=50%" = "#2C7FB8", "<50%" = "#F39C6B")) +
+      labs(
+        title = "真实区域按50%匹配率阈值分组",
+        subtitle = ">=50%：在至少一半随机sample中可匹配；<50%：匹配不稳定",
+        x = "匹配率分组",
+        y = "真实区域数量"
+      ) +
+      theme_minimal(base_size = 12) +
+      theme(
+        legend.position = "none",
+        plot.title = element_text(face = "bold")
+      ) +
+      expand_limits(y = max(match_count_df$true_region_count) * 1.14)
+
+    ggsave(file.path(out_dir, "plot1c_threshold50_region_count.png"), p1_threshold,
+      width = 8, height = 5.6, dpi = 300
     )
 
     # 附加热图：展示出现频率最高的loc在不同sample中的分布
