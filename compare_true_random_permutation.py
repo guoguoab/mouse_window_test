@@ -6,8 +6,10 @@ from __future__ import annotations
 import argparse
 import csv
 import glob
+import math
 import os
 from collections import Counter, defaultdict
+from multiprocessing import Pool
 from typing import Dict, Iterable, List, Tuple
 
 
@@ -170,6 +172,57 @@ def compute_statistics(
     return summary_rows, detail_rows, missing
 
 
+def _compute_chunk(
+    chunk_keys: List[Key],
+    true_map: Dict[Key, List[float]],
+    random_map: Dict[Key, List[Tuple[str, float]]],
+) -> Tuple[List[dict], List[dict], Counter]:
+    chunk_true_map = {key: true_map[key] for key in chunk_keys}
+    return compute_statistics(chunk_true_map, random_map)
+
+
+def chunked_compute_statistics(
+    true_map: Dict[Key, List[float]],
+    random_map: Dict[Key, List[Tuple[str, float]]],
+    workers: int,
+    chunk_size: int,
+    show_progress: bool = True,
+) -> Tuple[List[dict], List[dict], Counter]:
+    keys = sorted(true_map.keys())
+    if not keys:
+        return [], [], Counter()
+
+    workers = max(1, workers)
+    if workers == 1 or len(keys) <= chunk_size:
+        if show_progress:
+            print("[进度] 已完成 1/1 chunks (100.0%)")
+        return compute_statistics(true_map, random_map)
+
+    chunks = [keys[i : i + chunk_size] for i in range(0, len(keys), chunk_size)]
+    args = [(chunk, true_map, random_map) for chunk in chunks]
+
+    summary_rows: List[dict] = []
+    detail_rows: List[dict] = []
+    missing = Counter()
+    total_chunks = len(chunks)
+    done_chunks = 0
+    with Pool(processes=workers) as pool:
+        for chunk_summary, chunk_detail, chunk_missing in pool.starmap(_compute_chunk, args):
+            summary_rows.extend(chunk_summary)
+            detail_rows.extend(chunk_detail)
+            missing.update(chunk_missing)
+            done_chunks += 1
+            if show_progress:
+                percent = (done_chunks / total_chunks) * 100.0
+                print(
+                    f"[进度] 已完成 {done_chunks}/{total_chunks} chunks ({percent:.1f}%)",
+                    flush=True,
+                )
+
+    summary_rows.sort(key=lambda r: (r["slide"], r["subclass"], r["layer"]))
+    return summary_rows, detail_rows, missing
+
+
 def write_tsv(path: str, rows: List[dict]) -> None:
     if not rows:
         with open(path, "w", encoding="utf-8") as f:
@@ -206,6 +259,18 @@ def main() -> None:
         default="true_vs_random_permutation_detail.tsv",
         help="逐 sample 输出文件",
     )
+    parser.add_argument(
+        "--workers",
+        type=int,
+        default=20,
+        help="并行进程数，默认20",
+    )
+    parser.add_argument(
+        "--chunk-size",
+        type=int,
+        default=0,
+        help="每个并行任务处理的 key 数；0 表示自动按 workers 切分",
+    )
     args = parser.parse_args()
 
     random_map = load_random_summary(args.sample_summary)
@@ -216,7 +281,16 @@ def main() -> None:
     if not true_map:
         raise RuntimeError(f"未从 {args.true_dir} 读取到有效真实统计")
 
-    summary_rows, detail_rows, missing = compute_statistics(true_map, random_map)
+    chunk_size = args.chunk_size
+    if chunk_size <= 0:
+        chunk_size = max(1, math.ceil(len(true_map) / max(1, args.workers)))
+
+    summary_rows, detail_rows, missing = chunked_compute_statistics(
+        true_map=true_map,
+        random_map=random_map,
+        workers=args.workers,
+        chunk_size=chunk_size,
+    )
 
     write_tsv(args.out_summary, summary_rows)
     write_tsv(args.out_detail, detail_rows)
@@ -226,6 +300,8 @@ def main() -> None:
     print(f"- 真实键数量: {len(true_map)}")
     print(f"- 成功匹配键数量: {len(summary_rows)}")
     print(f"- 逐sample比较记录数: {len(detail_rows)}")
+    print(f"- 并行进程数: {max(1, args.workers)}")
+    print(f"- 分块大小: {chunk_size}")
     if skipped:
         print(f"- 跳过真实文件统计: {dict(skipped)}")
     if missing:
