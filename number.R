@@ -1,4 +1,5 @@
 library(dplyr)
+library(parallel)
 library(readr)
 library(stringr)
 
@@ -28,18 +29,29 @@ if (length(sample_dirs) == 0) {
 }
 
 ## ===============================
-## 3. 读取所有 *cell_id.txt 文件
+## 3. 按 sample 分 chunk（19 核）并行读取 *cell_id.txt 文件
 ## ===============================
-df_list <- list()
+needed_cols <- c(
+  "slide", "sample", "subclass", "layer", "region",
+  "enrich_subclass_cell_ids_num",
+  "Glut_Neruon_cell_ids_num",
+  "GABA_Neruon_cell_ids_num"
+)
 
-for (sample_path in sample_dirs) {
+process_one_sample <- function(sample_path) {
+  sample_name <- basename(sample_path)
   txt_files <- list.files(
     sample_path,
     pattern = "cell_id\\.txt$",
     full.names = TRUE
   )
 
-  if (length(txt_files) == 0) next
+  if (length(txt_files) == 0) {
+    cat(sprintf("[INFO] %s 处理完成：未找到 cell_id.txt 文件\n", sample_name))
+    return(list())
+  }
+
+  sample_df_list <- list()
 
   for (f in txt_files) {
     tmp <- tryCatch(
@@ -48,14 +60,6 @@ for (sample_path in sample_dirs) {
     )
 
     if (is.null(tmp) || nrow(tmp) == 0) next
-
-    needed_cols <- c(
-      "slide", "sample", "subclass", "layer", "region",
-      "enrich_subclass_cell_ids_num",
-      "Glut_Neruon_cell_ids_num",
-      "GABA_Neruon_cell_ids_num"
-    )
-
     if (!all(needed_cols %in% colnames(tmp))) next
 
     ## 只保留后续统计必需列，并统一类型，避免 bind_rows 的类型冲突
@@ -71,9 +75,28 @@ for (sample_path in sample_dirs) {
         GABA_Neruon_cell_ids_num = as.numeric(GABA_Neruon_cell_ids_num)
       )
 
-    df_list[[length(df_list) + 1]] <- tmp
+    sample_df_list[[length(sample_df_list) + 1]] <- tmp
   }
+
+  valid_rows <- sum(vapply(sample_df_list, nrow, integer(1)))
+  cat(sprintf("[INFO] %s 处理完成：有效行数=%d\n", sample_name, valid_rows))
+  sample_df_list
 }
+
+n_cores <- 19
+chunk_ids <- cut(seq_along(sample_dirs), breaks = n_cores, labels = FALSE)
+sample_chunks <- split(sample_dirs, chunk_ids)
+
+chunk_results <- mclapply(
+  sample_chunks,
+  function(one_chunk) {
+    chunk_list <- lapply(one_chunk, process_one_sample)
+    unlist(chunk_list, recursive = FALSE)
+  },
+  mc.cores = n_cores
+)
+
+df_list <- unlist(chunk_results, recursive = FALSE)
 
 if (length(df_list) == 0) {
   stop("没有读取到有效的 *cell_id.txt 数据")
