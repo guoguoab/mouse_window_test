@@ -1,0 +1,4 @@
+metric	true_total	random_total_mean	random_total_min	random_total_max	sample_n	p_one_sided_true_gt	p_one_sided_true_lt	p_two_sided
+region_num	49.000000	197.500000	107.000000	288.000000	2	1	0.333333	0.333333
+glut_num	1481.000000	5561.083333	1891.500000	9230.666667	2	1	0.333333	0.333333
+gaba_num	3223.500000	3402.008333	3048.250000	3755.766667	2	0.666667	0.666667	1
