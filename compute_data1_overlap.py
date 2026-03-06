@@ -11,22 +11,9 @@ import argparse
 import csv
 import itertools
 import math
-import re
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from pathlib import Path
-from typing import Dict, Iterable, List, Sequence
-
-GABA_LIST = {
-    "046 Vip Gaba",
-    "047 Sncg Gaba",
-    "048 RHP-COA Ndnf Gaba",
-    "049 Lamp5 Gaba",
-    "050 Lamp5 Lhx6 Gaba",
-    "051 Pvalb chandelier Gaba",
-    "052 Pvalb Gaba",
-    "053 Sst Gaba",
-}
-GLUT_PATTERN = re.compile(r"^(00[1-9]|01[0-9]|02[0-6])")
+from typing import Dict, Iterable, List
 
 
 def safe_int(value: str | None) -> int | None:
@@ -100,16 +87,8 @@ def class_value(row: Dict[str, str]) -> str:
     return (row.get("class") or row.get("subclass") or "").strip()
 
 
-def build_target_classes(rows: Sequence[Dict[str, str]]) -> set[str]:
-    classes = {class_value(r) for r in rows if class_value(r)}
-    glut = {c for c in classes if GLUT_PATTERN.match(c)}
-    return glut | GABA_LIST
-
-
 def process_sample(sample_dir: Path, output_dir: Path) -> tuple[str, int, Path]:
     rows = read_sample_rows(sample_dir)
-    target_classes = build_target_classes(rows)
-    rows = [r for r in rows if class_value(r) in target_classes]
 
     groups: Dict[tuple[str, str], List[Dict[str, str]]] = {}
     for row in rows:
