@@ -11,22 +11,9 @@ import argparse
 import csv
 import itertools
 import math
-import re
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from pathlib import Path
-from typing import Dict, Iterable, List, Sequence
-
-GABA_LIST = {
-    "046 Vip Gaba",
-    "047 Sncg Gaba",
-    "048 RHP-COA Ndnf Gaba",
-    "049 Lamp5 Gaba",
-    "050 Lamp5 Lhx6 Gaba",
-    "051 Pvalb chandelier Gaba",
-    "052 Pvalb Gaba",
-    "053 Sst Gaba",
-}
-GLUT_PATTERN = re.compile(r"^(00[1-9]|01[0-9]|02[0-6])")
+from typing import Dict, Iterable, List
 
 
 def safe_int(value: str | None) -> int | None:
@@ -100,16 +87,8 @@ def class_value(row: Dict[str, str]) -> str:
     return (row.get("class") or row.get("subclass") or "").strip()
 
 
-def build_target_classes(rows: Sequence[Dict[str, str]]) -> set[str]:
-    classes = {class_value(r) for r in rows if class_value(r)}
-    glut = {c for c in classes if GLUT_PATTERN.match(c)}
-    return glut | GABA_LIST
-
-
 def process_sample(sample_dir: Path, output_dir: Path) -> tuple[str, int, Path]:
     rows = read_sample_rows(sample_dir)
-    target_classes = build_target_classes(rows)
-    rows = [r for r in rows if class_value(r) in target_classes]
 
     groups: Dict[tuple[str, str], List[Dict[str, str]]] = {}
     for row in rows:
@@ -215,17 +194,44 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--data-dir", type=Path, default=Path("data1"), help="Folder containing sample_* subfolders")
     parser.add_argument("--output-dir", type=Path, default=Path("overlap_results"), help="Output folder")
     parser.add_argument("--workers", type=int, default=20, help="Parallel workers (default: 20)")
+    parser.add_argument(
+        "--start-folder",
+        type=int,
+        default=1,
+        help="1-based index of the first sample_* folder to process (default: 1)",
+    )
+    parser.add_argument(
+        "--end-folder",
+        type=int,
+        default=None,
+        help="1-based index of the last sample_* folder to process, inclusive (default: last folder)",
+    )
     return parser.parse_args()
 
 
 def main() -> None:
     args = parse_args()
-    sample_dirs = sorted(p for p in args.data_dir.glob("sample_*") if p.is_dir())
-    if not sample_dirs:
+    all_sample_dirs = sorted(p for p in args.data_dir.glob("sample_*") if p.is_dir())
+    if not all_sample_dirs:
         raise SystemExit(f"No sample_* directories found in {args.data_dir}")
 
+    total_samples = len(all_sample_dirs)
+    start_idx = max(1, args.start_folder)
+    end_idx = total_samples if args.end_folder is None else min(total_samples, args.end_folder)
+
+    if start_idx > end_idx:
+        raise SystemExit(
+            f"Invalid folder range: start={args.start_folder}, end={args.end_folder}. "
+            f"Valid range is 1..{total_samples}."
+        )
+
+    sample_dirs = all_sample_dirs[start_idx - 1 : end_idx]
+
     workers = max(1, args.workers)
-    print(f"Found {len(sample_dirs)} samples, running with {workers} workers.")
+    print(
+        f"Found {total_samples} samples, processing folders {start_idx}-{end_idx} "
+        f"({len(sample_dirs)} samples) with {workers} workers."
+    )
 
     futures = []
     with ProcessPoolExecutor(max_workers=workers) as pool:
