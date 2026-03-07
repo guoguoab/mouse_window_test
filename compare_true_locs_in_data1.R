@@ -2,6 +2,7 @@
 
 suppressPackageStartupMessages({
   library(data.table)
+  library(parallel)
 })
 
 args <- commandArgs(trailingOnly = TRUE)
@@ -9,6 +10,8 @@ true_dir <- if (length(args) >= 1) args[[1]] else "true_data"
 data1_dir <- if (length(args) >= 2) args[[2]] else "data1"
 out_file <- if (length(args) >= 3) args[[3]] else "true_loc_presence_by_sample.tsv"
 tol_digits <- if (length(args) >= 4) as.integer(args[[4]]) else 8L
+summary_out_file <- if (length(args) >= 5) args[[5]] else "true_loc_presence_summary.tsv"
+parallel_cores <- 20L
 
 if (is.na(tol_digits) || tol_digits < 0) {
   stop("tol_digits 必须是非负整数")
@@ -98,66 +101,80 @@ if (length(sample_dirs) == 0) {
 
 message(sprintf("发现 true_data loc 文件: %d", length(true_loc_files)))
 message(sprintf("发现 sample 目录: %d", length(sample_dirs)))
+message(sprintf("并行核数: %d", parallel_cores))
 
-sample_chip_locs <- vector("list", length(sample_dirs))
-names(sample_chip_locs) <- basename(sample_dirs)
-for (i in seq_along(sample_dirs)) {
-  sname <- basename(sample_dirs[[i]])
-  sample_chip_locs[[sname]] <- build_sample_chip_loc_sets(sample_dirs[[i]], digits = tol_digits)
+sample_build <- mclapply(
+  sample_dirs,
+  function(sample_dir) {
+    sname <- basename(sample_dir)
+    chip_locs <- build_sample_chip_loc_sets(sample_dir, digits = tol_digits)
+    list(
+      sample_name = sname,
+      chip_locs = chip_locs,
+      chip_count = length(chip_locs),
+      loc_count = sum(vapply(chip_locs, length, integer(1)))
+    )
+  },
+  mc.cores = parallel_cores
+)
 
-  chip_count <- length(sample_chip_locs[[sname]])
-  loc_count <- sum(vapply(sample_chip_locs[[sname]], length, integer(1)))
-  message(sprintf("[%s] chip数: %d, loc总数: %d", sname, chip_count, loc_count))
+sample_chip_locs <- setNames(lapply(sample_build, `[[`, "chip_locs"), vapply(sample_build, `[[`, "sample_name", FUN.VALUE = character(1)))
+for (x in sample_build) {
+  message(sprintf("[%s] chip数: %d, loc总数: %d", x$sample_name, x$chip_count, x$loc_count))
 }
 
-results <- list()
-idx <- 1L
-
-for (f in true_loc_files) {
-  dt <- tryCatch(
-    fread(f, sep = "\t", header = TRUE, fill = TRUE, showProgress = FALSE),
-    error = function(e) NULL
-  )
-
-  if (is.null(dt) || nrow(dt) == 0) next
-
-  chip <- extract_chip_from_true_filename(f)
-
-  # true 文件优先使用 loc；若缺失则用 xstart_ystart 生成 loc key
-  if ("loc" %in% names(dt)) {
-    dt[, loc_key := as.character(loc)]
-  } else if (all(c("xstart", "ystart") %in% names(dt))) {
-    dt[, loc_key := coord_loc_key(xstart, ystart, digits = tol_digits)]
-  } else {
-    warning(sprintf("跳过文件(缺少 loc 与坐标列): %s", f))
-    next
-  }
-
-  dt <- dt[!is.na(loc_key) & loc_key != ""]
-  if (nrow(dt) == 0) next
-
-  # 用户要求：按每个 loc 检索；不考虑内部子 loc 组成
-  uniq_locs <- unique(dt$loc_key)
-
-  for (loc_name in uniq_locs) {
-    row <- data.table(
-      true_file = basename(f),
-      true_file_path = f,
-      chip = chip,
-      loc = loc_name
+results <- mclapply(
+  true_loc_files,
+  function(f) {
+    dt <- tryCatch(
+      fread(f, sep = "\t", header = TRUE, fill = TRUE, showProgress = FALSE),
+      error = function(e) NULL
     )
 
-    for (sname in names(sample_chip_locs)) {
-      chip_bucket <- sample_chip_locs[[sname]][[chip]]
-      found <- !is.null(chip_bucket) && (loc_name %in% chip_bucket)
-      row[[sname]] <- as.integer(found)
+    if (is.null(dt) || nrow(dt) == 0) return(NULL)
+
+    chip <- extract_chip_from_true_filename(f)
+
+    # true 文件优先使用 loc；若缺失则用 xstart_ystart 生成 loc key
+    if ("loc" %in% names(dt)) {
+      dt[, loc_key := as.character(loc)]
+    } else if (all(c("xstart", "ystart") %in% names(dt))) {
+      dt[, loc_key := coord_loc_key(xstart, ystart, digits = tol_digits)]
+    } else {
+      warning(sprintf("跳过文件(缺少 loc 与坐标列): %s", f))
+      return(NULL)
     }
 
-    results[[idx]] <- row
-    idx <- idx + 1L
-  }
-}
+    dt <- dt[!is.na(loc_key) & loc_key != ""]
+    if (nrow(dt) == 0) return(NULL)
 
+    # 用户要求：按每个 loc 检索；不考虑内部子 loc 组成
+    uniq_locs <- unique(dt$loc_key)
+    one_file_rows <- vector("list", length(uniq_locs))
+
+    for (i in seq_along(uniq_locs)) {
+      loc_name <- uniq_locs[[i]]
+      row <- data.table(
+        true_file = basename(f),
+        true_file_path = f,
+        chip = chip,
+        loc = loc_name
+      )
+
+      for (sname in names(sample_chip_locs)) {
+        chip_bucket <- sample_chip_locs[[sname]][[chip]]
+        found <- !is.null(chip_bucket) && (loc_name %in% chip_bucket)
+        row[[sname]] <- as.integer(found)
+      }
+      one_file_rows[[i]] <- row
+    }
+
+    rbindlist(one_file_rows, fill = TRUE)
+  },
+  mc.cores = parallel_cores
+)
+
+results <- Filter(Negate(is.null), results)
 if (length(results) == 0) {
   stop("没有产生任何结果，请检查输入文件格式")
 }
@@ -169,5 +186,17 @@ setcolorder(
 )
 
 fwrite(out_dt, out_file, sep = "\t")
+
+sample_cols <- sort(setdiff(names(out_dt), c("true_file", "true_file_path", "chip", "loc")))
+summary_dt <- data.table(
+  sample = sample_cols,
+  matched_true_loc_count = vapply(sample_cols, function(s) sum(out_dt[[s]] == 1L, na.rm = TRUE), integer(1)),
+  total_true_loc_count = nrow(out_dt)
+)
+summary_dt[, matched_ratio := round(matched_true_loc_count / total_true_loc_count, 6)]
+setorder(summary_dt, -matched_true_loc_count, sample)
+fwrite(summary_dt, summary_out_file, sep = "\t")
+
 message(sprintf("完成: %s", out_file))
 message(sprintf("记录数: %d", nrow(out_dt)))
+message(sprintf("汇总完成: %s", summary_out_file))
