@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1380" height="680">
+<rect width="100%" height="100%" fill="white"/>
+<text x="690" y="40" text-anchor="middle" font-size="26" font-weight="700">Sample vs True Overlap Percent (Permutation Test)</text>
+<line x1="90" y1="120" x2="90" y2="570" stroke="#333" stroke-width="2"/>
+<line x1="90" y1="570" x2="1340" y2="570" stroke="#333" stroke-width="2"/>
+<line x1="84" y1="570.00" x2="90" y2="570.00" stroke="#333" stroke-width="1.5"/>
+<text x="78" y="574.00" text-anchor="end" font-size="14">0%</text>
+<line x1="84" y1="524.24" x2="90" y2="524.24" stroke="#333" stroke-width="1.5"/>
+<text x="78" y="528.24" text-anchor="end" font-size="14">10%</text>
+<line x1="84" y1="478.47" x2="90" y2="478.47" stroke="#333" stroke-width="1.5"/>
+<text x="78" y="482.47" text-anchor="end" font-size="14">20%</text>
+<line x1="84" y1="432.71" x2="90" y2="432.71" stroke="#333" stroke-width="1.5"/>
+<text x="78" y="436.71" text-anchor="end" font-size="14">30%</text>
+<line x1="84" y1="386.95" x2="90" y2="386.95" stroke="#333" stroke-width="1.5"/>
+<text x="78" y="390.95" text-anchor="end" font-size="14">40%</text>
+<line x1="84" y1="341.19" x2="90" y2="341.19" stroke="#333" stroke-width="1.5"/>
+<text x="78" y="345.19" text-anchor="end" font-size="14">50%</text>
+<line x1="84" y1="295.42" x2="90" y2="295.42" stroke="#333" stroke-width="1.5"/>
+<text x="78" y="299.42" text-anchor="end" font-size="14">60%</text>
+<line x1="84" y1="249.66" x2="90" y2="249.66" stroke="#333" stroke-width="1.5"/>
+<text x="78" y="253.66" text-anchor="end" font-size="14">70%</text>
+<line x1="84" y1="203.90" x2="90" y2="203.90" stroke="#333" stroke-width="1.5"/>
+<text x="78" y="207.90" text-anchor="end" font-size="14">80%</text>
+<line x1="84" y1="158.14" x2="90" y2="158.14" stroke="#333" stroke-width="1.5"/>
+<text x="78" y="162.14" text-anchor="end" font-size="14">90%</text>
+<rect x="160" y="60" width="24" height="14" fill="#d9d2ad" stroke="#333"/>
+<text x="192" y="72" font-size="15">0–20%</text>
+<rect x="305" y="60" width="24" height="14" fill="#b7d4ca" stroke="#333"/>
+<text x="337" y="72" font-size="15">20–40%</text>
+<rect x="450" y="60" width="24" height="14" fill="#57a9a5" stroke="#333"/>
+<text x="482" y="72" font-size="15">40–60%</text>
+<rect x="595" y="60" width="24" height="14" fill="#3d80ad" stroke="#333"/>
+<text x="627" y="72" font-size="15">60–80%</text>
+<rect x="740" y="60" width="24" height="14" fill="#294f72" stroke="#333"/>
+<text x="772" y="72" font-size="15">80–100%</text>
+<circle cx="1040" cy="66" r="4" fill="#222"/>
+<text x="1052" y="70" font-size="14">sample points</text>
+<line x1="1160" y1="66" x2="1188" y2="66" stroke="#111" stroke-width="2"/>
+<text x="1194" y="70" font-size="14">sample mean ± SD</text>
+<rect x="164.25" y="411.10" width="28" height="158.90" fill="#d9d2ad" stroke="#333" stroke-width="1"/>
+<circle cx="196.25" cy="478.47" r="2.5" fill="#222"/>
+<circle cx="201.25" cy="411.39" r="2.5" fill="#222"/>
+<line x1="198.75" y1="492.37" x2="198.75" y2="397.50" stroke="#111" stroke-width="1.5"/>
+<line x1="194.75" y1="492.37" x2="202.75" y2="492.37" stroke="#111" stroke-width="1.5"/>
+<line x1="194.75" y1="397.50" x2="202.75" y2="397.50" stroke="#111" stroke-width="1.5"/>
+<circle cx="198.75" cy="444.93" r="2.8" fill="#111"/>
+<text x="178.25" y="374.62" text-anchor="middle" font-size="13" font-weight="700">ns</text>
+<rect x="198.25" y="525.51" width="28" height="44.49" fill="#b7d4ca" stroke="#333" stroke-width="1"/>
+<circle cx="230.25" cy="398.39" r="2.5" fill="#222"/>
+<circle cx="235.25" cy="494.60" r="2.5" fill="#222"/>
+<line x1="232.75" y1="514.52" x2="232.75" y2="378.46" stroke="#111" stroke-width="1.5"/>
+<line x1="228.75" y1="514.52" x2="236.75" y2="514.52" stroke="#111" stroke-width="1.5"/>
+<line x1="228.75" y1="378.46" x2="236.75" y2="378.46" stroke="#111" stroke-width="1.5"/>
+<circle cx="232.75" cy="446.49" r="2.8" fill="#111"/>
+<text x="212.25" y="355.58" text-anchor="middle" font-size="13" font-weight="700">ns</text>
+<rect x="232.25" y="461.95" width="28" height="108.05" fill="#57a9a5" stroke="#333" stroke-width="1"/>
+<circle cx="264.25" cy="535.68" r="2.5" fill="#222"/>
+<circle cx="269.25" cy="502.40" r="2.5" fill="#222"/>
+<line x1="266.75" y1="542.57" x2="266.75" y2="495.50" stroke="#111" stroke-width="1.5"/>
+<line x1="262.75" y1="542.57" x2="270.75" y2="542.57" stroke="#111" stroke-width="1.5"/>
+<line x1="262.75" y1="495.50" x2="270.75" y2="495.50" stroke="#111" stroke-width="1.5"/>
+<circle cx="266.75" cy="519.04" r="2.8" fill="#111"/>
+<text x="246.25" y="439.07" text-anchor="middle" font-size="13" font-weight="700">ns</text>
+<rect x="266.25" y="519.15" width="28" height="50.85" fill="#3d80ad" stroke="#333" stroke-width="1"/>
+<circle cx="298.25" cy="489.92" r="2.5" fill="#222"/>
+<circle cx="303.25" cy="502.40" r="2.5" fill="#222"/>
+<line x1="300.75" y1="504.98" x2="300.75" y2="487.33" stroke="#111" stroke-width="1.5"/>
+<line x1="296.75" y1="504.98" x2="304.75" y2="504.98" stroke="#111" stroke-width="1.5"/>
+<line x1="296.75" y1="487.33" x2="304.75" y2="487.33" stroke="#111" stroke-width="1.5"/>
+<circle cx="300.75" cy="496.16" r="2.8" fill="#111"/>
+<text x="280.25" y="464.45" text-anchor="middle" font-size="13" font-weight="700">ns</text>
+<rect x="300.25" y="474.66" width="28" height="95.34" fill="#294f72" stroke="#333" stroke-width="1"/>
+<circle cx="332.25" cy="489.92" r="2.5" fill="#222"/>
+<circle cx="337.25" cy="481.59" r="2.5" fill="#222"/>
+<line x1="334.75" y1="491.64" x2="334.75" y2="479.87" stroke="#111" stroke-width="1.5"/>
+<line x1="330.75" y1="491.64" x2="338.75" y2="491.64" stroke="#111" stroke-width="1.5"/>
+<line x1="330.75" y1="479.87" x2="338.75" y2="479.87" stroke="#111" stroke-width="1.5"/>
+<circle cx="334.75" cy="485.76" r="2.8" fill="#111"/>
+<text x="314.25" y="451.78" text-anchor="middle" font-size="13" font-weight="700">ns</text>
+<text x="246.25" y="615" text-anchor="middle" font-size="20">GABA-GABA</text>
+<rect x="476.75" y="306.86" width="28" height="263.14" fill="#d9d2ad" stroke="#333" stroke-width="1"/>
+<circle cx="508.75" cy="408.48" r="2.5" fill="#222"/>
+<circle cx="513.75" cy="459.94" r="2.5" fill="#222"/>
+<line x1="511.25" y1="470.59" x2="511.25" y2="397.83" stroke="#111" stroke-width="1.5"/>
+<line x1="507.25" y1="470.59" x2="515.25" y2="470.59" stroke="#111" stroke-width="1.5"/>
+<line x1="507.25" y1="397.83" x2="515.25" y2="397.83" stroke="#111" stroke-width="1.5"/>
+<circle cx="511.25" cy="434.21" r="2.8" fill="#111"/>
+<text x="490.75" y="283.98" text-anchor="middle" font-size="13" font-weight="700">ns</text>
+<rect x="510.75" y="547.12" width="28" height="22.88" fill="#b7d4ca" stroke="#333" stroke-width="1"/>
+<circle cx="542.75" cy="489.24" r="2.5" fill="#222"/>
+<circle cx="547.75" cy="494.69" r="2.5" fill="#222"/>
+<line x1="545.25" y1="495.82" x2="545.25" y2="488.11" stroke="#111" stroke-width="1.5"/>
+<line x1="541.25" y1="495.82" x2="549.25" y2="495.82" stroke="#111" stroke-width="1.5"/>
+<line x1="541.25" y1="488.11" x2="549.25" y2="488.11" stroke="#111" stroke-width="1.5"/>
+<circle cx="545.25" cy="491.97" r="2.8" fill="#111"/>
+<text x="524.75" y="465.23" text-anchor="middle" font-size="13" font-weight="700">ns</text>
+<rect x="544.75" y="524.24" width="28" height="45.76" fill="#57a9a5" stroke="#333" stroke-width="1"/>
+<circle cx="576.75" cy="462.32" r="2.5" fill="#222"/>
+<circle cx="581.75" cy="494.69" r="2.5" fill="#222"/>
+<line x1="579.25" y1="501.40" x2="579.25" y2="455.62" stroke="#111" stroke-width="1.5"/>
+<line x1="575.25" y1="501.40" x2="583.25" y2="501.40" stroke="#111" stroke-width="1.5"/>
+<line x1="575.25" y1="455.62" x2="583.25" y2="455.62" stroke="#111" stroke-width="1.5"/>
+<circle cx="579.25" cy="478.51" r="2.8" fill="#111"/>
+<text x="558.75" y="432.74" text-anchor="middle" font-size="13" font-weight="700">ns</text>
+<rect x="578.75" y="547.12" width="28" height="22.88" fill="#3d80ad" stroke="#333" stroke-width="1"/>
+<circle cx="610.75" cy="570.00" r="2.5" fill="#222"/>
+<circle cx="615.75" cy="500.49" r="2.5" fill="#222"/>
+<line x1="613.25" y1="570.00" x2="613.25" y2="486.09" stroke="#111" stroke-width="1.5"/>
+<line x1="609.25" y1="570.00" x2="617.25" y2="570.00" stroke="#111" stroke-width="1.5"/>
+<line x1="609.25" y1="486.09" x2="617.25" y2="486.09" stroke="#111" stroke-width="1.5"/>
+<circle cx="613.25" cy="535.24" r="2.8" fill="#111"/>
+<text x="592.75" y="463.21" text-anchor="middle" font-size="13" font-weight="700">ns</text>
+<rect x="612.75" y="467.03" width="28" height="102.97" fill="#294f72" stroke="#333" stroke-width="1"/>
+<circle cx="644.75" cy="462.32" r="2.5" fill="#222"/>
+<circle cx="649.75" cy="442.56" r="2.5" fill="#222"/>
+<line x1="647.25" y1="466.42" x2="647.25" y2="438.47" stroke="#111" stroke-width="1.5"/>
+<line x1="643.25" y1="466.42" x2="651.25" y2="466.42" stroke="#111" stroke-width="1.5"/>
+<line x1="643.25" y1="438.47" x2="651.25" y2="438.47" stroke="#111" stroke-width="1.5"/>
+<circle cx="647.25" cy="452.44" r="2.8" fill="#111"/>
+<text x="626.75" y="415.59" text-anchor="middle" font-size="13" font-weight="700">ns</text>
+<text x="558.75" y="615" text-anchor="middle" font-size="20">GABA-Glut</text>
+<rect x="789.25" y="341.19" width="28" height="228.81" fill="#d9d2ad" stroke="#333" stroke-width="1"/>
+<circle cx="821.25" cy="462.32" r="2.5" fill="#222"/>
+<circle cx="826.25" cy="349.88" r="2.5" fill="#222"/>
+<line x1="823.75" y1="485.61" x2="823.75" y2="326.59" stroke="#111" stroke-width="1.5"/>
+<line x1="819.75" y1="485.61" x2="827.75" y2="485.61" stroke="#111" stroke-width="1.5"/>
+<line x1="819.75" y1="326.59" x2="827.75" y2="326.59" stroke="#111" stroke-width="1.5"/>
+<circle cx="823.75" cy="406.10" r="2.8" fill="#111"/>
+<text x="803.25" y="303.71" text-anchor="middle" font-size="13" font-weight="700">ns</text>
+<rect x="823.25" y="524.24" width="28" height="45.76" fill="#b7d4ca" stroke="#333" stroke-width="1"/>
+<circle cx="855.25" cy="516.16" r="2.5" fill="#222"/>
+<circle cx="860.25" cy="454.15" r="2.5" fill="#222"/>
+<line x1="857.75" y1="529.01" x2="857.75" y2="441.30" stroke="#111" stroke-width="1.5"/>
+<line x1="853.75" y1="529.01" x2="861.75" y2="529.01" stroke="#111" stroke-width="1.5"/>
+<line x1="853.75" y1="441.30" x2="861.75" y2="441.30" stroke="#111" stroke-width="1.5"/>
+<circle cx="857.75" cy="485.15" r="2.8" fill="#111"/>
+<text x="837.25" y="418.42" text-anchor="middle" font-size="13" font-weight="700">ns</text>
+<rect x="857.25" y="524.24" width="28" height="45.76" fill="#57a9a5" stroke="#333" stroke-width="1"/>
+<circle cx="889.25" cy="489.24" r="2.5" fill="#222"/>
+<circle cx="894.25" cy="529.45" r="2.5" fill="#222"/>
+<line x1="891.75" y1="537.78" x2="891.75" y2="480.91" stroke="#111" stroke-width="1.5"/>
+<line x1="887.75" y1="537.78" x2="895.75" y2="537.78" stroke="#111" stroke-width="1.5"/>
+<line x1="887.75" y1="480.91" x2="895.75" y2="480.91" stroke="#111" stroke-width="1.5"/>
+<circle cx="891.75" cy="509.35" r="2.8" fill="#111"/>
+<text x="871.25" y="458.03" text-anchor="middle" font-size="13" font-weight="700">ns</text>
+<rect x="891.25" y="524.24" width="28" height="45.76" fill="#3d80ad" stroke="#333" stroke-width="1"/>
+<circle cx="923.25" cy="516.16" r="2.5" fill="#222"/>
+<circle cx="928.25" cy="523.66" r="2.5" fill="#222"/>
+<line x1="925.75" y1="525.21" x2="925.75" y2="514.61" stroke="#111" stroke-width="1.5"/>
+<line x1="921.75" y1="525.21" x2="929.75" y2="525.21" stroke="#111" stroke-width="1.5"/>
+<line x1="921.75" y1="514.61" x2="929.75" y2="514.61" stroke="#111" stroke-width="1.5"/>
+<circle cx="925.75" cy="519.91" r="2.8" fill="#111"/>
+<text x="905.25" y="491.73" text-anchor="middle" font-size="13" font-weight="700">ns</text>
+<rect x="925.25" y="478.47" width="28" height="91.53" fill="#294f72" stroke="#333" stroke-width="1"/>
+<circle cx="957.25" cy="408.48" r="2.5" fill="#222"/>
+<circle cx="962.25" cy="535.24" r="2.5" fill="#222"/>
+<line x1="959.75" y1="561.50" x2="959.75" y2="382.23" stroke="#111" stroke-width="1.5"/>
+<line x1="955.75" y1="561.50" x2="963.75" y2="561.50" stroke="#111" stroke-width="1.5"/>
+<line x1="955.75" y1="382.23" x2="963.75" y2="382.23" stroke="#111" stroke-width="1.5"/>
+<circle cx="959.75" cy="471.86" r="2.8" fill="#111"/>
+<text x="939.25" y="359.35" text-anchor="middle" font-size="13" font-weight="700">ns</text>
+<text x="871.25" y="615" text-anchor="middle" font-size="20">Glut-GABA</text>
+<rect x="1101.75" y="188.64" width="28" height="381.36" fill="#d9d2ad" stroke="#333" stroke-width="1"/>
+<circle cx="1133.75" cy="341.19" r="2.5" fill="#222"/>
+<circle cx="1138.75" cy="512.80" r="2.5" fill="#222"/>
+<line x1="1136.25" y1="548.34" x2="1136.25" y2="305.64" stroke="#111" stroke-width="1.5"/>
+<line x1="1132.25" y1="548.34" x2="1140.25" y2="548.34" stroke="#111" stroke-width="1.5"/>
+<line x1="1132.25" y1="305.64" x2="1140.25" y2="305.64" stroke="#111" stroke-width="1.5"/>
+<circle cx="1136.25" cy="426.99" r="2.8" fill="#111"/>
+<text x="1115.75" y="165.76" text-anchor="middle" font-size="13" font-weight="700">ns</text>
+<rect x="1135.75" y="531.86" width="28" height="38.14" fill="#b7d4ca" stroke="#333" stroke-width="1"/>
+<circle cx="1167.75" cy="570.00" r="2.5" fill="#222"/>
+<circle cx="1172.75" cy="455.59" r="2.5" fill="#222"/>
+<line x1="1170.25" y1="570.00" x2="1170.25" y2="431.90" stroke="#111" stroke-width="1.5"/>
+<line x1="1166.25" y1="570.00" x2="1174.25" y2="570.00" stroke="#111" stroke-width="1.5"/>
+<line x1="1166.25" y1="431.90" x2="1174.25" y2="431.90" stroke="#111" stroke-width="1.5"/>
+<circle cx="1170.25" cy="512.80" r="2.8" fill="#111"/>
+<text x="1149.75" y="409.02" text-anchor="middle" font-size="13" font-weight="700">ns</text>
+<rect x="1169.75" y="570.00" width="28" height="0.00" fill="#57a9a5" stroke="#333" stroke-width="1"/>
+<circle cx="1201.75" cy="570.00" r="2.5" fill="#222"/>
+<circle cx="1206.75" cy="512.80" r="2.5" fill="#222"/>
+<line x1="1204.25" y1="570.00" x2="1204.25" y2="500.95" stroke="#111" stroke-width="1.5"/>
+<line x1="1200.25" y1="570.00" x2="1208.25" y2="570.00" stroke="#111" stroke-width="1.5"/>
+<line x1="1200.25" y1="500.95" x2="1208.25" y2="500.95" stroke="#111" stroke-width="1.5"/>
+<circle cx="1204.25" cy="541.40" r="2.8" fill="#111"/>
+<text x="1183.75" y="478.07" text-anchor="middle" font-size="13" font-weight="700">ns</text>
+<rect x="1203.75" y="531.86" width="28" height="38.14" fill="#3d80ad" stroke="#333" stroke-width="1"/>
+<circle cx="1235.75" cy="570.00" r="2.5" fill="#222"/>
+<circle cx="1240.75" cy="512.80" r="2.5" fill="#222"/>
+<line x1="1238.25" y1="570.00" x2="1238.25" y2="500.95" stroke="#111" stroke-width="1.5"/>
+<line x1="1234.25" y1="570.00" x2="1242.25" y2="570.00" stroke="#111" stroke-width="1.5"/>
+<line x1="1234.25" y1="500.95" x2="1242.25" y2="500.95" stroke="#111" stroke-width="1.5"/>
+<circle cx="1238.25" cy="541.40" r="2.8" fill="#111"/>
+<text x="1217.75" y="478.07" text-anchor="middle" font-size="13" font-weight="700">ns</text>
+<rect x="1237.75" y="570.00" width="28" height="0.00" fill="#294f72" stroke="#333" stroke-width="1"/>
+<circle cx="1269.75" cy="341.19" r="2.5" fill="#222"/>
+<circle cx="1274.75" cy="398.39" r="2.5" fill="#222"/>
+<line x1="1272.25" y1="410.24" x2="1272.25" y2="329.34" stroke="#111" stroke-width="1.5"/>
+<line x1="1268.25" y1="410.24" x2="1276.25" y2="410.24" stroke="#111" stroke-width="1.5"/>
+<line x1="1268.25" y1="329.34" x2="1276.25" y2="329.34" stroke="#111" stroke-width="1.5"/>
+<circle cx="1272.25" cy="369.79" r="2.8" fill="#111"/>
+<text x="1251.75" y="306.46" text-anchor="middle" font-size="13" font-weight="700">ns</text>
+<text x="1183.75" y="615" text-anchor="middle" font-size="20">Glut-Glut</text>
+</svg>
