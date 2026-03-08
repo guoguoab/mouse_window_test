@@ -12,6 +12,7 @@ from __future__ import annotations
 import argparse
 import csv
 import itertools
+from concurrent.futures import ProcessPoolExecutor
 from pathlib import Path
 from typing import Dict, Iterable, List, Tuple
 
@@ -68,14 +69,39 @@ def class_value(row: Dict[str, str]) -> str:
     return (row.get("class") or row.get("Class") or row.get("subclass") or "").strip()
 
 
-def read_rows(true_data_dir: Path) -> List[Dict[str, str]]:
+def split_into_chunks(paths: List[Path], chunk_count: int) -> List[List[Path]]:
+    if chunk_count <= 0:
+        return [paths]
+    chunks: List[List[Path]] = [[] for _ in range(chunk_count)]
+    for i, path in enumerate(paths):
+        chunks[i % chunk_count].append(path)
+    return chunks
+
+
+def read_rows_from_chunk(paths: List[Path]) -> List[Dict[str, str]]:
     rows: List[Dict[str, str]] = []
-    for path in sorted(true_data_dir.glob("*_merged_regions_table_cell_id.txt")):
+    for path in paths:
         with path.open("r", encoding="utf-8", newline="") as fh:
             reader = csv.DictReader(fh, delimiter="\t")
             for row in reader:
                 row["__source_file"] = path.name
                 rows.append(row)
+    return rows
+
+
+def read_rows(true_data_dir: Path, workers: int = 20, chunks: int = 20) -> List[Dict[str, str]]:
+    files = sorted(true_data_dir.glob("*_merged_regions_table_cell_id.txt"))
+    if not files:
+        return []
+
+    file_chunks = split_into_chunks(files, chunks)
+    non_empty_chunks = [chunk for chunk in file_chunks if chunk]
+    max_workers = max(1, min(workers, len(non_empty_chunks)))
+
+    rows: List[Dict[str, str]] = []
+    with ProcessPoolExecutor(max_workers=max_workers) as executor:
+        for chunk_rows in executor.map(read_rows_from_chunk, non_empty_chunks):
+            rows.extend(chunk_rows)
     return rows
 
 
@@ -367,13 +393,15 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--total-table", type=str, default="true_data_total_overlap_table.csv")
     parser.add_argument("--pair-percent-table", type=str, default="true_data_pair_overlap_percent.csv")
     parser.add_argument("--plot", type=str, default="true_data_subcluster_overlap_percent.svg")
+    parser.add_argument("--workers", type=int, default=20, help="Parallel worker count (default: 20)")
+    parser.add_argument("--chunks", type=int, default=20, help="Number of file chunks to split for parallel read (default: 20)")
     return parser.parse_args()
 
 
 def main() -> None:
     args = parse_args()
 
-    rows = read_rows(args.data_dir)
+    rows = read_rows(args.data_dir, workers=args.workers, chunks=args.chunks)
     if not rows:
         raise SystemExit(f"No *_merged_regions_table_cell_id.txt files found in {args.data_dir}")
 
