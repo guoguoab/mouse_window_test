@@ -17,6 +17,7 @@ from __future__ import annotations
 import argparse
 import csv
 import math
+from multiprocessing import Pool
 import random
 from pathlib import Path
 from statistics import mean
@@ -174,6 +175,12 @@ def compute_sample_distribution(path: Path, mapping: Dict[str, str]) -> Dict[str
         den = denominator_for_pair(pair_name, counts)
         dist_by_pair[pair_name] = compute_distribution(vals, den)
     return dist_by_pair
+
+
+def compute_sample_distribution_task(task: Tuple[Path, Dict[str, str]]) -> Tuple[str, Dict[str, Dict[str, float]]]:
+    path, mapping = task
+    sample_name = path.stem.replace("_cellid_overlap_summary_filtered", "")
+    return sample_name, compute_sample_distribution(path, mapping)
 
 
 def load_true_distribution(path: Path) -> Dict[str, Dict[str, float]]:
@@ -409,6 +416,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--mapping", type=Path, default=Path("Merfish_brain_cell_type_subclass.txt"))
     parser.add_argument("--out-dir", type=Path, default=Path("overlap_results"))
     parser.add_argument("--sample-pattern", type=str, default="*_cellid_overlap_summary_filtered.csv")
+    parser.add_argument("--jobs", type=int, default=20, help="并行处理 sample 文件的进程数（默认 20）")
     return parser.parse_args()
 
 
@@ -425,10 +433,11 @@ def main() -> None:
     if not sample_files:
         raise SystemExit(f"No sample files matched: {args.overlap_dir / args.sample_pattern}")
 
-    sample_dists: Dict[str, Dict[str, Dict[str, float]]] = {}
-    for path in sample_files:
-        sample_name = path.stem.replace("_cellid_overlap_summary_filtered", "")
-        sample_dists[sample_name] = compute_sample_distribution(path, mapping)
+    jobs = max(1, args.jobs)
+    tasks = [(path, mapping) for path in sample_files]
+    with Pool(processes=jobs) as pool:
+        sample_results = pool.map(compute_sample_distribution_task, tasks)
+    sample_dists = dict(sample_results)
 
     sample_table = args.out_dir / "sample_pair_overlap_percent.csv"
     pvalue_table = args.out_dir / "sample_vs_true_permutation_pvalues.csv"
