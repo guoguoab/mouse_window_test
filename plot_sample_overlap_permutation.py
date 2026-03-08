@@ -24,9 +24,16 @@ from typing import Dict, Iterable, List, Tuple
 
 
 PAIR_ORDER = ["Gaba-Gaba", "Gaba-Glut", "Glut-Gaba", "Glut-Glut"]
-PAIR_LABELS = ["GABA-GABA", "GABA-Glut", "Glut-GABA", "Glut-Glut"]
+PLOT_PAIR_ORDER = ["Gaba-Gaba", "Glut-Gaba", "Gaba-Glut", "Glut-Glut"]
+PAIR_LABELS = {
+    "Gaba-Gaba": "GABA-GABA",
+    "Gaba-Glut": "GABA-Glut",
+    "Glut-Gaba": "Glut-GABA",
+    "Glut-Glut": "Glut-Glut",
+}
 BINS = ["0–20%", "20–40%", "40–60%", "60–80%", "80–100%"]
 COLORS = ["#d9d2ad", "#b7d4ca", "#57a9a5", "#3d80ad", "#294f72"]
+SAMPLE_BAR_COLOR = "#7b4ab8"
 
 
 def load_type_mapping(path: Path) -> Dict[str, str]:
@@ -287,22 +294,27 @@ def draw_plot(
     stats: Dict[Tuple[str, str], Dict[str, float]],
     out_svg: Path,
 ) -> None:
-    width, height = 1380, 680
+    width, height = 1500, 680
     left, right, top, bottom = 90, 40, 120, 110
     chart_w = width - left - right
     chart_h = height - top - bottom
 
     max_true = max(true_dist[p][b] for p in PAIR_ORDER for b in BINS)
     max_sample = max(sample_dists[s][p][b] for s in sample_dists for p in PAIR_ORDER for b in BINS)
-    y_max = max(60.0, max_true, max_sample) + 15.0
+    max_mean_sd = max(
+        stats[(p, b)]["mean"] + stats[(p, b)]["sd"]
+        for p in PAIR_ORDER
+        for b in BINS
+    )
+    y_max = max(60.0, max_true, max_sample, max_mean_sd) + 15.0
 
     def y_to_px(v: float) -> float:
         return top + chart_h - (v / y_max) * chart_h
 
-    samples = sorted(sample_dists)
-    group_w = chart_w / len(PAIR_ORDER)
-    bar_w = 28
-    bar_gap = 6
+    group_w = chart_w / len(PLOT_PAIR_ORDER)
+    bar_w = 18
+    pair_gap = 3
+    bin_gap = 8
 
     svg: List[str] = []
     svg.append(f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}">')
@@ -310,59 +322,77 @@ def draw_plot(
     svg.append('<text x="690" y="40" text-anchor="middle" font-size="26" font-weight="700">Sample vs True Overlap Percent (Permutation Test)</text>')
 
     # axis
-    svg.append(f'<line x1="{left}" y1="{top}" x2="{left}" y2="{top + chart_h}" stroke="#333" stroke-width="2"/>')
-    svg.append(f'<line x1="{left}" y1="{top + chart_h}" x2="{left + chart_w}" y2="{top + chart_h}" stroke="#333" stroke-width="2"/>')
+    svg.append(f'<line x1="{left}" y1="{top}" x2="{left}" y2="{top + chart_h}" stroke="#222" stroke-width="3"/>')
+    svg.append(f'<line x1="{left}" y1="{top + chart_h}" x2="{left + chart_w}" y2="{top + chart_h}" stroke="#222" stroke-width="3"/>')
 
     for tick in range(0, int(y_max) + 1, 10):
         y = y_to_px(float(tick))
-        svg.append(f'<line x1="{left - 6}" y1="{y:.2f}" x2="{left}" y2="{y:.2f}" stroke="#333" stroke-width="1.5"/>')
+        svg.append(f'<line x1="{left - 6}" y1="{y:.2f}" x2="{left}" y2="{y:.2f}" stroke="#222" stroke-width="2"/>')
         svg.append(f'<text x="{left - 12}" y="{y + 4:.2f}" text-anchor="end" font-size="14">{tick}%</text>')
 
     # legend
     lx, ly = 160, 72
     for i, b in enumerate(BINS):
         x = lx + i * 145
-        svg.append(f'<rect x="{x}" y="{ly - 12}" width="24" height="14" fill="{COLORS[i]}" stroke="#333"/>')
+        svg.append(f'<rect x="{x}" y="{ly - 12}" width="24" height="14" fill="{COLORS[i]}" stroke="#222" stroke-width="1.6"/>')
         svg.append(f'<text x="{x + 32}" y="{ly}" font-size="15">{b}</text>')
-    svg.append('<circle cx="1040" cy="66" r="4" fill="#222"/>')
-    svg.append('<text x="1052" y="70" font-size="14">sample points</text>')
-    svg.append('<line x1="1160" y1="66" x2="1188" y2="66" stroke="#111" stroke-width="2"/>')
-    svg.append('<text x="1194" y="70" font-size="14">sample mean ± SD</text>')
+    svg.append('<rect x="1040" y="54" width="18" height="14" fill="#7f7f7f" fill-opacity="0.35" stroke="#222" stroke-width="1.6"/>')
+    svg.append('<text x="1066" y="66" font-size="14">true</text>')
+    svg.append(f'<rect x="1120" y="54" width="18" height="14" fill="{SAMPLE_BAR_COLOR}" fill-opacity="0.9" stroke="#222" stroke-width="1.6"/>')
+    svg.append('<text x="1146" y="66" font-size="14">sample mean</text>')
+    svg.append('<line x1="1248" y1="61" x2="1276" y2="61" stroke="#111" stroke-width="2.6"/>')
+    svg.append('<line x1="1262" y1="53" x2="1262" y2="69" stroke="#111" stroke-width="2.6"/>')
+    svg.append('<text x="1284" y="66" font-size="14">sample mean ± SD</text>')
 
-    for g, pair in enumerate(PAIR_ORDER):
+    for g, pair in enumerate(PLOT_PAIR_ORDER):
         center = left + group_w * (g + 0.5)
-        start_x = center - ((len(BINS) * bar_w + (len(BINS) - 1) * bar_gap) / 2)
+        cluster_w = len(BINS) * (2 * bar_w + pair_gap) + (len(BINS) - 1) * bin_gap
+        start_x = center - cluster_w / 2
 
         for i, b in enumerate(BINS):
-            x = start_x + i * (bar_w + bar_gap)
+            bin_start = start_x + i * (2 * bar_w + pair_gap + bin_gap)
+            true_x = bin_start
+            mean_x = bin_start + bar_w + pair_gap
             tv = true_dist[pair][b]
-            y = y_to_px(tv)
-            h = top + chart_h - y
-            svg.append(f'<rect x="{x:.2f}" y="{y:.2f}" width="{bar_w}" height="{h:.2f}" fill="{COLORS[i]}" stroke="#333" stroke-width="1"/>')
+            y_true = y_to_px(tv)
+            h_true = top + chart_h - y_true
+            svg.append(
+                f'<rect x="{true_x:.2f}" y="{y_true:.2f}" width="{bar_w}" height="{h_true:.2f}" '
+                f'fill="{COLORS[i]}" fill-opacity="0.35" stroke="#222" stroke-width="1.8"/>'
+            )
+            true_label_y = max(12, y_true - 4)
+            svg.append(
+                f'<text x="{true_x + bar_w / 2:.2f}" y="{true_label_y:.2f}" text-anchor="middle" '
+                f'font-size="9" fill="#333">{tv:.1f}%</text>'
+            )
 
-            vals = [sample_dists[s][pair][b] for s in samples]
             stat = stats[(pair, b)]
-            sample_x0 = x + bar_w + 4
-            for j, v in enumerate(vals):
-                dot_x = sample_x0 + j * 5
-                dot_y = y_to_px(v)
-                svg.append(f'<circle cx="{dot_x:.2f}" cy="{dot_y:.2f}" r="2.5" fill="#222"/>')
-
             m = stat["mean"]
             sd = stat["sd"]
-            ex = sample_x0 + max(0, (len(vals) - 1) * 2.5)
+            y_mean = y_to_px(m)
+            h_mean = top + chart_h - y_mean
+            svg.append(
+                f'<rect x="{mean_x:.2f}" y="{y_mean:.2f}" width="{bar_w}" height="{h_mean:.2f}" '
+                f'fill="{SAMPLE_BAR_COLOR}" fill-opacity="0.9" stroke="#222" stroke-width="1.8"/>'
+            )
+            mean_label_y = max(12, y_mean - 4)
+            svg.append(
+                f'<text x="{mean_x + bar_w / 2:.2f}" y="{mean_label_y:.2f}" text-anchor="middle" '
+                f'font-size="9" fill="{SAMPLE_BAR_COLOR}">{m:.1f}%</text>'
+            )
+
+            ex = mean_x + bar_w / 2
             y1 = y_to_px(max(0.0, m - sd))
             y2 = y_to_px(m + sd)
-            ym = y_to_px(m)
-            svg.append(f'<line x1="{ex:.2f}" y1="{y1:.2f}" x2="{ex:.2f}" y2="{y2:.2f}" stroke="#111" stroke-width="1.5"/>')
-            svg.append(f'<line x1="{ex - 4:.2f}" y1="{y1:.2f}" x2="{ex + 4:.2f}" y2="{y1:.2f}" stroke="#111" stroke-width="1.5"/>')
-            svg.append(f'<line x1="{ex - 4:.2f}" y1="{y2:.2f}" x2="{ex + 4:.2f}" y2="{y2:.2f}" stroke="#111" stroke-width="1.5"/>')
-            svg.append(f'<circle cx="{ex:.2f}" cy="{ym:.2f}" r="2.8" fill="#111"/>')
+            svg.append(f'<line x1="{ex:.2f}" y1="{y1:.2f}" x2="{ex:.2f}" y2="{y2:.2f}" stroke="#111" stroke-width="2.2"/>')
+            svg.append(f'<line x1="{ex - 4:.2f}" y1="{y1:.2f}" x2="{ex + 4:.2f}" y2="{y1:.2f}" stroke="#111" stroke-width="2.2"/>')
+            svg.append(f'<line x1="{ex - 4:.2f}" y1="{y2:.2f}" x2="{ex + 4:.2f}" y2="{y2:.2f}" stroke="#111" stroke-width="2.2"/>')
 
             sig_y = y_to_px(max(tv, m + sd) + 5)
-            svg.append(f'<text x="{x + bar_w/2:.2f}" y="{max(16, sig_y):.2f}" text-anchor="middle" font-size="13" font-weight="700">{stat["sig"]}</text>')
+            sig_x = (true_x + mean_x + bar_w) / 2
+            svg.append(f'<text x="{sig_x:.2f}" y="{max(16, sig_y):.2f}" text-anchor="middle" font-size="13" font-weight="700">{stat["sig"]}</text>')
 
-        svg.append(f'<text x="{center:.2f}" y="{top + chart_h + 45}" text-anchor="middle" font-size="20">{PAIR_LABELS[g]}</text>')
+        svg.append(f'<text x="{center:.2f}" y="{top + chart_h + 45}" text-anchor="middle" font-size="20">{PAIR_LABELS[pair]}</text>')
 
     svg.append('</svg>')
 
