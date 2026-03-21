@@ -1,0 +1,272 @@
+sample,slide,pair_key_unordered,a_class,b_class,overlap_a_in_b
+true_data,C57BL6J-1.025,035 OB Eomes Ms4a15 Glut || 039 OB Meis2 Thsd7b Gaba,035 OB Eomes Ms4a15 Glut,039 OB Meis2 Thsd7b Gaba,0.5064655172413793
+true_data,C57BL6J-1.025,035 OB Eomes Ms4a15 Glut || 039 OB Meis2 Thsd7b Gaba,035 OB Eomes Ms4a15 Glut,039 OB Meis2 Thsd7b Gaba,0.26939655172413796
+true_data,C57BL6J-1.025,035 OB Eomes Ms4a15 Glut || 040 OB Trdn Gaba,035 OB Eomes Ms4a15 Glut,040 OB Trdn Gaba,1.0
+true_data,C57BL6J-1.025,035 OB Eomes Ms4a15 Glut || 041 OB-in Frmd7 Gaba,035 OB Eomes Ms4a15 Glut,041 OB-in Frmd7 Gaba,0.9655172413793104
+true_data,C57BL6J-1.025,035 OB Eomes Ms4a15 Glut || 042 OB-out Frmd7 Gaba,035 OB Eomes Ms4a15 Glut,042 OB-out Frmd7 Gaba,1.0
+true_data,C57BL6J-1.025,035 OB Eomes Ms4a15 Glut || 043 OB-mi Frmd7 Gaba,035 OB Eomes Ms4a15 Glut,043 OB-mi Frmd7 Gaba,1.0
+true_data,C57BL6J-1.025,035 OB Eomes Ms4a15 Glut || 117 LHA Barhl2 Glut,035 OB Eomes Ms4a15 Glut,117 LHA Barhl2 Glut,0.11637931034482758
+true_data,C57BL6J-1.025,035 OB Eomes Ms4a15 Glut || 039 OB Meis2 Thsd7b Gaba,035 OB Eomes Ms4a15 Glut,039 OB Meis2 Thsd7b Gaba,0.7391304347826086
+true_data,C57BL6J-1.025,035 OB Eomes Ms4a15 Glut || 040 OB Trdn Gaba,035 OB Eomes Ms4a15 Glut,040 OB Trdn Gaba,0.05434782608695652
+true_data,C57BL6J-1.025,035 OB Eomes Ms4a15 Glut || 041 OB-in Frmd7 Gaba,035 OB Eomes Ms4a15 Glut,041 OB-in Frmd7 Gaba,0.9619565217391305
+true_data,C57BL6J-1.025,035 OB Eomes Ms4a15 Glut || 042 OB-out Frmd7 Gaba,035 OB Eomes Ms4a15 Glut,042 OB-out Frmd7 Gaba,0.04076086956521739
+true_data,C57BL6J-1.025,035 OB Eomes Ms4a15 Glut || 043 OB-mi Frmd7 Gaba,035 OB Eomes Ms4a15 Glut,043 OB-mi Frmd7 Gaba,0.024456521739130436
+true_data,C57BL6J-1.025,035 OB Eomes Ms4a15 Glut || 049 Lamp5 Gaba,035 OB Eomes Ms4a15 Glut,049 Lamp5 Gaba,0.2798913043478261
+true_data,C57BL6J-1.025,035 OB Eomes Ms4a15 Glut || 117 LHA Barhl2 Glut,035 OB Eomes Ms4a15 Glut,117 LHA Barhl2 Glut,0.07880434782608696
+true_data,C57BL6J-1.025,039 OB Meis2 Thsd7b Gaba || 040 OB Trdn Gaba,039 OB Meis2 Thsd7b Gaba,040 OB Trdn Gaba,0.48214285714285715
+true_data,C57BL6J-1.025,039 OB Meis2 Thsd7b Gaba || 041 OB-in Frmd7 Gaba,039 OB Meis2 Thsd7b Gaba,041 OB-in Frmd7 Gaba,0.8701298701298701
+true_data,C57BL6J-1.025,039 OB Meis2 Thsd7b Gaba || 042 OB-out Frmd7 Gaba,039 OB Meis2 Thsd7b Gaba,042 OB-out Frmd7 Gaba,0.47564935064935066
+true_data,C57BL6J-1.025,039 OB Meis2 Thsd7b Gaba || 043 OB-mi Frmd7 Gaba,039 OB Meis2 Thsd7b Gaba,043 OB-mi Frmd7 Gaba,0.461038961038961
+true_data,C57BL6J-1.025,039 OB Meis2 Thsd7b Gaba || 049 Lamp5 Gaba,039 OB Meis2 Thsd7b Gaba,049 Lamp5 Gaba,0.1314935064935065
+true_data,C57BL6J-1.025,039 OB Meis2 Thsd7b Gaba || 117 LHA Barhl2 Glut,039 OB Meis2 Thsd7b Gaba,117 LHA Barhl2 Glut,0.09740259740259741
+true_data,C57BL6J-1.025,039 OB Meis2 Thsd7b Gaba || 040 OB Trdn Gaba,039 OB Meis2 Thsd7b Gaba,040 OB Trdn Gaba,1.0
+true_data,C57BL6J-1.025,039 OB Meis2 Thsd7b Gaba || 041 OB-in Frmd7 Gaba,039 OB Meis2 Thsd7b Gaba,041 OB-in Frmd7 Gaba,0.904
+true_data,C57BL6J-1.025,039 OB Meis2 Thsd7b Gaba || 042 OB-out Frmd7 Gaba,039 OB Meis2 Thsd7b Gaba,042 OB-out Frmd7 Gaba,1.0
+true_data,C57BL6J-1.025,039 OB Meis2 Thsd7b Gaba || 043 OB-mi Frmd7 Gaba,039 OB Meis2 Thsd7b Gaba,043 OB-mi Frmd7 Gaba,1.0
+true_data,C57BL6J-1.025,039 OB Meis2 Thsd7b Gaba || 117 LHA Barhl2 Glut,039 OB Meis2 Thsd7b Gaba,117 LHA Barhl2 Glut,0.024
+true_data,C57BL6J-1.025,040 OB Trdn Gaba || 041 OB-in Frmd7 Gaba,040 OB Trdn Gaba,041 OB-in Frmd7 Gaba,0.9372623574144486
+true_data,C57BL6J-1.025,040 OB Trdn Gaba || 042 OB-out Frmd7 Gaba,040 OB Trdn Gaba,042 OB-out Frmd7 Gaba,0.9828897338403042
+true_data,C57BL6J-1.025,040 OB Trdn Gaba || 043 OB-mi Frmd7 Gaba,040 OB Trdn Gaba,043 OB-mi Frmd7 Gaba,0.9752851711026616
+true_data,C57BL6J-1.025,040 OB Trdn Gaba || 117 LHA Barhl2 Glut,040 OB Trdn Gaba,117 LHA Barhl2 Glut,0.1311787072243346
+true_data,C57BL6J-1.025,041 OB-in Frmd7 Gaba || 042 OB-out Frmd7 Gaba,041 OB-in Frmd7 Gaba,042 OB-out Frmd7 Gaba,0.5768321513002365
+true_data,C57BL6J-1.025,041 OB-in Frmd7 Gaba || 043 OB-mi Frmd7 Gaba,041 OB-in Frmd7 Gaba,043 OB-mi Frmd7 Gaba,0.5697399527186762
+true_data,C57BL6J-1.025,041 OB-in Frmd7 Gaba || 049 Lamp5 Gaba,041 OB-in Frmd7 Gaba,049 Lamp5 Gaba,0.1111111111111111
+true_data,C57BL6J-1.025,041 OB-in Frmd7 Gaba || 117 LHA Barhl2 Glut,041 OB-in Frmd7 Gaba,117 LHA Barhl2 Glut,0.09810874704491726
+true_data,C57BL6J-1.025,042 OB-out Frmd7 Gaba || 043 OB-mi Frmd7 Gaba,042 OB-out Frmd7 Gaba,043 OB-mi Frmd7 Gaba,0.9827586206896551
+true_data,C57BL6J-1.025,042 OB-out Frmd7 Gaba || 117 LHA Barhl2 Glut,042 OB-out Frmd7 Gaba,117 LHA Barhl2 Glut,0.11685823754789272
+true_data,C57BL6J-1.025,043 OB-mi Frmd7 Gaba || 117 LHA Barhl2 Glut,043 OB-mi Frmd7 Gaba,117 LHA Barhl2 Glut,0.11695906432748537
+true_data,C57BL6J-1.026,007 L2/3 IT CTX Glut || 035 OB Eomes Ms4a15 Glut,007 L2/3 IT CTX Glut,035 OB Eomes Ms4a15 Glut,0.016317016317016316
+true_data,C57BL6J-1.026,007 L2/3 IT CTX Glut || 046 Vip Gaba,007 L2/3 IT CTX Glut,046 Vip Gaba,0.48951048951048953
+true_data,C57BL6J-1.026,007 L2/3 IT CTX Glut || 047 Sncg Gaba,007 L2/3 IT CTX Glut,047 Sncg Gaba,0.4988344988344988
+true_data,C57BL6J-1.026,007 L2/3 IT CTX Glut || 049 Lamp5 Gaba,007 L2/3 IT CTX Glut,049 Lamp5 Gaba,0.21212121212121213
+true_data,C57BL6J-1.026,007 L2/3 IT CTX Glut || 051 Pvalb chandelier Gaba,007 L2/3 IT CTX Glut,051 Pvalb chandelier Gaba,0.4149184149184149
+true_data,C57BL6J-1.026,007 L2/3 IT CTX Glut || 052 Pvalb Gaba,007 L2/3 IT CTX Glut,052 Pvalb Gaba,0.12121212121212122
+true_data,C57BL6J-1.026,007 L2/3 IT CTX Glut || 053 Sst Gaba,007 L2/3 IT CTX Glut,053 Sst Gaba,0.2097902097902098
+true_data,C57BL6J-1.026,035 OB Eomes Ms4a15 Glut || 049 Lamp5 Gaba,035 OB Eomes Ms4a15 Glut,049 Lamp5 Gaba,0.12903225806451613
+true_data,C57BL6J-1.026,036 HPF CR Glut || 049 Lamp5 Gaba,036 HPF CR Glut,049 Lamp5 Gaba,0.1746031746031746
+true_data,C57BL6J-1.026,036 HPF CR Glut || 051 Pvalb chandelier Gaba,036 HPF CR Glut,051 Pvalb chandelier Gaba,0.1746031746031746
+true_data,C57BL6J-1.026,036 HPF CR Glut || 053 Sst Gaba,036 HPF CR Glut,053 Sst Gaba,0.9841269841269841
+true_data,C57BL6J-1.026,046 Vip Gaba || 047 Sncg Gaba,046 Vip Gaba,047 Sncg Gaba,0.6190476190476191
+true_data,C57BL6J-1.026,046 Vip Gaba || 049 Lamp5 Gaba,046 Vip Gaba,049 Lamp5 Gaba,0.10952380952380952
+true_data,C57BL6J-1.026,046 Vip Gaba || 051 Pvalb chandelier Gaba,046 Vip Gaba,051 Pvalb chandelier Gaba,0.5571428571428572
+true_data,C57BL6J-1.026,046 Vip Gaba || 052 Pvalb Gaba,046 Vip Gaba,052 Pvalb Gaba,0.1619047619047619
+true_data,C57BL6J-1.026,046 Vip Gaba || 053 Sst Gaba,046 Vip Gaba,053 Sst Gaba,0.1523809523809524
+true_data,C57BL6J-1.026,047 Sncg Gaba || 049 Lamp5 Gaba,047 Sncg Gaba,049 Lamp5 Gaba,0.21428571428571427
+true_data,C57BL6J-1.026,047 Sncg Gaba || 051 Pvalb chandelier Gaba,047 Sncg Gaba,051 Pvalb chandelier Gaba,0.47767857142857145
+true_data,C57BL6J-1.026,047 Sncg Gaba || 052 Pvalb Gaba,047 Sncg Gaba,052 Pvalb Gaba,0.16071428571428573
+true_data,C57BL6J-1.026,047 Sncg Gaba || 053 Sst Gaba,047 Sncg Gaba,053 Sst Gaba,0.29464285714285715
+true_data,C57BL6J-1.026,049 Lamp5 Gaba || 051 Pvalb chandelier Gaba,049 Lamp5 Gaba,051 Pvalb chandelier Gaba,0.725925925925926
+true_data,C57BL6J-1.026,049 Lamp5 Gaba || 052 Pvalb Gaba,049 Lamp5 Gaba,052 Pvalb Gaba,0.06666666666666667
+true_data,C57BL6J-1.026,049 Lamp5 Gaba || 053 Sst Gaba,049 Lamp5 Gaba,053 Sst Gaba,0.7481481481481481
+true_data,C57BL6J-1.026,051 Pvalb chandelier Gaba || 052 Pvalb Gaba,051 Pvalb chandelier Gaba,052 Pvalb Gaba,0.017391304347826087
+true_data,C57BL6J-1.026,051 Pvalb chandelier Gaba || 053 Sst Gaba,051 Pvalb chandelier Gaba,053 Sst Gaba,0.5739130434782609
+true_data,C57BL6J-1.026,007 L2/3 IT CTX Glut || 052 Pvalb Gaba,007 L2/3 IT CTX Glut,052 Pvalb Gaba,0.18867924528301888
+sample_1,C57BL6J-1.026,007 L2/3 IT CTX Glut || 047 Sncg Gaba,007 L2/3 IT CTX Glut,047 Sncg Gaba,0.5833333333333334
+sample_1,C57BL6J-1.026,007 L2/3 IT CTX Glut || 049 Lamp5 Gaba,007 L2/3 IT CTX Glut,049 Lamp5 Gaba,0.3333333333333333
+sample_1,C57BL6J-1.026,007 L2/3 IT CTX Glut || 051 Pvalb chandelier Gaba,007 L2/3 IT CTX Glut,051 Pvalb chandelier Gaba,0.125
+sample_1,C57BL6J-1.026,007 L2/3 IT CTX Glut || 047 Sncg Gaba,007 L2/3 IT CTX Glut,047 Sncg Gaba,0.6
+sample_1,C57BL6J-1.026,007 L2/3 IT CTX Glut || 049 Lamp5 Gaba,007 L2/3 IT CTX Glut,049 Lamp5 Gaba,0.3333333333333333
+sample_1,C57BL6J-1.026,007 L2/3 IT CTX Glut || 053 Sst Gaba,007 L2/3 IT CTX Glut,053 Sst Gaba,0.13333333333333333
+sample_1,C57BL6J-1.026,046 Vip Gaba || 047 Sncg Gaba,046 Vip Gaba,047 Sncg Gaba,0.25
+sample_1,C57BL6J-1.026,046 Vip Gaba || 049 Lamp5 Gaba,046 Vip Gaba,049 Lamp5 Gaba,0.75
+sample_1,C57BL6J-1.026,046 Vip Gaba || 051 Pvalb chandelier Gaba,046 Vip Gaba,051 Pvalb chandelier Gaba,0.75
+sample_1,C57BL6J-1.026,047 Sncg Gaba || 049 Lamp5 Gaba,047 Sncg Gaba,049 Lamp5 Gaba,0.22857142857142856
+sample_1,C57BL6J-1.026,047 Sncg Gaba || 051 Pvalb chandelier Gaba,047 Sncg Gaba,051 Pvalb chandelier Gaba,0.2571428571428571
+sample_1,C57BL6J-1.026,047 Sncg Gaba || 053 Sst Gaba,047 Sncg Gaba,053 Sst Gaba,0.05714285714285714
+sample_1,C57BL6J-1.026,047 Sncg Gaba || 049 Lamp5 Gaba,047 Sncg Gaba,049 Lamp5 Gaba,1.0
+sample_1,C57BL6J-1.026,049 Lamp5 Gaba || 051 Pvalb chandelier Gaba,049 Lamp5 Gaba,051 Pvalb chandelier Gaba,0.22857142857142856
+sample_1,C57BL6J-1.026,049 Lamp5 Gaba || 051 Pvalb chandelier Gaba,049 Lamp5 Gaba,051 Pvalb chandelier Gaba,0.25
+sample_1,C57BL6J-1.026,046 Vip Gaba || 047 Sncg Gaba,046 Vip Gaba,047 Sncg Gaba,0.6111111111111112
+sample_1,C57BL6J-1.026,046 Vip Gaba || 051 Pvalb chandelier Gaba,046 Vip Gaba,051 Pvalb chandelier Gaba,0.7222222222222222
+sample_1,C57BL6J-1.026,046 Vip Gaba || 052 Pvalb Gaba,046 Vip Gaba,052 Pvalb Gaba,0.2222222222222222
+sample_1,C57BL6J-1.026,047 Sncg Gaba || 051 Pvalb chandelier Gaba,047 Sncg Gaba,051 Pvalb chandelier Gaba,0.34375
+sample_1,C57BL6J-1.026,047 Sncg Gaba || 052 Pvalb Gaba,047 Sncg Gaba,052 Pvalb Gaba,0.34375
+sample_1,C57BL6J-1.026,051 Pvalb chandelier Gaba || 052 Pvalb Gaba,051 Pvalb chandelier Gaba,052 Pvalb Gaba,0.018867924528301886
+sample_1,C57BL6J-1.027,007 L2/3 IT CTX Glut || 047 Sncg Gaba,007 L2/3 IT CTX Glut,047 Sncg Gaba,0.5
+sample_1,C57BL6J-1.027,007 L2/3 IT CTX Glut || 049 Lamp5 Gaba,007 L2/3 IT CTX Glut,049 Lamp5 Gaba,1.0
+sample_1,C57BL6J-1.027,007 L2/3 IT CTX Glut || 052 Pvalb Gaba,007 L2/3 IT CTX Glut,052 Pvalb Gaba,0.6666666666666666
+sample_1,C57BL6J-1.027,007 L2/3 IT CTX Glut || 046 Vip Gaba,007 L2/3 IT CTX Glut,046 Vip Gaba,0.5757575757575758
+sample_1,C57BL6J-1.027,047 Sncg Gaba || 049 Lamp5 Gaba,047 Sncg Gaba,049 Lamp5 Gaba,1.0
+sample_1,C57BL6J-1.027,006 L4/5 IT CTX Glut || 007 L2/3 IT CTX Glut,006 L4/5 IT CTX Glut,007 L2/3 IT CTX Glut,0.9285714285714286
+sample_1,C57BL6J-1.027,006 L4/5 IT CTX Glut || 046 Vip Gaba,006 L4/5 IT CTX Glut,046 Vip Gaba,0.9285714285714286
+sample_1,C57BL6J-1.027,006 L4/5 IT CTX Glut || 047 Sncg Gaba,006 L4/5 IT CTX Glut,047 Sncg Gaba,1.0
+sample_1,C57BL6J-1.027,006 L4/5 IT CTX Glut || 049 Lamp5 Gaba,006 L4/5 IT CTX Glut,049 Lamp5 Gaba,1.0
+sample_1,C57BL6J-1.027,006 L4/5 IT CTX Glut || 052 Pvalb Gaba,006 L4/5 IT CTX Glut,052 Pvalb Gaba,1.0
+sample_1,C57BL6J-1.027,007 L2/3 IT CTX Glut || 046 Vip Gaba,007 L2/3 IT CTX Glut,046 Vip Gaba,0.8734177215189873
+sample_1,C57BL6J-1.027,007 L2/3 IT CTX Glut || 047 Sncg Gaba,007 L2/3 IT CTX Glut,047 Sncg Gaba,0.0379746835443038
+sample_1,C57BL6J-1.027,007 L2/3 IT CTX Glut || 049 Lamp5 Gaba,007 L2/3 IT CTX Glut,049 Lamp5 Gaba,0.0379746835443038
+sample_1,C57BL6J-1.027,046 Vip Gaba || 049 Lamp5 Gaba,046 Vip Gaba,049 Lamp5 Gaba,0.03409090909090909
+sample_1,C57BL6J-1.027,047 Sncg Gaba || 049 Lamp5 Gaba,047 Sncg Gaba,049 Lamp5 Gaba,0.45871559633027525
+sample_1,C57BL6J-1.027,047 Sncg Gaba || 052 Pvalb Gaba,047 Sncg Gaba,052 Pvalb Gaba,0.8073394495412844
+sample_1,C57BL6J-1.027,049 Lamp5 Gaba || 052 Pvalb Gaba,049 Lamp5 Gaba,052 Pvalb Gaba,0.7857142857142857
+sample_2,C57BL6J-1.026,007 L2/3 IT CTX Glut || 046 Vip Gaba,007 L2/3 IT CTX Glut,046 Vip Gaba,0.8333333333333334
+sample_2,C57BL6J-1.026,007 L2/3 IT CTX Glut || 047 Sncg Gaba,007 L2/3 IT CTX Glut,047 Sncg Gaba,0.4166666666666667
+sample_2,C57BL6J-1.026,007 L2/3 IT CTX Glut || 049 Lamp5 Gaba,007 L2/3 IT CTX Glut,049 Lamp5 Gaba,0.7083333333333334
+sample_2,C57BL6J-1.026,007 L2/3 IT CTX Glut || 053 Sst Gaba,007 L2/3 IT CTX Glut,053 Sst Gaba,0.2916666666666667
+sample_2,C57BL6J-1.026,046 Vip Gaba || 047 Sncg Gaba,046 Vip Gaba,047 Sncg Gaba,0.5172413793103449
+sample_2,C57BL6J-1.026,046 Vip Gaba || 049 Lamp5 Gaba,046 Vip Gaba,049 Lamp5 Gaba,0.5862068965517241
+sample_2,C57BL6J-1.026,046 Vip Gaba || 053 Sst Gaba,046 Vip Gaba,053 Sst Gaba,0.13793103448275862
+sample_2,C57BL6J-1.026,047 Sncg Gaba || 049 Lamp5 Gaba,047 Sncg Gaba,049 Lamp5 Gaba,0.2631578947368421
+sample_2,C57BL6J-1.026,047 Sncg Gaba || 053 Sst Gaba,047 Sncg Gaba,053 Sst Gaba,0.3157894736842105
+sample_2,C57BL6J-1.026,049 Lamp5 Gaba || 051 Pvalb chandelier Gaba,049 Lamp5 Gaba,051 Pvalb chandelier Gaba,0.25925925925925924
+sample_2,C57BL6J-1.026,007 L2/3 IT CTX Glut || 046 Vip Gaba,007 L2/3 IT CTX Glut,046 Vip Gaba,0.67
+sample_2,C57BL6J-1.026,007 L2/3 IT CTX Glut || 049 Lamp5 Gaba,007 L2/3 IT CTX Glut,049 Lamp5 Gaba,0.36
+sample_2,C57BL6J-1.026,007 L2/3 IT CTX Glut || 052 Pvalb Gaba,007 L2/3 IT CTX Glut,052 Pvalb Gaba,0.01
+sample_2,C57BL6J-1.026,007 L2/3 IT CTX Glut || 053 Sst Gaba,007 L2/3 IT CTX Glut,053 Sst Gaba,0.16
+sample_2,C57BL6J-1.026,046 Vip Gaba || 049 Lamp5 Gaba,046 Vip Gaba,049 Lamp5 Gaba,0.5294117647058824
+sample_2,C57BL6J-1.026,046 Vip Gaba || 052 Pvalb Gaba,046 Vip Gaba,052 Pvalb Gaba,0.011764705882352941
+sample_2,C57BL6J-1.026,049 Lamp5 Gaba || 052 Pvalb Gaba,049 Lamp5 Gaba,052 Pvalb Gaba,0.013513513513513514
+sample_2,C57BL6J-1.026,049 Lamp5 Gaba || 053 Sst Gaba,049 Lamp5 Gaba,053 Sst Gaba,0.04054054054054054
+sample_2,C57BL6J-1.027,007 L2/3 IT CTX Glut || 049 Lamp5 Gaba,007 L2/3 IT CTX Glut,049 Lamp5 Gaba,0.03571428571428571
+sample_2,C57BL6J-1.027,007 L2/3 IT CTX Glut || 049 Lamp5 Gaba,007 L2/3 IT CTX Glut,049 Lamp5 Gaba,0.25
+sample_2,C57BL6J-1.027,007 L2/3 IT CTX Glut || 052 Pvalb Gaba,007 L2/3 IT CTX Glut,052 Pvalb Gaba,0.07142857142857142
+sample_2,C57BL6J-1.027,007 L2/3 IT CTX Glut || 046 Vip Gaba,007 L2/3 IT CTX Glut,046 Vip Gaba,0.125
+sample_2,C57BL6J-1.027,007 L2/3 IT CTX Glut || 046 Vip Gaba,007 L2/3 IT CTX Glut,046 Vip Gaba,0.125
+sample_2,C57BL6J-1.027,007 L2/3 IT CTX Glut || 049 Lamp5 Gaba,007 L2/3 IT CTX Glut,049 Lamp5 Gaba,1.0
+sample_2,C57BL6J-1.027,007 L2/3 IT CTX Glut || 052 Pvalb Gaba,007 L2/3 IT CTX Glut,052 Pvalb Gaba,0.125
+sample_2,C57BL6J-1.027,046 Vip Gaba || 047 Sncg Gaba,046 Vip Gaba,047 Sncg Gaba,0.5
+sample_2,C57BL6J-1.027,046 Vip Gaba || 049 Lamp5 Gaba,046 Vip Gaba,049 Lamp5 Gaba,0.14285714285714285
+sample_2,C57BL6J-1.027,046 Vip Gaba || 052 Pvalb Gaba,046 Vip Gaba,052 Pvalb Gaba,1.0
+sample_2,C57BL6J-1.027,046 Vip Gaba || 053 Sst Gaba,046 Vip Gaba,053 Sst Gaba,0.5714285714285714
+sample_2,C57BL6J-1.027,046 Vip Gaba || 049 Lamp5 Gaba,046 Vip Gaba,049 Lamp5 Gaba,1.0
+sample_2,C57BL6J-1.027,049 Lamp5 Gaba || 052 Pvalb Gaba,049 Lamp5 Gaba,052 Pvalb Gaba,0.09090909090909091
+sample_2,C57BL6J-1.027,052 Pvalb Gaba || 053 Sst Gaba,052 Pvalb Gaba,053 Sst Gaba,0.5384615384615384
+sample_2,C57BL6J-1.027,006 L4/5 IT CTX Glut || 007 L2/3 IT CTX Glut,006 L4/5 IT CTX Glut,007 L2/3 IT CTX Glut,0.9726027397260274
+sample_2,C57BL6J-1.027,006 L4/5 IT CTX Glut || 046 Vip Gaba,006 L4/5 IT CTX Glut,046 Vip Gaba,0.5821917808219178
+sample_2,C57BL6J-1.027,006 L4/5 IT CTX Glut || 047 Sncg Gaba,006 L4/5 IT CTX Glut,047 Sncg Gaba,0.4383561643835616
+sample_2,C57BL6J-1.027,006 L4/5 IT CTX Glut || 049 Lamp5 Gaba,006 L4/5 IT CTX Glut,049 Lamp5 Gaba,0.0273972602739726
+sample_2,C57BL6J-1.027,006 L4/5 IT CTX Glut || 051 Pvalb chandelier Gaba,006 L4/5 IT CTX Glut,051 Pvalb chandelier Gaba,0.00684931506849315
+sample_2,C57BL6J-1.027,006 L4/5 IT CTX Glut || 052 Pvalb Gaba,006 L4/5 IT CTX Glut,052 Pvalb Gaba,0.8698630136986302
+sample_2,C57BL6J-1.027,007 L2/3 IT CTX Glut || 051 Pvalb chandelier Gaba,007 L2/3 IT CTX Glut,051 Pvalb chandelier Gaba,0.14285714285714285
+sample_2,C57BL6J-1.027,007 L2/3 IT CTX Glut || 046 Vip Gaba,007 L2/3 IT CTX Glut,046 Vip Gaba,0.6759259259259259
+sample_2,C57BL6J-1.027,007 L2/3 IT CTX Glut || 047 Sncg Gaba,007 L2/3 IT CTX Glut,047 Sncg Gaba,0.3148148148148148
+sample_2,C57BL6J-1.027,007 L2/3 IT CTX Glut || 049 Lamp5 Gaba,007 L2/3 IT CTX Glut,049 Lamp5 Gaba,0.013888888888888888
+sample_2,C57BL6J-1.027,007 L2/3 IT CTX Glut || 051 Pvalb chandelier Gaba,007 L2/3 IT CTX Glut,051 Pvalb chandelier Gaba,0.009259259259259259
+sample_2,C57BL6J-1.027,007 L2/3 IT CTX Glut || 052 Pvalb Gaba,007 L2/3 IT CTX Glut,052 Pvalb Gaba,0.5925925925925926
+sample_2,C57BL6J-1.027,007 L2/3 IT CTX Glut || 053 Sst Gaba,007 L2/3 IT CTX Glut,053 Sst Gaba,0.06481481481481481
+sample_2,C57BL6J-1.027,046 Vip Gaba || 047 Sncg Gaba,046 Vip Gaba,047 Sncg Gaba,0.18803418803418803
+sample_2,C57BL6J-1.027,046 Vip Gaba || 049 Lamp5 Gaba,046 Vip Gaba,049 Lamp5 Gaba,0.017094017094017096
+sample_2,C57BL6J-1.027,046 Vip Gaba || 051 Pvalb chandelier Gaba,046 Vip Gaba,051 Pvalb chandelier Gaba,0.1111111111111111
+sample_2,C57BL6J-1.027,046 Vip Gaba || 052 Pvalb Gaba,046 Vip Gaba,052 Pvalb Gaba,0.32051282051282054
+sample_2,C57BL6J-1.027,046 Vip Gaba || 053 Sst Gaba,046 Vip Gaba,053 Sst Gaba,0.2264957264957265
+sample_2,C57BL6J-1.027,047 Sncg Gaba || 049 Lamp5 Gaba,047 Sncg Gaba,049 Lamp5 Gaba,0.04285714285714286
+sample_2,C57BL6J-1.027,047 Sncg Gaba || 052 Pvalb Gaba,047 Sncg Gaba,052 Pvalb Gaba,0.9714285714285714
+sample_2,C57BL6J-1.027,049 Lamp5 Gaba || 051 Pvalb chandelier Gaba,049 Lamp5 Gaba,051 Pvalb chandelier Gaba,0.25
+sample_2,C57BL6J-1.027,049 Lamp5 Gaba || 052 Pvalb Gaba,049 Lamp5 Gaba,052 Pvalb Gaba,0.75
+sample_2,C57BL6J-1.027,051 Pvalb chandelier Gaba || 053 Sst Gaba,051 Pvalb chandelier Gaba,053 Sst Gaba,0.03333333333333333
+sample_2,C57BL6J-1.028,007 L2/3 IT CTX Glut || 046 Vip Gaba,007 L2/3 IT CTX Glut,046 Vip Gaba,0.6111111111111112
+sample_2,C57BL6J-1.028,007 L2/3 IT CTX Glut || 047 Sncg Gaba,007 L2/3 IT CTX Glut,047 Sncg Gaba,0.07407407407407407
+sample_2,C57BL6J-1.028,007 L2/3 IT CTX Glut || 049 Lamp5 Gaba,007 L2/3 IT CTX Glut,049 Lamp5 Gaba,0.46296296296296297
+sample_2,C57BL6J-1.028,007 L2/3 IT CTX Glut || 046 Vip Gaba,007 L2/3 IT CTX Glut,046 Vip Gaba,0.13725490196078433
+sample_2,C57BL6J-1.028,007 L2/3 IT CTX Glut || 049 Lamp5 Gaba,007 L2/3 IT CTX Glut,049 Lamp5 Gaba,0.0196078431372549
+sample_2,C57BL6J-1.028,007 L2/3 IT CTX Glut || 051 Pvalb chandelier Gaba,007 L2/3 IT CTX Glut,051 Pvalb chandelier Gaba,0.7254901960784313
+sample_2,C57BL6J-1.028,007 L2/3 IT CTX Glut || 052 Pvalb Gaba,007 L2/3 IT CTX Glut,052 Pvalb Gaba,0.0784313725490196
+sample_2,C57BL6J-1.028,007 L2/3 IT CTX Glut || 053 Sst Gaba,007 L2/3 IT CTX Glut,053 Sst Gaba,0.37254901960784315
+sample_2,C57BL6J-1.028,007 L2/3 IT CTX Glut || 047 Sncg Gaba,007 L2/3 IT CTX Glut,047 Sncg Gaba,0.6666666666666666
+sample_2,C57BL6J-1.028,007 L2/3 IT CTX Glut || 052 Pvalb Gaba,007 L2/3 IT CTX Glut,052 Pvalb Gaba,1.0
+sample_2,C57BL6J-1.028,007 L2/3 IT CTX Glut || 053 Sst Gaba,007 L2/3 IT CTX Glut,053 Sst Gaba,0.9166666666666666
+sample_2,C57BL6J-1.028,007 L2/3 IT CTX Glut || 047 Sncg Gaba,007 L2/3 IT CTX Glut,047 Sncg Gaba,0.2413793103448276
+sample_2,C57BL6J-1.028,007 L2/3 IT CTX Glut || 051 Pvalb chandelier Gaba,007 L2/3 IT CTX Glut,051 Pvalb chandelier Gaba,0.10344827586206896
+sample_2,C57BL6J-1.028,007 L2/3 IT CTX Glut || 052 Pvalb Gaba,007 L2/3 IT CTX Glut,052 Pvalb Gaba,0.034482758620689655
+sample_2,C57BL6J-1.028,007 L2/3 IT CTX Glut || 049 Lamp5 Gaba,007 L2/3 IT CTX Glut,049 Lamp5 Gaba,0.07142857142857142
+sample_2,C57BL6J-1.028,007 L2/3 IT CTX Glut || 053 Sst Gaba,007 L2/3 IT CTX Glut,053 Sst Gaba,0.07142857142857142
+sample_2,C57BL6J-1.028,046 Vip Gaba || 047 Sncg Gaba,046 Vip Gaba,047 Sncg Gaba,0.07017543859649122
+sample_2,C57BL6J-1.028,046 Vip Gaba || 049 Lamp5 Gaba,046 Vip Gaba,049 Lamp5 Gaba,0.7543859649122807
+sample_2,C57BL6J-1.028,046 Vip Gaba || 052 Pvalb Gaba,046 Vip Gaba,052 Pvalb Gaba,0.08771929824561403
+sample_2,C57BL6J-1.028,046 Vip Gaba || 047 Sncg Gaba,046 Vip Gaba,047 Sncg Gaba,0.16666666666666666
+sample_2,C57BL6J-1.028,046 Vip Gaba || 047 Sncg Gaba,046 Vip Gaba,047 Sncg Gaba,0.5833333333333334
+sample_2,C57BL6J-1.028,046 Vip Gaba || 051 Pvalb chandelier Gaba,046 Vip Gaba,051 Pvalb chandelier Gaba,0.08333333333333333
+sample_2,C57BL6J-1.028,046 Vip Gaba || 052 Pvalb Gaba,046 Vip Gaba,052 Pvalb Gaba,0.3333333333333333
+sample_2,C57BL6J-1.028,046 Vip Gaba || 053 Sst Gaba,046 Vip Gaba,053 Sst Gaba,1.0
+sample_2,C57BL6J-1.028,047 Sncg Gaba || 049 Lamp5 Gaba,047 Sncg Gaba,049 Lamp5 Gaba,1.0
+sample_2,C57BL6J-1.028,047 Sncg Gaba || 053 Sst Gaba,047 Sncg Gaba,053 Sst Gaba,1.0
+sample_2,C57BL6J-1.028,047 Sncg Gaba || 051 Pvalb chandelier Gaba,047 Sncg Gaba,051 Pvalb chandelier Gaba,0.2
+sample_2,C57BL6J-1.028,047 Sncg Gaba || 052 Pvalb Gaba,047 Sncg Gaba,052 Pvalb Gaba,0.45
+sample_2,C57BL6J-1.028,047 Sncg Gaba || 053 Sst Gaba,047 Sncg Gaba,053 Sst Gaba,0.8
+sample_2,C57BL6J-1.028,049 Lamp5 Gaba || 052 Pvalb Gaba,049 Lamp5 Gaba,052 Pvalb Gaba,0.023255813953488372
+sample_2,C57BL6J-1.028,051 Pvalb chandelier Gaba || 053 Sst Gaba,051 Pvalb chandelier Gaba,053 Sst Gaba,0.3409090909090909
+sample_2,C57BL6J-1.028,051 Pvalb chandelier Gaba || 053 Sst Gaba,051 Pvalb chandelier Gaba,053 Sst Gaba,0.6363636363636364
+sample_2,C57BL6J-1.028,052 Pvalb Gaba || 053 Sst Gaba,052 Pvalb Gaba,053 Sst Gaba,0.9166666666666666
+sample_2,C57BL6J-1.028,006 L4/5 IT CTX Glut || 007 L2/3 IT CTX Glut,006 L4/5 IT CTX Glut,007 L2/3 IT CTX Glut,0.9119496855345912
+sample_2,C57BL6J-1.028,006 L4/5 IT CTX Glut || 046 Vip Gaba,006 L4/5 IT CTX Glut,046 Vip Gaba,0.4779874213836478
+sample_2,C57BL6J-1.028,006 L4/5 IT CTX Glut || 049 Lamp5 Gaba,006 L4/5 IT CTX Glut,049 Lamp5 Gaba,0.3710691823899371
+sample_2,C57BL6J-1.028,006 L4/5 IT CTX Glut || 051 Pvalb chandelier Gaba,006 L4/5 IT CTX Glut,051 Pvalb chandelier Gaba,0.05660377358490566
+sample_2,C57BL6J-1.028,006 L4/5 IT CTX Glut || 053 Sst Gaba,006 L4/5 IT CTX Glut,053 Sst Gaba,0.7421383647798742
+sample_2,C57BL6J-1.028,007 L2/3 IT CTX Glut || 046 Vip Gaba,007 L2/3 IT CTX Glut,046 Vip Gaba,0.24228028503562946
+sample_2,C57BL6J-1.028,007 L2/3 IT CTX Glut || 046 Vip Gaba,007 L2/3 IT CTX Glut,046 Vip Gaba,0.14489311163895488
+sample_2,C57BL6J-1.028,007 L2/3 IT CTX Glut || 047 Sncg Gaba,007 L2/3 IT CTX Glut,047 Sncg Gaba,0.22565320665083136
+sample_2,C57BL6J-1.028,007 L2/3 IT CTX Glut || 049 Lamp5 Gaba,007 L2/3 IT CTX Glut,049 Lamp5 Gaba,0.2517814726840855
+sample_2,C57BL6J-1.028,007 L2/3 IT CTX Glut || 049 Lamp5 Gaba,007 L2/3 IT CTX Glut,049 Lamp5 Gaba,0.0332541567695962
+sample_2,C57BL6J-1.028,007 L2/3 IT CTX Glut || 051 Pvalb chandelier Gaba,007 L2/3 IT CTX Glut,051 Pvalb chandelier Gaba,0.0332541567695962
+sample_2,C57BL6J-1.028,007 L2/3 IT CTX Glut || 052 Pvalb Gaba,007 L2/3 IT CTX Glut,052 Pvalb Gaba,0.3752969121140142
+sample_2,C57BL6J-1.028,007 L2/3 IT CTX Glut || 053 Sst Gaba,007 L2/3 IT CTX Glut,053 Sst Gaba,0.36104513064133015
+sample_2,C57BL6J-1.028,007 L2/3 IT CTX Glut || 053 Sst Gaba,007 L2/3 IT CTX Glut,053 Sst Gaba,0.09026128266033254
+sample_2,C57BL6J-1.028,046 Vip Gaba || 049 Lamp5 Gaba,046 Vip Gaba,049 Lamp5 Gaba,0.6037735849056604
+sample_2,C57BL6J-1.028,046 Vip Gaba || 051 Pvalb chandelier Gaba,046 Vip Gaba,051 Pvalb chandelier Gaba,0.14465408805031446
+sample_2,C57BL6J-1.028,046 Vip Gaba || 053 Sst Gaba,046 Vip Gaba,053 Sst Gaba,0.7987421383647799
+sample_2,C57BL6J-1.028,046 Vip Gaba || 047 Sncg Gaba,046 Vip Gaba,047 Sncg Gaba,0.84
+sample_2,C57BL6J-1.028,046 Vip Gaba || 052 Pvalb Gaba,046 Vip Gaba,052 Pvalb Gaba,0.85
+sample_2,C57BL6J-1.028,046 Vip Gaba || 053 Sst Gaba,046 Vip Gaba,053 Sst Gaba,0.64
+sample_2,C57BL6J-1.028,047 Sncg Gaba || 049 Lamp5 Gaba,047 Sncg Gaba,049 Lamp5 Gaba,0.017985611510791366
+sample_2,C57BL6J-1.028,047 Sncg Gaba || 049 Lamp5 Gaba,047 Sncg Gaba,049 Lamp5 Gaba,0.07194244604316546
+sample_2,C57BL6J-1.028,047 Sncg Gaba || 051 Pvalb chandelier Gaba,047 Sncg Gaba,051 Pvalb chandelier Gaba,0.04316546762589928
+sample_2,C57BL6J-1.028,047 Sncg Gaba || 052 Pvalb Gaba,047 Sncg Gaba,052 Pvalb Gaba,0.8992805755395683
+sample_2,C57BL6J-1.028,047 Sncg Gaba || 053 Sst Gaba,047 Sncg Gaba,053 Sst Gaba,0.6258992805755396
+sample_2,C57BL6J-1.028,049 Lamp5 Gaba || 051 Pvalb chandelier Gaba,049 Lamp5 Gaba,051 Pvalb chandelier Gaba,0.4854771784232365
+sample_2,C57BL6J-1.028,049 Lamp5 Gaba || 052 Pvalb Gaba,049 Lamp5 Gaba,052 Pvalb Gaba,0.5062240663900415
+sample_2,C57BL6J-1.028,049 Lamp5 Gaba || 053 Sst Gaba,049 Lamp5 Gaba,053 Sst Gaba,0.27800829875518673
+sample_2,C57BL6J-1.028,049 Lamp5 Gaba || 052 Pvalb Gaba,049 Lamp5 Gaba,052 Pvalb Gaba,0.9655172413793104
+sample_2,C57BL6J-1.028,051 Pvalb chandelier Gaba || 052 Pvalb Gaba,051 Pvalb chandelier Gaba,052 Pvalb Gaba,0.7925925925925926
+sample_2,C57BL6J-1.028,051 Pvalb chandelier Gaba || 053 Sst Gaba,051 Pvalb chandelier Gaba,053 Sst Gaba,0.02962962962962963
+sample_2,C57BL6J-1.028,052 Pvalb Gaba || 053 Sst Gaba,052 Pvalb Gaba,053 Sst Gaba,0.38235294117647056
+sample_2,C57BL6J-1.029,007 L2/3 IT CTX Glut || 046 Vip Gaba,007 L2/3 IT CTX Glut,046 Vip Gaba,0.375
+sample_2,C57BL6J-1.029,007 L2/3 IT CTX Glut || 046 Vip Gaba,007 L2/3 IT CTX Glut,046 Vip Gaba,0.325
+sample_2,C57BL6J-1.029,007 L2/3 IT CTX Glut || 047 Sncg Gaba,007 L2/3 IT CTX Glut,047 Sncg Gaba,0.05
+sample_2,C57BL6J-1.029,007 L2/3 IT CTX Glut || 049 Lamp5 Gaba,007 L2/3 IT CTX Glut,049 Lamp5 Gaba,0.35
+sample_2,C57BL6J-1.029,007 L2/3 IT CTX Glut || 051 Pvalb chandelier Gaba,007 L2/3 IT CTX Glut,051 Pvalb chandelier Gaba,0.25
+sample_2,C57BL6J-1.029,007 L2/3 IT CTX Glut || 053 Sst Gaba,007 L2/3 IT CTX Glut,053 Sst Gaba,0.35
+sample_2,C57BL6J-1.029,007 L2/3 IT CTX Glut || 047 Sncg Gaba,007 L2/3 IT CTX Glut,047 Sncg Gaba,0.08333333333333333
+sample_2,C57BL6J-1.029,046 Vip Gaba || 049 Lamp5 Gaba,046 Vip Gaba,049 Lamp5 Gaba,1.0
+sample_2,C57BL6J-1.029,046 Vip Gaba || 051 Pvalb chandelier Gaba,046 Vip Gaba,051 Pvalb chandelier Gaba,0.375
+sample_2,C57BL6J-1.029,046 Vip Gaba || 052 Pvalb Gaba,046 Vip Gaba,052 Pvalb Gaba,0.125
+sample_2,C57BL6J-1.029,046 Vip Gaba || 053 Sst Gaba,046 Vip Gaba,053 Sst Gaba,1.0
+sample_2,C57BL6J-1.029,047 Sncg Gaba || 049 Lamp5 Gaba,047 Sncg Gaba,049 Lamp5 Gaba,0.2
+sample_2,C57BL6J-1.029,047 Sncg Gaba || 051 Pvalb chandelier Gaba,047 Sncg Gaba,051 Pvalb chandelier Gaba,1.0
+sample_2,C57BL6J-1.029,047 Sncg Gaba || 053 Sst Gaba,047 Sncg Gaba,053 Sst Gaba,0.2
+sample_2,C57BL6J-1.029,049 Lamp5 Gaba || 051 Pvalb chandelier Gaba,049 Lamp5 Gaba,051 Pvalb chandelier Gaba,0.4117647058823529
+sample_2,C57BL6J-1.029,049 Lamp5 Gaba || 052 Pvalb Gaba,049 Lamp5 Gaba,052 Pvalb Gaba,0.11764705882352941
+sample_2,C57BL6J-1.029,049 Lamp5 Gaba || 053 Sst Gaba,049 Lamp5 Gaba,053 Sst Gaba,1.0
+sample_2,C57BL6J-1.029,049 Lamp5 Gaba || 052 Pvalb Gaba,049 Lamp5 Gaba,052 Pvalb Gaba,0.7
+sample_2,C57BL6J-1.029,051 Pvalb chandelier Gaba || 053 Sst Gaba,051 Pvalb chandelier Gaba,053 Sst Gaba,0.4666666666666667
+sample_2,C57BL6J-1.029,052 Pvalb Gaba || 053 Sst Gaba,052 Pvalb Gaba,053 Sst Gaba,0.18181818181818182
+sample_2,C57BL6J-1.029,006 L4/5 IT CTX Glut || 007 L2/3 IT CTX Glut,006 L4/5 IT CTX Glut,007 L2/3 IT CTX Glut,0.40145985401459855
+sample_2,C57BL6J-1.029,006 L4/5 IT CTX Glut || 046 Vip Gaba,006 L4/5 IT CTX Glut,046 Vip Gaba,0.5255474452554745
+sample_2,C57BL6J-1.029,006 L4/5 IT CTX Glut || 049 Lamp5 Gaba,006 L4/5 IT CTX Glut,049 Lamp5 Gaba,0.0170316301703163
+sample_2,C57BL6J-1.029,006 L4/5 IT CTX Glut || 051 Pvalb chandelier Gaba,006 L4/5 IT CTX Glut,051 Pvalb chandelier Gaba,0.0681265206812652
+sample_2,C57BL6J-1.029,006 L4/5 IT CTX Glut || 052 Pvalb Gaba,006 L4/5 IT CTX Glut,052 Pvalb Gaba,0.24574209245742093
+sample_2,C57BL6J-1.029,006 L4/5 IT CTX Glut || 007 L2/3 IT CTX Glut,006 L4/5 IT CTX Glut,007 L2/3 IT CTX Glut,1.0
+sample_2,C57BL6J-1.029,006 L4/5 IT CTX Glut || 047 Sncg Gaba,006 L4/5 IT CTX Glut,047 Sncg Gaba,0.703125
+sample_2,C57BL6J-1.029,006 L4/5 IT CTX Glut || 052 Pvalb Gaba,006 L4/5 IT CTX Glut,052 Pvalb Gaba,1.0
+sample_2,C57BL6J-1.029,007 L2/3 IT CTX Glut || 046 Vip Gaba,007 L2/3 IT CTX Glut,046 Vip Gaba,0.33178654292343385
+sample_2,C57BL6J-1.029,007 L2/3 IT CTX Glut || 047 Sncg Gaba,007 L2/3 IT CTX Glut,047 Sncg Gaba,0.19489559164733178
+sample_2,C57BL6J-1.029,007 L2/3 IT CTX Glut || 049 Lamp5 Gaba,007 L2/3 IT CTX Glut,049 Lamp5 Gaba,0.05104408352668213
+sample_2,C57BL6J-1.029,007 L2/3 IT CTX Glut || 049 Lamp5 Gaba,007 L2/3 IT CTX Glut,049 Lamp5 Gaba,0.016241299303944315
+sample_2,C57BL6J-1.029,007 L2/3 IT CTX Glut || 051 Pvalb chandelier Gaba,007 L2/3 IT CTX Glut,051 Pvalb chandelier Gaba,0.12296983758700696
+sample_2,C57BL6J-1.029,007 L2/3 IT CTX Glut || 051 Pvalb chandelier Gaba,007 L2/3 IT CTX Glut,051 Pvalb chandelier Gaba,0.05336426914153132
+sample_2,C57BL6J-1.029,007 L2/3 IT CTX Glut || 052 Pvalb Gaba,007 L2/3 IT CTX Glut,052 Pvalb Gaba,0.35266821345707655
+sample_2,C57BL6J-1.029,007 L2/3 IT CTX Glut || 052 Pvalb Gaba,007 L2/3 IT CTX Glut,052 Pvalb Gaba,0.09280742459396751
+sample_2,C57BL6J-1.029,007 L2/3 IT CTX Glut || 053 Sst Gaba,007 L2/3 IT CTX Glut,053 Sst Gaba,0.10904872389791183
+sample_2,C57BL6J-1.029,046 Vip Gaba || 051 Pvalb chandelier Gaba,046 Vip Gaba,051 Pvalb chandelier Gaba,0.0851063829787234
+sample_2,C57BL6J-1.029,046 Vip Gaba || 052 Pvalb Gaba,046 Vip Gaba,052 Pvalb Gaba,0.16595744680851063
+sample_2,C57BL6J-1.029,047 Sncg Gaba || 051 Pvalb chandelier Gaba,047 Sncg Gaba,051 Pvalb chandelier Gaba,0.011904761904761904
+sample_2,C57BL6J-1.029,047 Sncg Gaba || 052 Pvalb Gaba,047 Sncg Gaba,052 Pvalb Gaba,0.6785714285714286
+sample_2,C57BL6J-1.029,049 Lamp5 Gaba || 051 Pvalb chandelier Gaba,049 Lamp5 Gaba,051 Pvalb chandelier Gaba,0.6923076923076923
+sample_2,C57BL6J-1.029,049 Lamp5 Gaba || 052 Pvalb Gaba,049 Lamp5 Gaba,052 Pvalb Gaba,0.23076923076923078
+sample_2,C57BL6J-1.029,049 Lamp5 Gaba || 053 Sst Gaba,049 Lamp5 Gaba,053 Sst Gaba,0.8461538461538461
+sample_2,C57BL6J-1.029,049 Lamp5 Gaba || 051 Pvalb chandelier Gaba,049 Lamp5 Gaba,051 Pvalb chandelier Gaba,0.4420289855072464
+sample_2,C57BL6J-1.029,049 Lamp5 Gaba || 052 Pvalb Gaba,049 Lamp5 Gaba,052 Pvalb Gaba,0.36231884057971014
+sample_2,C57BL6J-1.029,051 Pvalb chandelier Gaba || 052 Pvalb Gaba,051 Pvalb chandelier Gaba,052 Pvalb Gaba,0.16037735849056603
+sample_2,C57BL6J-1.029,051 Pvalb chandelier Gaba || 053 Sst Gaba,051 Pvalb chandelier Gaba,053 Sst Gaba,0.8962264150943396
+sample_2,C57BL6J-1.029,051 Pvalb chandelier Gaba || 052 Pvalb Gaba,051 Pvalb chandelier Gaba,052 Pvalb Gaba,0.8090909090909091
+sample_2,C57BL6J-1.029,052 Pvalb Gaba || 053 Sst Gaba,052 Pvalb Gaba,053 Sst Gaba,0.05921052631578947
+sample_2,C57BL6J-1.029,006 L4/5 IT CTX Glut || 047 Sncg Gaba,006 L4/5 IT CTX Glut,047 Sncg Gaba,0.13636363636363635
