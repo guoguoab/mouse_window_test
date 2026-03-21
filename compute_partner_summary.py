@@ -147,10 +147,16 @@ def main() -> None:
     all_results.extend(summarize_rows_serial(true_rows, 'true_data'))
 
     sample_files = sorted(SAMPLE_GLOB_DIR.glob(SAMPLE_GLOB_PATTERN))
-    for sample_file in sample_files:
+    for idx, sample_file in enumerate(sample_files, start=1):
         sample_rows = load_rows(sample_file)
         sample_name = infer_sample_name(sample_file)
-        all_results.extend(summarize_rows_parallel(sample_rows, sample_name, max_workers=MAX_WORKERS))
+        print(f'[sample {idx}/{len(sample_files)}] start: {sample_name}, input_rows={len(sample_rows)}', flush=True)
+        sample_results = summarize_rows_parallel(sample_rows, sample_name, max_workers=MAX_WORKERS)
+        all_results.extend(sample_results)
+        print(
+            f'[sample {idx}/{len(sample_files)}] done: {sample_name}, output_rows={len(sample_results)}',
+            flush=True,
+        )
 
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     with OUTPUT_FILE.open('w', newline='', encoding='utf-8') as f:
