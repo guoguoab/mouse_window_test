@@ -1,0 +1,119 @@
+sample_name,a_class,enrich_cell_num_sum,a_merge_region,partner_number
+true_data,035 OB Eomes Ms4a15 Glut,127.0,regions_1,18
+true_data,035 OB Eomes Ms4a15 Glut,127.0,regions_2,18
+true_data,039 OB Meis2 Thsd7b Gaba,111.0,regions_1,18
+true_data,039 OB Meis2 Thsd7b Gaba,111.0,regions_2,9
+true_data,040 OB Trdn Gaba,5.0,regions_1,16
+true_data,041 OB-in Frmd7 Gaba,113.0,regions_1,19
+true_data,042 OB-out Frmd7 Gaba,86.0,regions_1,14
+true_data,043 OB-mi Frmd7 Gaba,11.0,regions_1,13
+true_data,044 OB Dopa-Gaba,36.0,regions_1,12
+true_data,045 OB-STR-CTX Inh IMN,2.0,regions_1,9
+true_data,049 Lamp5 Gaba,9.0,regions_1,9
+true_data,117 LHA Barhl2 Glut,1.0,regions_1,11
+true_data,319 Astro-TE NN,137.0,regions_1,8
+true_data,320 Astro-OLF NN,49.0,regions_1,7
+true_data,320 Astro-OLF NN,49.0,regions_2,4
+true_data,326 OPC NN,46.0,regions_1,6
+true_data,326 OPC NN,46.0,regions_2,1
+true_data,327 Oligo NN,16.0,regions_1,1
+true_data,327 Oligo NN,16.0,regions_2,4
+true_data,328 OEC NN,75.0,regions_1,5
+true_data,330 VLMC NN,59.0,regions_1,4
+true_data,332 SMC NN,7.0,regions_1,2
+true_data,333 Endo NN,69.0,regions_1,1
+true_data,333 Endo NN,69.0,regions_2,0
+true_data,007 L2/3 IT CTX Glut,58.0,regions_1,20
+true_data,035 OB Eomes Ms4a15 Glut,127.0,regions_1,9
+true_data,036 HPF CR Glut,1.0,regions_1,8
+true_data,044 OB Dopa-Gaba,36.0,regions_1,9
+true_data,046 Vip Gaba,4.0,regions_1,12
+true_data,047 Sncg Gaba,8.0,regions_1,12
+true_data,049 Lamp5 Gaba,9.0,regions_1,10
+true_data,051 Pvalb chandelier Gaba,2.0,regions_1,7
+true_data,052 Pvalb Gaba,1.0,regions_1,7
+true_data,053 Sst Gaba,3.0,regions_1,6
+true_data,319 Astro-TE NN,137.0,regions_1,7
+true_data,319 Astro-TE NN,137.0,regions_2,5
+true_data,326 OPC NN,46.0,regions_1,3
+true_data,326 OPC NN,46.0,regions_2,4
+true_data,327 Oligo NN,16.0,regions_1,4
+true_data,327 Oligo NN,16.0,regions_2,3
+true_data,328 OEC NN,75.0,regions_1,2
+true_data,330 VLMC NN,59.0,regions_1,1
+true_data,330 VLMC NN,59.0,regions_2,1
+sample_1,049 Lamp5 Gaba,23.0,regions_1,0
+sample_1,007 L2/3 IT CTX Glut,72.0,regions_1,3
+sample_1,007 L2/3 IT CTX Glut,72.0,regions_2,3
+sample_1,046 Vip Gaba,8.0,regions_1,6
+sample_1,047 Sncg Gaba,9.0,regions_1,5
+sample_1,047 Sncg Gaba,9.0,regions_2,1
+sample_1,049 Lamp5 Gaba,23.0,regions_1,1
+sample_1,049 Lamp5 Gaba,23.0,regions_2,1
+sample_1,051 Pvalb chandelier Gaba,2.0,regions_1,1
+sample_1,007 L2/3 IT CTX Glut,72.0,regions_1,5
+sample_1,007 L2/3 IT CTX Glut,72.0,regions_2,1
+sample_1,007 L2/3 IT CTX Glut,72.0,regions_3,1
+sample_1,046 Vip Gaba,8.0,regions_1,1
+sample_1,047 Sncg Gaba,9.0,regions_1,3
+sample_1,049 Lamp5 Gaba,23.0,regions_1,1
+sample_1,006 L4/5 IT CTX Glut,4.0,regions_1,2
+sample_1,006 L4/5 IT CTX Glut,4.0,regions_2,3
+sample_1,047 Sncg Gaba,9.0,regions_2,0
+sample_2,007 L2/3 IT CTX Glut,278.0,regions_1,8
+sample_2,007 L2/3 IT CTX Glut,278.0,regions_2,0
+sample_2,046 Vip Gaba,21.0,regions_1,5
+sample_2,047 Sncg Gaba,11.0,regions_1,2
+sample_2,049 Lamp5 Gaba,49.0,regions_1,3
+sample_2,051 Pvalb chandelier Gaba,10.0,regions_1,0
+sample_2,052 Pvalb Gaba,17.0,regions_1,0
+sample_2,007 L2/3 IT CTX Glut,278.0,regions_1,1
+sample_2,007 L2/3 IT CTX Glut,278.0,regions_2,9
+sample_2,007 L2/3 IT CTX Glut,278.0,regions_3,4
+sample_2,046 Vip Gaba,21.0,regions_1,6
+sample_2,046 Vip Gaba,21.0,regions_2,0
+sample_2,046 Vip Gaba,21.0,regions_3,3
+sample_2,046 Vip Gaba,21.0,regions_4,1
+sample_2,047 Sncg Gaba,11.0,regions_1,2
+sample_2,049 Lamp5 Gaba,49.0,regions_1,2
+sample_2,049 Lamp5 Gaba,49.0,regions_2,1
+sample_2,049 Lamp5 Gaba,49.0,regions_3,0
+sample_2,052 Pvalb Gaba,17.0,regions_1,1
+sample_2,006 L4/5 IT CTX Glut,208.0,regions_1,6
+sample_2,051 Pvalb chandelier Gaba,10.0,regions_1,1
+sample_2,007 L2/3 IT CTX Glut,278.0,regions_1,12
+sample_2,007 L2/3 IT CTX Glut,278.0,regions_2,5
+sample_2,007 L2/3 IT CTX Glut,278.0,regions_3,3
+sample_2,007 L2/3 IT CTX Glut,278.0,regions_4,3
+sample_2,007 L2/3 IT CTX Glut,278.0,regions_5,2
+sample_2,007 L2/3 IT CTX Glut,278.0,regions_6,0
+sample_2,046 Vip Gaba,21.0,regions_1,6
+sample_2,046 Vip Gaba,21.0,regions_2,8
+sample_2,046 Vip Gaba,21.0,regions_3,0
+sample_2,047 Sncg Gaba,11.0,regions_1,5
+sample_2,047 Sncg Gaba,11.0,regions_2,1
+sample_2,047 Sncg Gaba,11.0,regions_3,1
+sample_2,047 Sncg Gaba,11.0,regions_4,3
+sample_2,049 Lamp5 Gaba,49.0,regions_1,4
+sample_2,049 Lamp5 Gaba,49.0,regions_2,1
+sample_2,051 Pvalb chandelier Gaba,10.0,regions_1,3
+sample_2,051 Pvalb chandelier Gaba,10.0,regions_2,1
+sample_2,052 Pvalb Gaba,17.0,regions_1,1
+sample_2,052 Pvalb Gaba,17.0,regions_2,1
+sample_2,053 Sst Gaba,2.0,regions_1,0
+sample_2,006 L4/5 IT CTX Glut,208.0,regions_1,5
+sample_2,007 L2/3 IT CTX Glut,278.0,regions_1,15
+sample_2,007 L2/3 IT CTX Glut,278.0,regions_2,1
+sample_2,046 Vip Gaba,21.0,regions_1,2
+sample_2,046 Vip Gaba,21.0,regions_2,4
+sample_2,047 Sncg Gaba,11.0,regions_1,5
+sample_2,047 Sncg Gaba,11.0,regions_2,0
+sample_2,049 Lamp5 Gaba,49.0,regions_1,6
+sample_2,049 Lamp5 Gaba,49.0,regions_2,3
+sample_2,049 Lamp5 Gaba,49.0,regions_3,0
+sample_2,051 Pvalb chandelier Gaba,10.0,regions_1,3
+sample_2,052 Pvalb Gaba,17.0,regions_1,2
+sample_2,006 L4/5 IT CTX Glut,208.0,regions_1,6
+sample_2,006 L4/5 IT CTX Glut,208.0,regions_2,3
+sample_2,051 Pvalb chandelier Gaba,10.0,regions_2,1
+sample_2,052 Pvalb Gaba,17.0,regions_2,0
