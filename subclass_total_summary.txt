@@ -1,15 +1,38 @@
 subclass;number
-33 Vascular;732
-01 IT-ET Glut;586
-30 Astro-Epen;553
-05 OB-IMN GABA;396
-34 Immune;257
-31 OPC-Oligo;192
-03 OB-CR Glut;130
-06 CTX-CGE GABA;106
-32 OEC;78
-07 CTX-MGE GABA;38
-13 CNU-HYa Glut;4
-08 CNU-MGE GABA;2
-02 NP-CT-L6b Glut;1
-10 LSX GABA;1
+007 L2/3 IT CTX Glut;574
+333 Endo NN;532
+319 Astro-TE NN;480
+334 Microglia NN;234
+326 OPC NN;139
+035 OB Eomes Ms4a15 Glut;128
+039 OB Meis2 Thsd7b Gaba;118
+041 OB-in Frmd7 Gaba;113
+042 OB-out Frmd7 Gaba;102
+330 VLMC NN;95
+328 OEC NN;78
+320 Astro-OLF NN;73
+331 Peri NN;67
+049 Lamp5 Gaba;56
+327 Oligo NN;53
+044 OB Dopa-Gaba;41
+046 Vip Gaba;32
+332 SMC NN;29
+335 BAM NN;20
+047 Sncg Gaba;18
+053 Sst Gaba;18
+052 Pvalb Gaba;13
+043 OB-mi Frmd7 Gaba;12
+006 L4/5 IT CTX Glut;11
+329 ABC NN;9
+051 Pvalb chandelier Gaba;7
+040 OB Trdn Gaba;5
+045 OB-STR-CTX Inh IMN;5
+338 Lymphoid NN;3
+036 HPF CR Glut;2
+056 Sst Chodl Gaba;2
+118 ADP-MPO Trp73 Glut;2
+010 IT AON-TT-DP Glut;1
+031 CT SUB Glut;1
+067 LSX Sall3 Pax6 Gaba;1
+113 MEA-COA-BMA Ccdc42 Glut;1
+117 LHA Barhl2 Glut;1
