@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="680">
+<rect width="100%" height="100%" fill="white"/>
+<text x="750" y="40" text-anchor="middle" font-size="26" font-weight="700">Sample vs True E-I Pearson r (Permutation Test)</text>
+<line x1="90" y1="120" x2="90" y2="570" stroke="#222" stroke-width="3"/>
+<line x1="90" y1="570" x2="1460" y2="570" stroke="#222" stroke-width="3"/>
+<line x1="90" y1="345.00" x2="1460" y2="345.00" stroke="#666" stroke-width="1.6" stroke-dasharray="5,4"/>
+<line x1="84" y1="501.89" x2="90" y2="501.89" stroke="#222" stroke-width="2"/>
+<text x="78" y="505.89" text-anchor="end" font-size="14">-1.0</text>
+<line x1="84" y1="470.51" x2="90" y2="470.51" stroke="#222" stroke-width="2"/>
+<text x="78" y="474.51" text-anchor="end" font-size="14">-0.8</text>
+<line x1="84" y1="439.13" x2="90" y2="439.13" stroke="#222" stroke-width="2"/>
+<text x="78" y="443.13" text-anchor="end" font-size="14">-0.6</text>
+<line x1="84" y1="407.75" x2="90" y2="407.75" stroke="#222" stroke-width="2"/>
+<text x="78" y="411.75" text-anchor="end" font-size="14">-0.4</text>
+<line x1="84" y1="376.38" x2="90" y2="376.38" stroke="#222" stroke-width="2"/>
+<text x="78" y="380.38" text-anchor="end" font-size="14">-0.2</text>
+<line x1="84" y1="345.00" x2="90" y2="345.00" stroke="#222" stroke-width="2"/>
+<text x="78" y="349.00" text-anchor="end" font-size="14">-0.0</text>
+<line x1="84" y1="313.62" x2="90" y2="313.62" stroke="#222" stroke-width="2"/>
+<text x="78" y="317.62" text-anchor="end" font-size="14">0.2</text>
+<line x1="84" y1="282.25" x2="90" y2="282.25" stroke="#222" stroke-width="2"/>
+<text x="78" y="286.25" text-anchor="end" font-size="14">0.4</text>
+<line x1="84" y1="250.87" x2="90" y2="250.87" stroke="#222" stroke-width="2"/>
+<text x="78" y="254.87" text-anchor="end" font-size="14">0.6</text>
+<line x1="84" y1="219.49" x2="90" y2="219.49" stroke="#222" stroke-width="2"/>
+<text x="78" y="223.49" text-anchor="end" font-size="14">0.8</text>
+<line x1="84" y1="188.11" x2="90" y2="188.11" stroke="#222" stroke-width="2"/>
+<text x="78" y="192.11" text-anchor="end" font-size="14">1.0</text>
+<rect x="140" y="60" width="24" height="14" fill="#d9d2ad" stroke="#222" stroke-width="1.6"/>
+<text x="172" y="72" font-size="15">0–20%</text>
+<rect x="285" y="60" width="24" height="14" fill="#cdd8d8" stroke="#222" stroke-width="1.6"/>
+<text x="317" y="72" font-size="15">20–40%</text>
+<rect x="430" y="60" width="24" height="14" fill="#b7d4ca" stroke="#222" stroke-width="1.6"/>
+<text x="462" y="72" font-size="15">40–60%</text>
+<rect x="575" y="60" width="24" height="14" fill="#aac8de" stroke="#222" stroke-width="1.6"/>
+<text x="607" y="72" font-size="15">60–80%</text>
+<rect x="720" y="60" width="24" height="14" fill="#a4b4c5" stroke="#222" stroke-width="1.6"/>
+<text x="752" y="72" font-size="15">80–100%</text>
+<rect x="865" y="60" width="24" height="14" fill="#7b4ab8" stroke="#222" stroke-width="1.6"/>
+<text x="897" y="72" font-size="15">random sample</text>
+<rect x="147.75" y="345.00" width="18" height="1.05" fill="#d9d2ad" fill-opacity="0.35" stroke="#222" stroke-width="1.8"/>
+<text x="156.75" y="360.05" text-anchor="middle" font-size="9" font-weight="600">-0.01</text>
+<rect x="168.75" y="218.87" width="18" height="126.13" fill="#7b4ab8" fill-opacity="0.9" stroke="#222" stroke-width="1.8"/>
+<text x="177.75" y="214.87" text-anchor="middle" font-size="9" font-weight="600" fill="#4b237a">0.80</text>
+<line x1="177.75" y1="246.94" x2="177.75" y2="190.80" stroke="#111" stroke-width="2.2"/>
+<line x1="173.75" y1="246.94" x2="181.75" y2="246.94" stroke="#111" stroke-width="2.2"/>
+<line x1="173.75" y1="190.80" x2="181.75" y2="190.80" stroke="#111" stroke-width="2.2"/>
+<text x="167.25" y="178.24" text-anchor="middle" font-size="13" font-weight="700">ns</text>
+<rect x="194.75" y="208.59" width="18" height="136.41" fill="#cdd8d8" fill-opacity="0.35" stroke="#222" stroke-width="1.8"/>
+<text x="203.75" y="204.59" text-anchor="middle" font-size="9" font-weight="600">0.87</text>
+<rect x="215.75" y="211.11" width="18" height="133.89" fill="#7b4ab8" fill-opacity="0.9" stroke="#222" stroke-width="1.8"/>
+<text x="224.75" y="207.11" text-anchor="middle" font-size="9" font-weight="600" fill="#4b237a">0.85</text>
+<line x1="224.75" y1="217.36" x2="224.75" y2="204.85" stroke="#111" stroke-width="2.2"/>
+<line x1="220.75" y1="217.36" x2="228.75" y2="217.36" stroke="#111" stroke-width="2.2"/>
+<line x1="220.75" y1="204.85" x2="228.75" y2="204.85" stroke="#111" stroke-width="2.2"/>
+<text x="214.25" y="192.30" text-anchor="middle" font-size="13" font-weight="700">ns</text>
+<rect x="241.75" y="208.71" width="18" height="136.29" fill="#b7d4ca" fill-opacity="0.35" stroke="#222" stroke-width="1.8"/>
+<text x="250.75" y="204.71" text-anchor="middle" font-size="9" font-weight="600">0.87</text>
+<rect x="262.75" y="194.38" width="18" height="150.62" fill="#7b4ab8" fill-opacity="0.9" stroke="#222" stroke-width="1.8"/>
+<text x="271.75" y="190.38" text-anchor="middle" font-size="9" font-weight="600" fill="#4b237a">0.96</text>
+<line x1="271.75" y1="202.64" x2="271.75" y2="186.12" stroke="#111" stroke-width="2.2"/>
+<line x1="267.75" y1="202.64" x2="275.75" y2="202.64" stroke="#111" stroke-width="2.2"/>
+<line x1="267.75" y1="186.12" x2="275.75" y2="186.12" stroke="#111" stroke-width="2.2"/>
+<text x="261.25" y="173.57" text-anchor="middle" font-size="13" font-weight="700">ns</text>
+<rect x="288.75" y="210.90" width="18" height="134.10" fill="#aac8de" fill-opacity="0.35" stroke="#222" stroke-width="1.8"/>
+<text x="297.75" y="206.90" text-anchor="middle" font-size="9" font-weight="600">0.85</text>
+<rect x="309.75" y="213.67" width="18" height="131.33" fill="#7b4ab8" fill-opacity="0.9" stroke="#222" stroke-width="1.8"/>
+<text x="318.75" y="209.67" text-anchor="middle" font-size="9" font-weight="600" fill="#4b237a">0.84</text>
+<line x1="318.75" y1="222.60" x2="318.75" y2="204.74" stroke="#111" stroke-width="2.2"/>
+<line x1="314.75" y1="222.60" x2="322.75" y2="222.60" stroke="#111" stroke-width="2.2"/>
+<line x1="314.75" y1="204.74" x2="322.75" y2="204.74" stroke="#111" stroke-width="2.2"/>
+<text x="308.25" y="192.19" text-anchor="middle" font-size="13" font-weight="700">ns</text>
+<rect x="335.75" y="334.02" width="18" height="10.98" fill="#a4b4c5" fill-opacity="0.35" stroke="#222" stroke-width="1.8"/>
+<text x="344.75" y="330.02" text-anchor="middle" font-size="9" font-weight="600">0.07</text>
+<rect x="356.75" y="216.74" width="18" height="128.26" fill="#7b4ab8" fill-opacity="0.9" stroke="#222" stroke-width="1.8"/>
+<text x="365.75" y="212.74" text-anchor="middle" font-size="9" font-weight="600" fill="#4b237a">0.82</text>
+<line x1="365.75" y1="225.96" x2="365.75" y2="207.52" stroke="#111" stroke-width="2.2"/>
+<line x1="361.75" y1="225.96" x2="369.75" y2="225.96" stroke="#111" stroke-width="2.2"/>
+<line x1="361.75" y1="207.52" x2="369.75" y2="207.52" stroke="#111" stroke-width="2.2"/>
+<text x="355.25" y="194.97" text-anchor="middle" font-size="13" font-weight="700">ns</text>
+<text x="261.25" y="615" text-anchor="middle" font-size="20">GABA-GABA</text>
+<rect x="490.25" y="211.55" width="18" height="133.45" fill="#d9d2ad" fill-opacity="0.35" stroke="#222" stroke-width="1.8"/>
+<text x="499.25" y="207.55" text-anchor="middle" font-size="9" font-weight="600">0.85</text>
+<rect x="511.25" y="261.20" width="18" height="83.80" fill="#7b4ab8" fill-opacity="0.9" stroke="#222" stroke-width="1.8"/>
+<text x="520.25" y="257.20" text-anchor="middle" font-size="9" font-weight="600" fill="#4b237a">0.53</text>
+<line x1="520.25" y1="333.39" x2="520.25" y2="189.01" stroke="#111" stroke-width="2.2"/>
+<line x1="516.25" y1="333.39" x2="524.25" y2="333.39" stroke="#111" stroke-width="2.2"/>
+<line x1="516.25" y1="189.01" x2="524.25" y2="189.01" stroke="#111" stroke-width="2.2"/>
+<text x="509.75" y="176.46" text-anchor="middle" font-size="13" font-weight="700">ns</text>
+<rect x="537.25" y="249.98" width="18" height="95.02" fill="#cdd8d8" fill-opacity="0.35" stroke="#222" stroke-width="1.8"/>
+<text x="546.25" y="245.98" text-anchor="middle" font-size="9" font-weight="600">0.61</text>
+<rect x="558.25" y="232.48" width="18" height="112.52" fill="#7b4ab8" fill-opacity="0.9" stroke="#222" stroke-width="1.8"/>
+<text x="567.25" y="228.48" text-anchor="middle" font-size="9" font-weight="600" fill="#4b237a">0.72</text>
+<line x1="567.25" y1="295.22" x2="567.25" y2="169.74" stroke="#111" stroke-width="2.2"/>
+<line x1="563.25" y1="295.22" x2="571.25" y2="295.22" stroke="#111" stroke-width="2.2"/>
+<line x1="563.25" y1="169.74" x2="571.25" y2="169.74" stroke="#111" stroke-width="2.2"/>
+<text x="556.75" y="157.19" text-anchor="middle" font-size="13" font-weight="700">ns</text>
+<rect x="584.25" y="213.52" width="18" height="131.48" fill="#b7d4ca" fill-opacity="0.35" stroke="#222" stroke-width="1.8"/>
+<text x="593.25" y="209.52" text-anchor="middle" font-size="9" font-weight="600">0.84</text>
+<rect x="605.25" y="291.78" width="18" height="53.22" fill="#7b4ab8" fill-opacity="0.9" stroke="#222" stroke-width="1.8"/>
+<text x="614.25" y="287.78" text-anchor="middle" font-size="9" font-weight="600" fill="#4b237a">0.34</text>
+<line x1="614.25" y1="397.00" x2="614.25" y2="186.57" stroke="#111" stroke-width="2.2"/>
+<line x1="610.25" y1="397.00" x2="618.25" y2="397.00" stroke="#111" stroke-width="2.2"/>
+<line x1="610.25" y1="186.57" x2="618.25" y2="186.57" stroke="#111" stroke-width="2.2"/>
+<text x="603.75" y="174.01" text-anchor="middle" font-size="13" font-weight="700">ns</text>
+<rect x="631.25" y="345.00" width="18" height="129.40" fill="#aac8de" fill-opacity="0.35" stroke="#222" stroke-width="1.8"/>
+<text x="640.25" y="488.40" text-anchor="middle" font-size="9" font-weight="600">-0.82</text>
+<rect x="652.25" y="253.35" width="18" height="91.65" fill="#7b4ab8" fill-opacity="0.9" stroke="#222" stroke-width="1.8"/>
+<text x="661.25" y="249.35" text-anchor="middle" font-size="9" font-weight="600" fill="#4b237a">0.58</text>
+<line x1="661.25" y1="253.35" x2="661.25" y2="253.35" stroke="#111" stroke-width="2.2"/>
+<line x1="657.25" y1="253.35" x2="665.25" y2="253.35" stroke="#111" stroke-width="2.2"/>
+<line x1="657.25" y1="253.35" x2="665.25" y2="253.35" stroke="#111" stroke-width="2.2"/>
+<text x="650.75" y="240.80" text-anchor="middle" font-size="13" font-weight="700">ns</text>
+<rect x="678.25" y="189.61" width="18" height="155.39" fill="#a4b4c5" fill-opacity="0.35" stroke="#222" stroke-width="1.8"/>
+<text x="687.25" y="185.61" text-anchor="middle" font-size="9" font-weight="600">0.99</text>
+<rect x="699.25" y="282.42" width="18" height="62.58" fill="#7b4ab8" fill-opacity="0.9" stroke="#222" stroke-width="1.8"/>
+<text x="708.25" y="278.42" text-anchor="middle" font-size="9" font-weight="600" fill="#4b237a">0.40</text>
+<line x1="708.25" y1="294.71" x2="708.25" y2="270.13" stroke="#111" stroke-width="2.2"/>
+<line x1="704.25" y1="294.71" x2="712.25" y2="294.71" stroke="#111" stroke-width="2.2"/>
+<line x1="704.25" y1="270.13" x2="712.25" y2="270.13" stroke="#111" stroke-width="2.2"/>
+<text x="697.75" y="177.06" text-anchor="middle" font-size="13" font-weight="700">ns</text>
+<text x="603.75" y="615" text-anchor="middle" font-size="20">Glut-GABA</text>
+<rect x="832.75" y="202.29" width="18" height="142.71" fill="#d9d2ad" fill-opacity="0.35" stroke="#222" stroke-width="1.8"/>
+<text x="841.75" y="198.29" text-anchor="middle" font-size="9" font-weight="600">0.91</text>
+<rect x="853.75" y="337.39" width="18" height="7.61" fill="#7b4ab8" fill-opacity="0.9" stroke="#222" stroke-width="1.8"/>
+<text x="862.75" y="333.39" text-anchor="middle" font-size="9" font-weight="600" fill="#4b237a">0.05</text>
+<line x1="862.75" y1="340.75" x2="862.75" y2="334.02" stroke="#111" stroke-width="2.2"/>
+<line x1="858.75" y1="340.75" x2="866.75" y2="340.75" stroke="#111" stroke-width="2.2"/>
+<line x1="858.75" y1="334.02" x2="866.75" y2="334.02" stroke="#111" stroke-width="2.2"/>
+<text x="852.25" y="189.74" text-anchor="middle" font-size="13" font-weight="700">ns</text>
+<rect x="879.75" y="188.11" width="18" height="156.89" fill="#cdd8d8" fill-opacity="0.35" stroke="#222" stroke-width="1.8"/>
+<text x="888.75" y="184.11" text-anchor="middle" font-size="9" font-weight="600">1.00</text>
+<rect x="900.75" y="266.43" width="18" height="78.57" fill="#7b4ab8" fill-opacity="0.9" stroke="#222" stroke-width="1.8"/>
+<text x="909.75" y="262.43" text-anchor="middle" font-size="9" font-weight="600" fill="#4b237a">0.50</text>
+<line x1="909.75" y1="352.65" x2="909.75" y2="180.21" stroke="#111" stroke-width="2.2"/>
+<line x1="905.75" y1="352.65" x2="913.75" y2="352.65" stroke="#111" stroke-width="2.2"/>
+<line x1="905.75" y1="180.21" x2="913.75" y2="180.21" stroke="#111" stroke-width="2.2"/>
+<text x="899.25" y="167.66" text-anchor="middle" font-size="13" font-weight="700">ns</text>
+<rect x="926.75" y="190.11" width="18" height="154.89" fill="#b7d4ca" fill-opacity="0.35" stroke="#222" stroke-width="1.8"/>
+<text x="935.75" y="186.11" text-anchor="middle" font-size="9" font-weight="600">0.99</text>
+<rect x="947.75" y="345.00" width="18" height="2.25" fill="#7b4ab8" fill-opacity="0.9" stroke="#222" stroke-width="1.8"/>
+<text x="956.75" y="361.25" text-anchor="middle" font-size="9" font-weight="600" fill="#4b237a">-0.01</text>
+<line x1="956.75" y1="546.47" x2="956.75" y2="148.04" stroke="#111" stroke-width="2.2"/>
+<line x1="952.75" y1="546.47" x2="960.75" y2="546.47" stroke="#111" stroke-width="2.2"/>
+<line x1="952.75" y1="148.04" x2="960.75" y2="148.04" stroke="#111" stroke-width="2.2"/>
+<text x="946.25" y="135.49" text-anchor="middle" font-size="13" font-weight="700">ns</text>
+<rect x="994.75" y="221.87" width="18" height="123.13" fill="#7b4ab8" fill-opacity="0.9" stroke="#222" stroke-width="1.8"/>
+<text x="1003.75" y="217.87" text-anchor="middle" font-size="9" font-weight="600" fill="#4b237a">0.78</text>
+<line x1="1003.75" y1="221.87" x2="1003.75" y2="221.87" stroke="#111" stroke-width="2.2"/>
+<line x1="999.75" y1="221.87" x2="1007.75" y2="221.87" stroke="#111" stroke-width="2.2"/>
+<line x1="999.75" y1="221.87" x2="1007.75" y2="221.87" stroke="#111" stroke-width="2.2"/>
+<rect x="1020.75" y="212.67" width="18" height="132.33" fill="#a4b4c5" fill-opacity="0.35" stroke="#222" stroke-width="1.8"/>
+<text x="1029.75" y="208.67" text-anchor="middle" font-size="9" font-weight="600">0.84</text>
+<rect x="1041.75" y="242.71" width="18" height="102.29" fill="#7b4ab8" fill-opacity="0.9" stroke="#222" stroke-width="1.8"/>
+<text x="1050.75" y="238.71" text-anchor="middle" font-size="9" font-weight="600" fill="#4b237a">0.65</text>
+<line x1="1050.75" y1="256.73" x2="1050.75" y2="228.69" stroke="#111" stroke-width="2.2"/>
+<line x1="1046.75" y1="256.73" x2="1054.75" y2="256.73" stroke="#111" stroke-width="2.2"/>
+<line x1="1046.75" y1="228.69" x2="1054.75" y2="228.69" stroke="#111" stroke-width="2.2"/>
+<text x="1040.25" y="200.12" text-anchor="middle" font-size="13" font-weight="700">ns</text>
+<text x="946.25" y="615" text-anchor="middle" font-size="20">GABA-Glut</text>
+<rect x="1175.25" y="188.12" width="18" height="156.88" fill="#d9d2ad" fill-opacity="0.35" stroke="#222" stroke-width="1.8"/>
+<text x="1184.25" y="184.12" text-anchor="middle" font-size="9" font-weight="600">1.00</text>
+<rect x="1243.25" y="188.11" width="18" height="156.89" fill="#7b4ab8" fill-opacity="0.9" stroke="#222" stroke-width="1.8"/>
+<text x="1252.25" y="184.11" text-anchor="middle" font-size="9" font-weight="600" fill="#4b237a">1.00</text>
+<line x1="1252.25" y1="188.11" x2="1252.25" y2="188.11" stroke="#111" stroke-width="2.2"/>
+<line x1="1248.25" y1="188.11" x2="1256.25" y2="188.11" stroke="#111" stroke-width="2.2"/>
+<line x1="1248.25" y1="188.11" x2="1256.25" y2="188.11" stroke="#111" stroke-width="2.2"/>
+<rect x="1384.25" y="200.30" width="18" height="144.70" fill="#7b4ab8" fill-opacity="0.9" stroke="#222" stroke-width="1.8"/>
+<text x="1393.25" y="196.30" text-anchor="middle" font-size="9" font-weight="600" fill="#4b237a">0.92</text>
+<line x1="1393.25" y1="200.30" x2="1393.25" y2="200.30" stroke="#111" stroke-width="2.2"/>
+<line x1="1389.25" y1="200.30" x2="1397.25" y2="200.30" stroke="#111" stroke-width="2.2"/>
+<line x1="1389.25" y1="200.30" x2="1397.25" y2="200.30" stroke="#111" stroke-width="2.2"/>
+<text x="1288.75" y="615" text-anchor="middle" font-size="20">Glut-Glut</text>
+</svg>
