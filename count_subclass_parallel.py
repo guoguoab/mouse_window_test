@@ -7,23 +7,55 @@ import argparse
 import csv
 from collections import Counter
 from concurrent.futures import ProcessPoolExecutor
+from itertools import chain
 from pathlib import Path
 from typing import Iterable
+
+
+
+def iter_aligned_rows(file_path: Path) -> Iterable[dict[str, str]]:
+    """读取 tab 分隔文本；若表头少一列（常见于首列无列名）则自动向后对齐。"""
+    with file_path.open("r", encoding="utf-8", newline="") as f:
+        reader = csv.reader(f, delimiter="\t")
+
+        try:
+            header = next(reader)
+        except StopIteration as exc:
+            raise ValueError(f"空文件: {file_path}") from exc
+
+        try:
+            first_row = next(reader)
+        except StopIteration:
+            first_row = None
+
+        if first_row is not None and len(first_row) == len(header) + 1:
+            header = ["_unnamed_index"] + header
+
+        rows_iter = reader if first_row is None else chain([first_row], reader)
+        for row in rows_iter:
+            if len(row) < len(header):
+                row = row + [""] * (len(header) - len(row))
+            elif len(row) > len(header):
+                row = row[: len(header)]
+            yield dict(zip(header, row))
 
 
 def count_subclass_in_file(file_path: Path) -> Counter:
     """统计单个 txt 文件中的 subclass 计数。"""
     counter: Counter[str] = Counter()
 
-    with file_path.open("r", encoding="utf-8", newline="") as f:
-        reader = csv.DictReader(f, delimiter="\t")
-        if not reader.fieldnames or "subclass" not in reader.fieldnames:
-            raise ValueError(f"文件缺少 subclass 列: {file_path}")
+    rows = iter_aligned_rows(file_path)
+    first_row = next(rows, None)
+    if first_row is None:
+        return counter
 
-        for row in reader:
-            subclass = (row.get("subclass") or "").strip()
-            if subclass:
-                counter[subclass] += 1
+    if "subclass" not in first_row:
+        raise ValueError(f"文件缺少 subclass 列: {file_path}")
+
+    for row in chain([first_row], rows):
+        subclass = (row.get("subclass") or "").strip()
+        if subclass:
+            counter[subclass] += 1
 
     return counter
 
