@@ -182,7 +182,16 @@ def fmt(v: float) -> str:
     return f"{v:.1f}".rstrip("0").rstrip(".")
 
 
-def draw_double_donut(title: str, clustered: float, non_clustered: float, partner: float, cluster_only: float, cx: float, cy: float) -> str:
+def draw_double_donut(
+    title: str,
+    clustered: float,
+    non_clustered: float,
+    partner: float,
+    cluster_only: float,
+    cx: float,
+    cy: float,
+    y_offset: float = 0,
+) -> str:
     total_outer = max(clustered + non_clustered, 1e-9)
     total_inner = max(partner + cluster_only, 1e-9)
     c_outer, nc_outer, p_inner, co_inner = "#4EA5D9", "#D99A17", "#2A9D75", "#8A8A8A"
@@ -198,16 +207,22 @@ def draw_double_donut(title: str, clustered: float, non_clustered: float, partne
     pct_partner = 100.0 * partner / total_inner
     pct_co = 100.0 * cluster_only / total_inner
 
+    title_y = 45 + y_offset
+    stat_y1 = 215 + y_offset
+    stat_y2 = 235 + y_offset
+    stat_y3 = 255 + y_offset
+    stat_y4 = 275 + y_offset
+
     return "\n".join([
-        f'<text x="{cx}" y="45" text-anchor="middle" font-size="20" font-weight="700">{title}</text>',
+        f'<text x="{cx}" y="{title_y}" text-anchor="middle" font-size="20" font-weight="700">{title}</text>',
         f'<path d="{donut_segment_path(cx, cy, 120, 80, start, start + angle_clustered)}" fill="{c_outer}" stroke="white" stroke-width="1.5"/>',
         f'<path d="{donut_segment_path(cx, cy, 120, 80, start + angle_clustered, start + angle_clustered + angle_non)}" fill="{nc_outer}" stroke="white" stroke-width="1.5"/>',
         f'<path d="{donut_segment_path(cx, cy, 74, 38, start, start + angle_partner)}" fill="{p_inner}" stroke="white" stroke-width="1.3"/>',
         f'<path d="{donut_segment_path(cx, cy, 74, 38, start + angle_partner, start + angle_partner + angle_co)}" fill="{co_inner}" stroke="white" stroke-width="1.3"/>',
-        f'<text x="{cx}" y="215" text-anchor="middle" font-size="15">Clustered: {fmt(clustered)} ({fmt(pct_clustered)}%)</text>',
-        f'<text x="{cx}" y="235" text-anchor="middle" font-size="15">Non-clustered: {fmt(non_clustered)} ({fmt(pct_non)}%)</text>',
-        f'<text x="{cx}" y="255" text-anchor="middle" font-size="15">Partner: {fmt(partner)} ({fmt(pct_partner)}%)</text>',
-        f'<text x="{cx}" y="275" text-anchor="middle" font-size="15">Cluster-only: {fmt(cluster_only)} ({fmt(pct_co)}%)</text>',
+        f'<text x="{cx}" y="{stat_y1}" text-anchor="middle" font-size="15">Clustered: {fmt(clustered)} ({fmt(pct_clustered)}%)</text>',
+        f'<text x="{cx}" y="{stat_y2}" text-anchor="middle" font-size="15">Non-clustered: {fmt(non_clustered)} ({fmt(pct_non)}%)</text>',
+        f'<text x="{cx}" y="{stat_y3}" text-anchor="middle" font-size="15">Partner: {fmt(partner)} ({fmt(pct_partner)}%)</text>',
+        f'<text x="{cx}" y="{stat_y4}" text-anchor="middle" font-size="15">Cluster-only: {fmt(cluster_only)} ({fmt(pct_co)}%)</text>',
     ])
 
 
@@ -273,8 +288,17 @@ def main() -> None:
             f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}">',
             '<rect width="100%" height="100%" fill="white"/>',
             f'<text x="{width/2}" y="25" text-anchor="middle" font-size="22" font-weight="700">{a_class} | subclass={sub_code} total={fmt(total)}</text>',
-            draw_double_donut("true_data", t_clustered, t_non, t_partner, t_cluster_only, 250, 140),
-            draw_double_donut(f"sample_mean (n={len(sample_names)})", s_clustered_mean, s_non_mean, s_partner_mean, s_cluster_only_mean, 730, 140),
+            draw_double_donut("true_data", t_clustered, t_non, t_partner, t_cluster_only, 250, 160, y_offset=20),
+            draw_double_donut(
+                f"sample_mean (n={len(sample_names)})",
+                s_clustered_mean,
+                s_non_mean,
+                s_partner_mean,
+                s_cluster_only_mean,
+                730,
+                160,
+                y_offset=20,
+            ),
             '<rect x="390" y="65" width="16" height="16" fill="#4EA5D9"/><text x="412" y="78" font-size="14">clustered</text>',
             '<rect x="390" y="90" width="16" height="16" fill="#D99A17"/><text x="412" y="103" font-size="14">non-clustered</text>',
             '<rect x="390" y="115" width="16" height="16" fill="#2A9D75"/><text x="412" y="128" font-size="14">partner</text>',
