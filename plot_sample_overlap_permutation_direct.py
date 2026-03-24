@@ -16,7 +16,6 @@ from __future__ import annotations
 import argparse
 import csv
 import math
-import random
 from pathlib import Path
 from statistics import mean
 from typing import Dict, List, Tuple
@@ -63,33 +62,13 @@ def load_sample_distribution(path: Path) -> Dict[str, Dict[str, Dict[str, float]
     return out
 
 
-def sign_flip_pvalue(diffs: List[float], n_perm: int = 10000, seed: int = 0) -> float:
-    n = len(diffs)
+def permutation_direct_pvalue(random_vals: List[float], true_val: float) -> float:
+    """经验置换 p 值：p = (#{random >= true} + 1) / (N + 1)。"""
+    n = len(random_vals)
     if n == 0:
         return float("nan")
-    observed = abs(mean(diffs))
-
-    if n <= 16:
-        total = 1 << n
-        extreme = 0
-        for mask in range(total):
-            s = 0.0
-            for i, d in enumerate(diffs):
-                sign = -1.0 if ((mask >> i) & 1) else 1.0
-                s += sign * d
-            if abs(s / n) >= observed - 1e-12:
-                extreme += 1
-        return (extreme + 1.0) / (total + 1.0)
-
-    rng = random.Random(seed)
-    extreme = 0
-    for _ in range(n_perm):
-        s = 0.0
-        for d in diffs:
-            s += d if rng.random() < 0.5 else -d
-        if abs(s / n) >= observed - 1e-12:
-            extreme += 1
-    return (extreme + 1.0) / (n_perm + 1.0)
+    extreme = sum(1 for x in random_vals if x >= true_val)
+    return (extreme + 1.0) / (n + 1.0)
 
 
 def stars_for_p(p: float) -> str:
@@ -115,7 +94,7 @@ def compute_stats(
             tv = true_dist[p][b]
             m = mean(vals)
             sd = math.sqrt(sum((x - m) ** 2 for x in vals) / (len(vals) - 1)) if len(vals) > 1 else 0.0
-            pv = sign_flip_pvalue([x - tv for x in vals])
+            pv = permutation_direct_pvalue(vals, tv)
             stats[(p, b)] = {"true": tv, "mean": m, "sd": sd, "p": pv, "sig": stars_for_p(pv)}
     return stats
 
