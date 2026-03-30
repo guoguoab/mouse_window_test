@@ -24,13 +24,29 @@ from statistics import mean
 from typing import Dict, Iterable, List, Tuple
 
 
-PAIR_ORDER = ["Gaba-Gaba", "Gaba-Glut", "Glut-Gaba", "Glut-Glut"]
-PLOT_PAIR_ORDER = ["Gaba-Gaba", "Glut-Gaba", "Gaba-Glut", "Glut-Glut"]
+CELL_TYPES = ["Gaba", "Glut", "NonNeuron"]
+PAIR_ORDER = [f"{a}-{b}" for a in CELL_TYPES for b in CELL_TYPES]
+PLOT_PAIR_ORDER = [
+    "Gaba-Gaba",
+    "Glut-Gaba",
+    "Gaba-Glut",
+    "Glut-Glut",
+    "Gaba-NonNeuron",
+    "Glut-NonNeuron",
+    "NonNeuron-Gaba",
+    "NonNeuron-Glut",
+    "NonNeuron-NonNeuron",
+]
 PAIR_LABELS = {
     "Gaba-Gaba": "GABA-GABA",
     "Gaba-Glut": "GABA-Glut",
     "Glut-Gaba": "Glut-GABA",
     "Glut-Glut": "Glut-Glut",
+    "Gaba-NonNeuron": "GABA-NonNeuron",
+    "Glut-NonNeuron": "Glut-NonNeuron",
+    "NonNeuron-Gaba": "NonNeuron-GABA",
+    "NonNeuron-Glut": "NonNeuron-Glut",
+    "NonNeuron-NonNeuron": "NonNeuron-NonNeuron",
 }
 BINS = ["0–20%", "20–40%", "40–60%", "60–80%", "80–100%"]
 COLORS = ["#d9d2ad", "#b7d4ca", "#57a9a5", "#3d80ad", "#294f72"]
@@ -93,7 +109,7 @@ def overlap_bin(x: float) -> str:
 
 
 def pair_type_counts(total_rows: Iterable[Dict[str, object]]) -> Dict[str, int]:
-    counts = {"Gaba-Gaba": 0, "Gaba-Glut": 0, "Glut-Gaba": 0, "Glut-Glut": 0}
+    counts = {pair_name: 0 for pair_name in PAIR_ORDER}
     for row in total_rows:
         key = f"{row['a_type']}-{row['b_type']}"
         if key in counts:
@@ -101,36 +117,40 @@ def pair_type_counts(total_rows: Iterable[Dict[str, object]]) -> Dict[str, int]:
     return counts
 
 
+def split_pair(pair_name: str) -> Tuple[str, str]:
+    parts = pair_name.split("-", 1)
+    if len(parts) != 2:
+        raise ValueError(f"Invalid pair name: {pair_name}")
+    return parts[0], parts[1]
+
+
 def collect_directional_values(total_rows: Iterable[Dict[str, object]], pair_name: str) -> List[float]:
+    left_type, right_type = split_pair(pair_name)
     values: List[float] = []
     for row in total_rows:
         ab = f"{row['a_type']}-{row['b_type']}"
         a2b = float(row["overlap_a_in_b"])
         b2a = float(row["overlap_b_in_a"])
 
-        if pair_name in {"Gaba-Gaba", "Glut-Glut"} and ab == pair_name:
-            values.extend([a2b, b2a])
+        if left_type == right_type:
+            if ab == pair_name:
+                values.extend([a2b, b2a])
             continue
 
-        if pair_name == "Gaba-Glut":
-            if ab == "Gaba-Glut":
-                values.append(a2b)
-            elif ab == "Glut-Gaba":
-                values.append(b2a)
-        elif pair_name == "Glut-Gaba":
-            if ab == "Glut-Gaba":
-                values.append(a2b)
-            elif ab == "Gaba-Glut":
-                values.append(b2a)
+        reverse_name = f"{right_type}-{left_type}"
+        if ab == pair_name:
+            values.append(a2b)
+        elif ab == reverse_name:
+            values.append(b2a)
     return values
 
 
 def denominator_for_pair(pair_name: str, counts: Dict[str, int]) -> int:
-    if pair_name == "Gaba-Gaba":
-        return 2 * counts["Gaba-Gaba"]
-    if pair_name == "Glut-Glut":
-        return 2 * counts["Glut-Glut"]
-    return counts["Gaba-Glut"] + counts["Glut-Gaba"]
+    left_type, right_type = split_pair(pair_name)
+    if left_type == right_type:
+        return 2 * counts.get(pair_name, 0)
+    reverse_name = f"{right_type}-{left_type}"
+    return counts.get(pair_name, 0) + counts.get(reverse_name, 0)
 
 
 def compute_distribution(values: List[float], denominator: int) -> Dict[str, float]:
@@ -303,7 +323,8 @@ def draw_plot(
     stats: Dict[Tuple[str, str], Dict[str, float]],
     out_svg: Path,
 ) -> None:
-    width, height = 1500, 680
+    width = max(1500, 250 * len(PLOT_PAIR_ORDER))
+    height = 680
     left, right, top, bottom = 90, 40, 120, 110
     chart_w = width - left - right
     chart_h = height - top - bottom
@@ -328,7 +349,7 @@ def draw_plot(
     svg: List[str] = []
     svg.append(f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}">')
     svg.append('<rect width="100%" height="100%" fill="white"/>')
-    svg.append('<text x="690" y="40" text-anchor="middle" font-size="26" font-weight="700">Sample vs True Overlap Percent (Permutation Test)</text>')
+    svg.append(f'<text x="{width / 2:.0f}" y="40" text-anchor="middle" font-size="26" font-weight="700">Sample vs True Overlap Percent (Permutation Test)</text>')
 
     # axis
     svg.append(f'<line x1="{left}" y1="{top}" x2="{left}" y2="{top + chart_h}" stroke="#222" stroke-width="3"/>')
@@ -345,13 +366,14 @@ def draw_plot(
         x = lx + i * 145
         svg.append(f'<rect x="{x}" y="{ly - 12}" width="24" height="14" fill="{COLORS[i]}" stroke="#222" stroke-width="1.6"/>')
         svg.append(f'<text x="{x + 32}" y="{ly}" font-size="15">{b}</text>')
-    svg.append('<rect x="1040" y="54" width="18" height="14" fill="#7f7f7f" fill-opacity="0.35" stroke="#222" stroke-width="1.6"/>')
-    svg.append('<text x="1066" y="66" font-size="14">true</text>')
-    svg.append(f'<rect x="1120" y="54" width="18" height="14" fill="{SAMPLE_BAR_COLOR}" fill-opacity="0.9" stroke="#222" stroke-width="1.6"/>')
-    svg.append('<text x="1146" y="66" font-size="14">sample mean</text>')
-    svg.append('<line x1="1248" y1="61" x2="1276" y2="61" stroke="#111" stroke-width="2.6"/>')
-    svg.append('<line x1="1262" y1="53" x2="1262" y2="69" stroke="#111" stroke-width="2.6"/>')
-    svg.append('<text x="1284" y="66" font-size="14">sample mean ± SD</text>')
+    legend_x = width - 460
+    svg.append(f'<rect x="{legend_x}" y="54" width="18" height="14" fill="#7f7f7f" fill-opacity="0.35" stroke="#222" stroke-width="1.6"/>')
+    svg.append(f'<text x="{legend_x + 26}" y="66" font-size="14">true</text>')
+    svg.append(f'<rect x="{legend_x + 80}" y="54" width="18" height="14" fill="{SAMPLE_BAR_COLOR}" fill-opacity="0.9" stroke="#222" stroke-width="1.6"/>')
+    svg.append(f'<text x="{legend_x + 106}" y="66" font-size="14">sample mean</text>')
+    svg.append(f'<line x1="{legend_x + 208}" y1="61" x2="{legend_x + 236}" y2="61" stroke="#111" stroke-width="2.6"/>')
+    svg.append(f'<line x1="{legend_x + 222}" y1="53" x2="{legend_x + 222}" y2="69" stroke="#111" stroke-width="2.6"/>')
+    svg.append(f'<text x="{legend_x + 244}" y="66" font-size="14">sample mean ± SD</text>')
 
     for g, pair in enumerate(PLOT_PAIR_ORDER):
         center = left + group_w * (g + 0.5)
