@@ -12,7 +12,10 @@ from __future__ import annotations
 import argparse
 import csv
 from pathlib import Path
-from typing import Dict, Iterable, List
+from typing import Dict, Iterable, List, Tuple
+
+
+CELL_TYPES = ["Gaba", "Glut", "NonNeuron"]
 
 
 def safe_float(value: str | None) -> float | None:
@@ -60,8 +63,8 @@ def keep_pair(row: Dict[str, object]) -> bool:
     return (oa_num > 0) or (ob_num > 0)
 
 
-def pair_type_counts(total_rows: Iterable[Dict[str, object]]) -> Dict[str, int]:
-    counts = {"Gaba-Gaba": 0, "Gaba-Glut": 0, "Glut-Gaba": 0, "Glut-Glut": 0}
+def pair_type_counts(total_rows: Iterable[Dict[str, object]], pair_order: List[str]) -> Dict[str, int]:
+    counts = {k: 0 for k in pair_order}
     for row in total_rows:
         a_type = str(row.get("a_cell_Neuron_type", ""))
         b_type = str(row.get("b_cell_Neuron_type", ""))
@@ -71,8 +74,18 @@ def pair_type_counts(total_rows: Iterable[Dict[str, object]]) -> Dict[str, int]:
     return counts
 
 
+def split_pair(pair_name: str) -> Tuple[str, str]:
+    parts = pair_name.split("-", 1)
+    if len(parts) != 2:
+        return "", ""
+    return parts[0], parts[1]
+
+
 def collect_directional_values(total_rows: Iterable[Dict[str, object]], pair_name: str) -> List[float]:
     values: List[float] = []
+    left_type, right_type = split_pair(pair_name)
+    reverse_name = f"{right_type}-{left_type}"
+
     for row in total_rows:
         a_type = str(row.get("a_cell_Neuron_type", ""))
         b_type = str(row.get("b_cell_Neuron_type", ""))
@@ -80,30 +93,25 @@ def collect_directional_values(total_rows: Iterable[Dict[str, object]], pair_nam
         oa = float(row.get("overlap_a_in_b", 0.0) or 0.0)
         ob = float(row.get("overlap_b_in_a", 0.0) or 0.0)
 
-        if pair_name in {"Gaba-Gaba", "Glut-Glut"} and ab == pair_name:
-            values.append(oa)
-            values.append(ob)
+        if left_type == right_type:
+            if ab == pair_name:
+                values.append(oa)
+                values.append(ob)
             continue
 
-        if pair_name == "Gaba-Glut":
-            if ab == "Gaba-Glut":
-                values.append(oa)
-            elif ab == "Glut-Gaba":
-                values.append(ob)
-        elif pair_name == "Glut-Gaba":
-            if ab == "Glut-Gaba":
-                values.append(oa)
-            elif ab == "Gaba-Glut":
-                values.append(ob)
+        if ab == pair_name:
+            values.append(oa)
+        elif ab == reverse_name:
+            values.append(ob)
     return values
 
 
 def denominator_for_pair(pair_name: str, counts: Dict[str, int]) -> int:
-    if pair_name == "Gaba-Gaba":
-        return 2 * counts["Gaba-Gaba"]
-    if pair_name == "Glut-Glut":
-        return 2 * counts["Glut-Glut"]
-    return counts["Gaba-Glut"] + counts["Glut-Gaba"]
+    left_type, right_type = split_pair(pair_name)
+    reverse_name = f"{right_type}-{left_type}"
+    if left_type == right_type:
+        return 2 * counts.get(pair_name, 0)
+    return counts.get(pair_name, 0) + counts.get(reverse_name, 0)
 
 
 def compute_distribution(values: List[float], bins: List[str], denominator: int) -> Dict[str, float]:
@@ -118,16 +126,36 @@ def compute_distribution(values: List[float], bins: List[str], denominator: int)
 
 
 def draw_plot(dist_by_pair: Dict[str, Dict[str, float]], plot_path: Path) -> None:
-    pair_order = ["Gaba-Gaba", "Gaba-Glut", "Glut-Gaba", "Glut-Glut"]
-    pair_labels = ["GABA-GABA", "GABA-Glut", "Glut-GABA", "Glut-Glut"]
+    pair_order = [
+        "Gaba-Gaba",
+        "Gaba-Glut",
+        "Gaba-NonNeuron",
+        "Glut-Gaba",
+        "Glut-Glut",
+        "Glut-NonNeuron",
+        "NonNeuron-Gaba",
+        "NonNeuron-Glut",
+        "NonNeuron-NonNeuron",
+    ]
+    pair_labels = [
+        "GABA-GABA",
+        "GABA-Glut",
+        "GABA-NonNeuron",
+        "Glut-GABA",
+        "Glut-Glut",
+        "Glut-NonNeuron",
+        "NonNeuron-GABA",
+        "NonNeuron-Glut",
+        "NonNeuron-NonNeuron",
+    ]
     bins = ["0–20%", "20–40%", "40–60%", "60–80%", "80–100%"]
     colors = ["#d9d2ad", "#b7d4ca", "#57a9a5", "#3d80ad", "#294f72"]
 
-    width, height = 1200, 620
+    width, height = 2100, 620
     left, right, top, bottom = 90, 40, 100, 90
     chart_w = width - left - right
     chart_h = height - top - bottom
-    y_max = 55.0
+    y_max = 100.0
 
     def y_to_px(v: float) -> float:
         return top + chart_h - (v / y_max) * chart_h
@@ -139,7 +167,7 @@ def draw_plot(dist_by_pair: Dict[str, Dict[str, float]], plot_path: Path) -> Non
 
     svg.append(f'<line x1="{left}" y1="{top}" x2="{left}" y2="{top + chart_h}" stroke="#333" stroke-width="2"/>')
     svg.append(f'<line x1="{left}" y1="{top + chart_h}" x2="{left + chart_w}" y2="{top + chart_h}" stroke="#333" stroke-width="2"/>')
-    for tick in [0, 10, 20, 30, 40, 50]:
+    for tick in [0, 20, 40, 60, 80, 100]:
         y = y_to_px(float(tick))
         svg.append(f'<line x1="{left - 6}" y1="{y:.2f}" x2="{left}" y2="{y:.2f}" stroke="#333" stroke-width="2"/>')
         svg.append(f'<text x="{left - 14}" y="{y + 5:.2f}" text-anchor="end" font-size="18" fill="#333">{tick}%</text>')
@@ -193,9 +221,9 @@ def main() -> None:
     filtered_rows = [r for r in total_table if keep_pair(r)]
 
     bins = ["0–20%", "20–40%", "40–60%", "60–80%", "80–100%"]
-    pair_order = ["Gaba-Gaba", "Gaba-Glut", "Glut-Gaba", "Glut-Glut"]
+    pair_order = [f"{a}-{b}" for a in CELL_TYPES for b in CELL_TYPES]
 
-    type_counts = pair_type_counts(filtered_rows)
+    type_counts = pair_type_counts(filtered_rows, pair_order)
     dist_by_pair: Dict[str, Dict[str, float]] = {}
     out_pair_rows: List[Dict[str, object]] = []
     for pair_name in pair_order:
@@ -212,7 +240,7 @@ def main() -> None:
                     "directional_values_in_bin_denominator": denominator,
                     "directional_values_count": len(values),
                     "source_pair_count": type_counts.get(pair_name, 0),
-                    "mixed_pair_total": type_counts["Gaba-Glut"] + type_counts["Glut-Gaba"],
+                    "mixed_pair_total": type_counts.get(pair_name, 0) + type_counts.get(f"{pair_name.split('-', 1)[1]}-{pair_name.split('-', 1)[0]}", 0),
                 }
             )
 
