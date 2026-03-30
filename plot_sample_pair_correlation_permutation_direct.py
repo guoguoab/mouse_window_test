@@ -11,13 +11,25 @@ from pathlib import Path
 from statistics import mean
 from typing import Dict, List, Tuple
 
-PAIR_ORDER = ["Gaba-Gaba", "Gaba-Glut", "Glut-Gaba", "Glut-Glut"]
-PLOT_PAIR_ORDER = ["Gaba-Gaba", "Glut-Gaba", "Gaba-Glut", "Glut-Glut"]
+CELL_TYPES = ["Gaba", "Glut", "NonNeuron"]
+PAIR_ORDER = [f"{a}-{b}" for a in CELL_TYPES for b in CELL_TYPES]
+PLOT_PAIR_ORDER = [
+    "Gaba-NonNeuron",
+    "Glut-NonNeuron",
+    "NonNeuron-Gaba",
+    "NonNeuron-Glut",
+    "NonNeuron-NonNeuron",
+]
 PAIR_LABELS = {
     "Gaba-Gaba": "GABA-GABA",
     "Gaba-Glut": "GABA-Glut",
+    "Gaba-NonNeuron": "GABA-NonNeuron",
     "Glut-Gaba": "Glut-GABA",
     "Glut-Glut": "Glut-Glut",
+    "Glut-NonNeuron": "Glut-NonNeuron",
+    "NonNeuron-Gaba": "NonNeuron-GABA",
+    "NonNeuron-Glut": "NonNeuron-Glut",
+    "NonNeuron-NonNeuron": "NonNeuron-NonNeuron",
 }
 BINS = ["0-20", "20-40", "40-60", "60-80", "80-100"]
 BIN_LABELS = ["0–20%", "20–40%", "40–60%", "60–80%", "80–100%"]
@@ -115,7 +127,7 @@ def compute_stats(true_values, sample_values):
 
 
 def draw_plot(metric: str, metric_label: str, stats, out_svg: Path) -> None:
-    width, height = 1500, 680
+    width, height = 1900, 680
     left, right, top, bottom = 90, 40, 120, 110
     chart_w = width - left - right
     chart_h = height - top - bottom
@@ -146,7 +158,7 @@ def draw_plot(metric: str, metric_label: str, stats, out_svg: Path) -> None:
     svg: List[str] = []
     svg.append(f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}">')
     svg.append('<rect width="100%" height="100%" fill="white"/>')
-    svg.append(f'<text x="750" y="40" text-anchor="middle" font-size="26" font-weight="700">Sample vs True {metric_label} (Permutation Test)</text>')
+    svg.append(f'<text x="{width / 2:.0f}" y="40" text-anchor="middle" font-size="26" font-weight="700">Sample vs True {metric_label} (Permutation Test)</text>')
     svg.append(f'<line x1="{left}" y1="{top}" x2="{left}" y2="{top + chart_h}" stroke="#222" stroke-width="3"/>')
     svg.append(f'<line x1="{left}" y1="{top + chart_h}" x2="{left + chart_w}" y2="{top + chart_h}" stroke="#222" stroke-width="3"/>')
 
