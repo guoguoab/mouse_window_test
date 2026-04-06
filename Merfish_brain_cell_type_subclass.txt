@@ -1,120 +1,120 @@
-class	cell_Neuron_type	subclass_sim
-035 OB Eomes Ms4a15 Glut	Glut	OB Eomes Ms4a15
-039 OB Meis2 Thsd7b Gaba	Gaba	OB Meis2 Thsd7b
-040 OB Trdn Gaba	Gaba	OB Trdn
-041 OB-in Frmd7 Gaba	Gaba	OB-in Frmd7
-042 OB-out Frmd7 Gaba	Gaba	OB-out Frmd7
-043 OB-mi Frmd7 Gaba	Gaba	OB-mi Frmd7
-044 OB Dopa-Gaba	NonNeuron	OB
-045 OB-STR-CTX Inh IMN	NonNeuron	OB-STR-CTX Inh
-117 LHA Barhl2 Glut	Glut	LHA Barhl2
-319 Astro-TE NN	NonNeuron	Astro-TE
-320 Astro-OLF NN	NonNeuron	Astro-OLF
-326 OPC NN	NonNeuron	OPC
-327 Oligo NN	NonNeuron	Oligo
-328 OEC NN	NonNeuron	OEC
-330 VLMC NN	NonNeuron	VLMC
-332 SMC NN	NonNeuron	SMC
-333 Endo NN	NonNeuron	Endo
-334 Microglia NN	NonNeuron	Microglia
-007 L2/3 IT CTX Glut	Glut	L2/3 IT CTX
-036 HPF CR Glut	Glut	HPF CR
-046 Vip Gaba	Gaba	Vip
-047 Sncg Gaba	Gaba	Sncg
-049 Lamp5 Gaba	Gaba	Lamp5
-051 Pvalb chandelier Gaba	Gaba	Pvalb chandelier
-052 Pvalb Gaba	Gaba	Pvalb
-053 Sst Gaba	Gaba	Sst
-331 Peri NN	NonNeuron	Peri
-335 BAM NN	NonNeuron	BAM
-338 Lymphoid NN	NonNeuron	Lymphoid
-006 L4/5 IT CTX Glut	Glut	L4/5 IT CTX
-056 Sst Chodl Gaba	Gaba	Sst Chodl
-329 ABC NN	NonNeuron	ABC
-337 DC NN	NonNeuron	DC
-095 DMH Prdm13 Gaba	Gaba	DMH Prdm13
-321 Astroependymal NN	NonNeuron	Astroependymal
-022 L5 ET CTX Glut	Glut	L5 ET CTX
-032 L5 NP CTX Glut	Glut	L5 NP CTX
-050 Lamp5 Lhx6 Gaba	Gaba	Lamp5 Lhx6
-113 MEA-COA-BMA Ccdc42 Glut	Glut	MEA-COA-BMA Ccdc42
-004 L6 IT CTX Glut	Glut	L6 IT CTX
-005 L5 IT CTX Glut	Glut	L5 IT CTX
-010 IT AON-TT-DP Glut	Glut	IT AON-TT-DP
-012 MEA Slc17a7 Glut	Glut	MEA Slc17a7
-030 L6 CT CTX Glut	Glut	L6 CT CTX
-031 CT SUB Glut	Glut	CT SUB
-001 CLA-EPd-CTX Car3 Glut	Glut	CLA-EPd-CTX Car3
-002 IT EP-CLA Glut	Glut	IT EP-CLA
-318 Astro-NT NN	NonNeuron	Astro-NT
-029 L6b CTX Glut	Glut	L6b CTX
-101 ZI Pax6 Gaba	Gaba	ZI Pax6
-064 STR-PAL Chst9 Gaba	Gaba	STR-PAL Chst9
-009 L2/3 IT PIR-ENTl Glut	Glut	L2/3 IT PIR-ENTl
-018 L2 IT PPP-APr Glut	Glut	L2 IT PPP-APr
-037 DG Glut	Glut	DG
-003 L5/6 IT TPE-ENT Glut	Glut	L5/6 IT TPE-ENT
-033 NP SUB Glut	Glut	NP SUB
-061 STR D1 Gaba	Gaba	STR D1
-063 STR D1 Sema5a Gaba	Gaba	STR D1 Sema5a
-097 PVHd-SBPV Six3 Prox1 Gaba	Gaba	PVHd-SBPV Six3 Prox1
-115 MS-SF Bsx Glut	Glut	MS-SF Bsx
-020 L2/3 IT RSP Glut	Glut	L2/3 IT RSP
-114 COAa-PAA-MEA Barhl2 Glut	Glut	COAa-PAA-MEA Barhl2
-314 CB Granule Glut	Glut	CB Granule
-008 L2/3 IT ENT Glut	Glut	L2/3 IT ENT
-019 L2/3 IT PPP Glut	Glut	L2/3 IT PPP
-028 L6b/CT ENT Glut	Glut	L6b/CT ENT
-262 Pineal Crx Glut	Glut	Pineal Crx
-100 AHN Onecut3 Gaba	Gaba	AHN Onecut3
-025 CA2-FC-IG Glut	Glut	CA2-FC-IG
-062 STR D2 Gaba	Gaba	STR D2
-065 IA Mgp Gaba	Gaba	IA Mgp
-016 CA1-ProS Glut	Glut	CA1-ProS
-072 LSX Sall3 Lmo1 Gaba	Gaba	LSX Sall3 Lmo1
-080 CEA-AAA-BST Six3 Sp9 Gaba	Gaba	CEA-AAA-BST Six3 Sp9
-316 Bergmann NN	NonNeuron	Bergmann
-222 PB Evx2 Glut	Glut	PB Evx2
-336 Monocytes NN	NonNeuron	Monocytes
-128 VMH Fezf1 Glut	Glut	VMH Fezf1
-144 MM Foxb1 Glut	Glut	MM Foxb1
-013 COAp Grxcr2 Glut	Glut	COAp Grxcr2
-021 L4 RSP-ACA Glut	Glut	L4 RSP-ACA
-048 RHP-COA Ndnf Gaba	Gaba	RHP-COA Ndnf
-129 VMH Nr5a1 Glut	Glut	VMH Nr5a1
-024 L5 PPP Glut	Glut	L5 PPP
-038 DG-PIR Ex IMN	NonNeuron	DG-PIR Ex
-034 NP PPP Glut	Glut	NP PPP
-203 LGv-SPFp-SPFm Nkx2-2 Tcf7l2 Gaba	Gaba	LGv-SPFp-SPFm Nkx2-2 Tcf7l2
-054 STR Prox1 Lhx6 Gaba	Gaba	STR Prox1 Lhx6
-023 SUB-ProS Glut	Glut	SUB-ProS
-317 Astro-CB NN	NonNeuron	Astro-CB
-325 CHOR NN	NonNeuron	CHOR
-187 SCsg Pde5a Glut	Glut	SCsg Pde5a
-073 MEA-BST Sox6 Gaba	Gaba	MEA-BST Sox6
-207 SCs Dmbx1 Gaba	Gaba	SCs Dmbx1
-208 SC Lef1 Otx2 Gaba	Gaba	SC Lef1 Otx2
-211 SC Tnnt1 Gli3 Gaba	Gaba	SC Tnnt1 Gli3
-213 SCsg Gabrr2 Gaba	Gaba	SCsg Gabrr2
-204 SC Otx2 Gcnt4 Gaba	Gaba	SC Otx2 Gcnt4
-164 APN C1ql4 Glut	Glut	APN C1ql4
-256 SPVC Mafa Glut	Glut	SPVC Mafa
-322 Tanycyte NN	NonNeuron	Tanycyte
-011 L2 IT ENT-po Glut	Glut	L2 IT ENT-po
-055 STR Lhx8 Gaba	Gaba	STR Lhx8
-324 Hypendymal NN	NonNeuron	Hypendymal
-074 MEA-BST Lhx6 Sp9 Gaba	Gaba	MEA-BST Lhx6 Sp9
-315 DCO UBC Glut	Glut	DCO UBC
-066 NDB-SI-ant Prdm12 Gaba	Gaba	NDB-SI-ant Prdm12
-071 LSX Prdm12 Zeb2 Gaba	Gaba	LSX Prdm12 Zeb2
-058 PAL-STR Gaba-Chol	NonNeuron	PAL-STR
-057 NDB-SI-MA-STRv Lhx8 Gaba	Gaba	NDB-SI-MA-STRv Lhx8
-014 LA-BLA-BMA-PA Glut	Glut	LA-BLA-BMA-PA
-094 SCH Six6 Cdc14a Gaba	Gaba	SCH Six6 Cdc14a
-121 MEA-BST Otp Zic2 Glut	Glut	MEA-BST Otp Zic2
-177 SCig-an-PPT Foxb1 Glut	Glut	SCig-an-PPT Foxb1
-060 OT D3 Folh1 Gaba	Gaba	OT D3 Folh1
-070 LSX Prdm12 Slit2 Gaba	Gaba	LSX Prdm12 Slit2
-142 HY Gnrh1 Glut	Glut	HY Gnrh1
-209 SCs Pax7 Nfia Gaba	Gaba	SCs Pax7 Nfia
-027 L6b EPd Glut	Glut	L6b EPd
+class	cell_Neuron_type	subclass_sim	superclass
+035 OB Eomes Ms4a15 Glut	Glut	OB Eomes Ms4a15	none
+039 OB Meis2 Thsd7b Gaba	Gaba	OB Meis2 Thsd7b	none
+040 OB Trdn Gaba	Gaba	OB Trdn	none
+041 OB-in Frmd7 Gaba	Gaba	OB-in Frmd7	none
+042 OB-out Frmd7 Gaba	Gaba	OB-out Frmd7	none
+043 OB-mi Frmd7 Gaba	Gaba	OB-mi Frmd7	none
+044 OB Dopa-Gaba	NonNeuron	OB	none
+045 OB-STR-CTX Inh IMN	NonNeuron	OB-STR-CTX Inh	none
+117 LHA Barhl2 Glut	Glut	LHA Barhl2	none
+319 Astro-TE NN	NonNeuron	Astro-TE	Astro-Epen
+320 Astro-OLF NN	NonNeuron	Astro-OLF	Astro-Epen
+326 OPC NN	NonNeuron	OPC	OPC-Oligo
+327 Oligo NN	NonNeuron	Oligo	OPC-Oligo
+328 OEC NN	NonNeuron	OEC	Astro-Epen
+330 VLMC NN	NonNeuron	VLMC	Vascular
+332 SMC NN	NonNeuron	SMC	Vascular
+333 Endo NN	NonNeuron	Endo	Vascular
+334 Microglia NN	NonNeuron	Microglia	Immune
+007 L2/3 IT CTX Glut	Glut	L2/3 IT CTX	none
+036 HPF CR Glut	Glut	HPF CR	none
+046 Vip Gaba	Gaba	Vip	none
+047 Sncg Gaba	Gaba	Sncg	none
+049 Lamp5 Gaba	Gaba	Lamp5	none
+051 Pvalb chandelier Gaba	Gaba	Pvalb chandelier	none
+052 Pvalb Gaba	Gaba	Pvalb	none
+053 Sst Gaba	Gaba	Sst	none
+331 Peri NN	NonNeuron	Peri	Vascular
+335 BAM NN	NonNeuron	BAM	Immune
+338 Lymphoid NN	NonNeuron	Lymphoid	Immune
+006 L4/5 IT CTX Glut	Glut	L4/5 IT CTX	none
+056 Sst Chodl Gaba	Gaba	Sst Chodl	none
+329 ABC NN	NonNeuron	ABC	Vascular
+337 DC NN	NonNeuron	DC	Immune
+095 DMH Prdm13 Gaba	Gaba	DMH Prdm13	none
+321 Astroependymal NN	NonNeuron	Astroependymal	Astro-Epen
+022 L5 ET CTX Glut	Glut	L5 ET CTX	none
+032 L5 NP CTX Glut	Glut	L5 NP CTX	none
+050 Lamp5 Lhx6 Gaba	Gaba	Lamp5 Lhx6	none
+113 MEA-COA-BMA Ccdc42 Glut	Glut	MEA-COA-BMA Ccdc42	none
+004 L6 IT CTX Glut	Glut	L6 IT CTX	none
+005 L5 IT CTX Glut	Glut	L5 IT CTX	none
+010 IT AON-TT-DP Glut	Glut	IT AON-TT-DP	none
+012 MEA Slc17a7 Glut	Glut	MEA Slc17a7	none
+030 L6 CT CTX Glut	Glut	L6 CT CTX	none
+031 CT SUB Glut	Glut	CT SUB	none
+001 CLA-EPd-CTX Car3 Glut	Glut	CLA-EPd-CTX Car3	none
+002 IT EP-CLA Glut	Glut	IT EP-CLA	none
+318 Astro-NT NN	NonNeuron	Astro-NT	Astro-Epen
+029 L6b CTX Glut	Glut	L6b CTX	none
+101 ZI Pax6 Gaba	Gaba	ZI Pax6	none
+064 STR-PAL Chst9 Gaba	Gaba	STR-PAL Chst9	none
+009 L2/3 IT PIR-ENTl Glut	Glut	L2/3 IT PIR-ENTl	none
+018 L2 IT PPP-APr Glut	Glut	L2 IT PPP-APr	none
+037 DG Glut	Glut	DG	none
+003 L5/6 IT TPE-ENT Glut	Glut	L5/6 IT TPE-ENT	none
+033 NP SUB Glut	Glut	NP SUB	none
+061 STR D1 Gaba	Gaba	STR D1	none
+063 STR D1 Sema5a Gaba	Gaba	STR D1 Sema5a	none
+097 PVHd-SBPV Six3 Prox1 Gaba	Gaba	PVHd-SBPV Six3 Prox1	none
+115 MS-SF Bsx Glut	Glut	MS-SF Bsx	none
+020 L2/3 IT RSP Glut	Glut	L2/3 IT RSP	none
+114 COAa-PAA-MEA Barhl2 Glut	Glut	COAa-PAA-MEA Barhl2	none
+314 CB Granule Glut	Glut	CB Granule	none
+008 L2/3 IT ENT Glut	Glut	L2/3 IT ENT	none
+019 L2/3 IT PPP Glut	Glut	L2/3 IT PPP	none
+028 L6b/CT ENT Glut	Glut	L6b/CT ENT	none
+262 Pineal Crx Glut	Glut	Pineal Crx	none
+100 AHN Onecut3 Gaba	Gaba	AHN Onecut3	none
+025 CA2-FC-IG Glut	Glut	CA2-FC-IG	none
+062 STR D2 Gaba	Gaba	STR D2	none
+065 IA Mgp Gaba	Gaba	IA Mgp	none
+016 CA1-ProS Glut	Glut	CA1-ProS	none
+072 LSX Sall3 Lmo1 Gaba	Gaba	LSX Sall3 Lmo1	none
+080 CEA-AAA-BST Six3 Sp9 Gaba	Gaba	CEA-AAA-BST Six3 Sp9	none
+316 Bergmann NN	NonNeuron	Bergmann	Astro-Epen
+222 PB Evx2 Glut	Glut	PB Evx2	none
+336 Monocytes NN	NonNeuron	Monocytes	Immune
+128 VMH Fezf1 Glut	Glut	VMH Fezf1	none
+144 MM Foxb1 Glut	Glut	MM Foxb1	none
+013 COAp Grxcr2 Glut	Glut	COAp Grxcr2	none
+021 L4 RSP-ACA Glut	Glut	L4 RSP-ACA	none
+048 RHP-COA Ndnf Gaba	Gaba	RHP-COA Ndnf	none
+129 VMH Nr5a1 Glut	Glut	VMH Nr5a1	none
+024 L5 PPP Glut	Glut	L5 PPP	none
+038 DG-PIR Ex IMN	NonNeuron	DG-PIR Ex	none
+034 NP PPP Glut	Glut	NP PPP	none
+203 LGv-SPFp-SPFm Nkx2-2 Tcf7l2 Gaba	Gaba	LGv-SPFp-SPFm Nkx2-2 Tcf7l2	none
+054 STR Prox1 Lhx6 Gaba	Gaba	STR Prox1 Lhx6	none
+023 SUB-ProS Glut	Glut	SUB-ProS	none
+317 Astro-CB NN	NonNeuron	Astro-CB	none
+325 CHOR NN	NonNeuron	CHOR	none
+187 SCsg Pde5a Glut	Glut	SCsg Pde5a	none
+073 MEA-BST Sox6 Gaba	Gaba	MEA-BST Sox6	none
+207 SCs Dmbx1 Gaba	Gaba	SCs Dmbx1	none
+208 SC Lef1 Otx2 Gaba	Gaba	SC Lef1 Otx2	none
+211 SC Tnnt1 Gli3 Gaba	Gaba	SC Tnnt1 Gli3	none
+213 SCsg Gabrr2 Gaba	Gaba	SCsg Gabrr2	none
+204 SC Otx2 Gcnt4 Gaba	Gaba	SC Otx2 Gcnt4	none
+164 APN C1ql4 Glut	Glut	APN C1ql4	none
+256 SPVC Mafa Glut	Glut	SPVC Mafa	none
+322 Tanycyte NN	NonNeuron	Tanycyte	Astro-Epen
+011 L2 IT ENT-po Glut	Glut	L2 IT ENT-po	none
+055 STR Lhx8 Gaba	Gaba	STR Lhx8	none
+324 Hypendymal NN	NonNeuron	Hypendymal	Astro-Epen
+074 MEA-BST Lhx6 Sp9 Gaba	Gaba	MEA-BST Lhx6 Sp9	none
+315 DCO UBC Glut	Glut	DCO UBC	none
+066 NDB-SI-ant Prdm12 Gaba	Gaba	NDB-SI-ant Prdm12	none
+071 LSX Prdm12 Zeb2 Gaba	Gaba	LSX Prdm12 Zeb2	none
+058 PAL-STR Gaba-Chol	NonNeuron	PAL-STR	none
+057 NDB-SI-MA-STRv Lhx8 Gaba	Gaba	NDB-SI-MA-STRv Lhx8	none
+014 LA-BLA-BMA-PA Glut	Glut	LA-BLA-BMA-PA	none
+094 SCH Six6 Cdc14a Gaba	Gaba	SCH Six6 Cdc14a	none
+121 MEA-BST Otp Zic2 Glut	Glut	MEA-BST Otp Zic2	none
+177 SCig-an-PPT Foxb1 Glut	Glut	SCig-an-PPT Foxb1	none
+060 OT D3 Folh1 Gaba	Gaba	OT D3 Folh1	none
+070 LSX Prdm12 Slit2 Gaba	Gaba	LSX Prdm12 Slit2	none
+142 HY Gnrh1 Glut	Glut	HY Gnrh1	none
+209 SCs Pax7 Nfia Gaba	Gaba	SCs Pax7 Nfia	none
+027 L6b EPd Glut	Glut	L6b EPd	none
