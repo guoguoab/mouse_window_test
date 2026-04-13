@@ -6,30 +6,23 @@ from __future__ import annotations
 import argparse
 import csv
 import math
-import random
 from pathlib import Path
 from statistics import mean
 from typing import Dict, List, Tuple
 
-CELL_TYPES = ["Gaba", "Glut", "NonNeuron"]
+CELL_TYPES = ["Gaba", "Glut"]
 PAIR_ORDER = [f"{a}-{b}" for a in CELL_TYPES for b in CELL_TYPES]
 PLOT_PAIR_ORDER = [
-    "Gaba-NonNeuron",
-    "Glut-NonNeuron",
-    "NonNeuron-Gaba",
-    "NonNeuron-Glut",
-    "NonNeuron-NonNeuron",
+    "Glut-Glut",
+    "Gaba-Glut",
+    "Glut-Gaba",
+    "Gaba-Gaba",
 ]
 PAIR_LABELS = {
     "Gaba-Gaba": "GABA-GABA",
     "Gaba-Glut": "GABA-Glut",
-    "Gaba-NonNeuron": "GABA-NonNeuron",
     "Glut-Gaba": "Glut-GABA",
     "Glut-Glut": "Glut-Glut",
-    "Glut-NonNeuron": "Glut-NonNeuron",
-    "NonNeuron-Gaba": "NonNeuron-GABA",
-    "NonNeuron-Glut": "NonNeuron-Glut",
-    "NonNeuron-NonNeuron": "NonNeuron-NonNeuron",
 }
 BINS = ["0-20", "20-40", "40-60", "60-80", "80-100"]
 BIN_LABELS = ["0–20%", "20–40%", "40–60%", "60–80%", "80–100%"]
@@ -37,33 +30,13 @@ COLORS = ["#d9d2ad", "#cdd8d8", "#b7d4ca", "#aac8de", "#a4b4c5"]
 SAMPLE_BAR_COLOR = "#7b4ab8"
 
 
-def sign_flip_pvalue(diffs: List[float], n_perm: int = 10000, seed: int = 0) -> float:
-    n = len(diffs)
+def permutation_direct_pvalue(random_vals: List[float], true_val: float) -> float:
+    """经验置换 p 值：将 sample 结果直接视作随机分布，比较其与真实值大小。"""
+    n = len(random_vals)
     if n == 0:
         return float("nan")
-    observed = abs(mean(diffs))
-
-    if n <= 16:
-        total = 1 << n
-        extreme = 0
-        for mask in range(total):
-            s = 0.0
-            for i, d in enumerate(diffs):
-                sign = -1.0 if ((mask >> i) & 1) else 1.0
-                s += sign * d
-            if abs(s / n) >= observed - 1e-12:
-                extreme += 1
-        return (extreme + 1.0) / (total + 1.0)
-
-    rng = random.Random(seed)
-    extreme = 0
-    for _ in range(n_perm):
-        s = 0.0
-        for d in diffs:
-            s += d if rng.random() < 0.5 else -d
-        if abs(s / n) >= observed - 1e-12:
-            extreme += 1
-    return (extreme + 1.0) / (n_perm + 1.0)
+    extreme = sum(1 for x in random_vals if x >= true_val)
+    return (extreme + 1.0) / (n + 1.0)
 
 
 def stars_for_p(p: float) -> str:
@@ -117,7 +90,7 @@ def compute_stats(true_values, sample_values):
             if vals:
                 m = mean(vals)
                 sd = math.sqrt(sum((x - m) ** 2 for x in vals) / (len(vals) - 1)) if len(vals) > 1 else 0.0
-                pv = sign_flip_pvalue([x - tv for x in vals]) if not math.isnan(tv) else float("nan")
+                pv = permutation_direct_pvalue(vals, tv) if not math.isnan(tv) else float("nan")
             else:
                 m = float("nan")
                 sd = float("nan")
