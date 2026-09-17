@@ -189,63 +189,70 @@ def significance(p: float) -> str:
     return "ns"
 
 
-def draw_svg(rows: list[dict[str, object]], path: Path) -> None:
-    """Draw random-replicate boxplots and true-value diamonds without dependencies."""
+def draw_svg(
+    rows: list[dict[str, object]], path: Path, subclasses_per_plot: int = 20
+) -> list[tuple[Path, list[dict[str, object]]]]:
+    """Draw one layout-friendly SVG for each consecutive subclass group.
+
+    All panels share a y-axis range, so values can still be compared across
+    panels.  ``path`` supplies the filename stem; panels are suffixed with
+    ``_part_01``, ``_part_02``, and so on.
+    """
     if not rows:
         raise RuntimeError("真实数据与随机数据没有共同的 subclass，无法绘图")
+    if subclasses_per_plot < 1:
+        raise ValueError("每张图的 subclass 数必须至少为 1")
     rows = sorted(rows, key=lambda row: float(row["true_mean_cluster_size"]), reverse=True)
-    width = max(1000, 105 + 70 * len(rows))
-    height = 700
-    left, right, top, bottom = 85, 35, 70, 230
-    chart_h = height - top - bottom
-    chart_w = width - left - right
     maximum = max(
         max(float(row["random_max"]), float(row["true_mean_cluster_size"]))
         for row in rows
     ) * 1.12 or 1
-    y = lambda value: top + chart_h * (1 - float(value) / maximum)
-    out = [
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}">',
-        '<rect width="100%" height="100%" fill="white"/>',
-        f'<text x="{width/2}" y="35" text-anchor="middle" font-size="24" font-family="sans-serif" font-weight="bold">True mean vs random maximum cluster size by subclass</text>',
-    ]
-    for tick in range(6):
-        value = maximum * tick / 5
-        py = y(value)
-        out += [
-            f'<line x1="{left}" y1="{py:.1f}" x2="{width-right}" y2="{py:.1f}" stroke="#dddddd"/>',
-            f'<text x="{left-8}" y="{py+5:.1f}" text-anchor="end" font-size="12" font-family="sans-serif">{value:.0f}</text>',
-        ]
-    step = chart_w / len(rows)
-    for index, row in enumerate(rows):
-        x = left + step * (index + 0.5)
-        box_w = min(30, step * 0.55)
-        low, q1, med, q3, high = (
-            float(row[key])
-            for key in (
-                "random_min", "random_q1", "random_median_of_replicate_maxima",
-                "random_q3", "random_max",
-            )
-        )
-        out += [
-            f'<line x1="{x:.1f}" y1="{y(low):.1f}" x2="{x:.1f}" y2="{y(high):.1f}" stroke="#d97820" stroke-width="2"/>',
-            f'<rect x="{x-box_w/2:.1f}" y="{y(q3):.1f}" width="{box_w:.1f}" height="{max(1, y(q1)-y(q3)):.1f}" fill="#f5ad63" stroke="#b85c00"/>',
-            f'<line x1="{x-box_w/2:.1f}" y1="{y(med):.1f}" x2="{x+box_w/2:.1f}" y2="{y(med):.1f}" stroke="#703500" stroke-width="2"/>',
-        ]
-        true_y = y(row["true_mean_cluster_size"])
-        out += [
-            f'<polygon points="{x:.1f},{true_y-6:.1f} {x+6:.1f},{true_y:.1f} {x:.1f},{true_y+6:.1f} {x-6:.1f},{true_y:.1f}" fill="#2878b5"/>',
-            f'<text x="{x:.1f}" y="{max(55, true_y-10):.1f}" text-anchor="middle" font-size="11" font-family="sans-serif">{significance(float(row["p_two_sided"]))}</text>',
-            f'<text transform="translate({x+4:.1f},{top+chart_h+12}) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">{escape(str(row["subclass"]))}</text>',
-        ]
-    out += [
-        f'<text transform="translate(20,{top+chart_h/2}) rotate(-90)" text-anchor="middle" font-size="15" font-family="sans-serif">Cluster size (total_cell_num)</text>',
-        f'<rect x="{width-300}" y="50" width="14" height="14" fill="#f5ad63" stroke="#b85c00"/><text x="{width-280}" y="62" font-size="12" font-family="sans-serif">random replicate maxima</text>',
-        f'<polygon points="{width-155},50 {width-149},56 {width-155},62 {width-161},56" fill="#2878b5"/><text x="{width-143}" y="61" font-size="12" font-family="sans-serif">true</text>',
-        "</svg>",
-    ]
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text("\n".join(out), encoding="utf-8")
+    panels = [rows[start:start + subclasses_per_plot] for start in range(0, len(rows), subclasses_per_plot)]
+    written: list[tuple[Path, list[dict[str, object]]]] = []
+    for panel_number, panel_rows in enumerate(panels, start=1):
+        width = max(1000, 105 + 70 * len(panel_rows))
+        height = 700
+        left, right, top, bottom = 85, 35, 70, 230
+        chart_h = height - top - bottom
+        chart_w = width - left - right
+        y = lambda value: top + chart_h * (1 - float(value) / maximum)
+        out = [
+            f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}">',
+            '<rect width="100%" height="100%" fill="white"/>',
+            f'<text x="{width/2}" y="35" text-anchor="middle" font-size="24" font-family="sans-serif" font-weight="bold">True mean vs random maximum cluster size by subclass (part {panel_number}/{len(panels)})</text>',
+        ]
+        for tick in range(6):
+            value = maximum * tick / 5
+            py = y(value)
+            out += [
+                f'<line x1="{left}" y1="{py:.1f}" x2="{width-right}" y2="{py:.1f}" stroke="#dddddd"/>',
+                f'<text x="{left-8}" y="{py+5:.1f}" text-anchor="end" font-size="12" font-family="sans-serif">{value:.0f}</text>',
+            ]
+        step = chart_w / len(panel_rows)
+        for index, row in enumerate(panel_rows):
+            x = left + step * (index + 0.5)
+            box_w = min(30, step * 0.55)
+            low, q1, med, q3, high = (float(row[key]) for key in ("random_min", "random_q1", "random_median_of_replicate_maxima", "random_q3", "random_max"))
+            out += [
+                f'<line x1="{x:.1f}" y1="{y(low):.1f}" x2="{x:.1f}" y2="{y(high):.1f}" stroke="#d97820" stroke-width="2"/>',
+                f'<rect x="{x-box_w/2:.1f}" y="{y(q3):.1f}" width="{box_w:.1f}" height="{max(1, y(q1)-y(q3)):.1f}" fill="#f5ad63" stroke="#b85c00"/>',
+                f'<line x1="{x-box_w/2:.1f}" y1="{y(med):.1f}" x2="{x+box_w/2:.1f}" y2="{y(med):.1f}" stroke="#703500" stroke-width="2"/>',
+            ]
+            true_y = y(row["true_mean_cluster_size"])
+            out += [
+                f'<polygon points="{x:.1f},{true_y-6:.1f} {x+6:.1f},{true_y:.1f} {x:.1f},{true_y+6:.1f} {x-6:.1f},{true_y:.1f}" fill="#2878b5"/>',
+                f'<text x="{x:.1f}" y="{max(55, true_y-10):.1f}" text-anchor="middle" font-size="11" font-family="sans-serif">{significance(float(row["p_two_sided"]))}</text>',
+                f'<text transform="translate({x+4:.1f},{top+chart_h+12}) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">{escape(str(row["subclass"]))}</text>',
+            ]
+        out += [
+            f'<text transform="translate(20,{top+chart_h/2}) rotate(-90)" text-anchor="middle" font-size="15" font-family="sans-serif">Cluster size (total_cell_num)</text>',
+            f'<rect x="{width-300}" y="50" width="14" height="14" fill="#f5ad63" stroke="#b85c00"/><text x="{width-280}" y="62" font-size="12" font-family="sans-serif">random replicate maxima</text>',
+            f'<polygon points="{width-155},50 {width-149},56 {width-155},62 {width-161},56" fill="#2878b5"/><text x="{width-143}" y="61" font-size="12" font-family="sans-serif">true</text>', "</svg>"]
+        panel_path = path.with_name(f"{path.stem}_part_{panel_number:02d}{path.suffix}")
+        panel_path.write_text("\n".join(out), encoding="utf-8")
+        written.append((panel_path, panel_rows))
+    return written
 
 
 def parse_args() -> argparse.Namespace:
@@ -272,6 +279,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--out-plot", type=Path,
         default=Path("subclass_max_cluster_size_comparison.svg"),
+        help="拆分图的文件名前缀（会生成 *_part_01.svg 等文件）",
+    )
+    parser.add_argument(
+        "--subclasses-per-plot", type=int, default=20,
+        help="每张拆分图中显示的 subclass 数（默认：20）",
     )
     return parser.parse_args()
 
@@ -283,13 +295,18 @@ def main() -> None:
     summary, detail = compute_results(true, random)
     write_tsv(args.out_summary, summary)
     write_tsv(args.out_detail, detail)
-    draw_svg(summary, args.out_plot)
+    panels = draw_svg(summary, args.out_plot, args.subclasses_per_plot)
+    if args.out_plot.exists():
+        args.out_plot.unlink()
     print(f"真实 subclass 数: {len(true)}")
     print(f"随机文件数: {file_count}; 随机 sample 数: {len(random)}")
     if len(random) != 500:
         print(f"警告: 检测到 {len(random)} 个随机 sample（预期 500）")
     print(f"成功比较 subclass 数: {len(summary)}")
-    print(f"输出: {args.out_summary}, {args.out_detail}, {args.out_plot}")
+    print(f"输出: {args.out_summary}, {args.out_detail}")
+    for panel_path, panel_rows in panels:
+        subclasses = ", ".join(str(row["subclass"]) for row in panel_rows)
+        print(f"输出: {panel_path} ({subclasses})")
 
 
 if __name__ == "__main__":
