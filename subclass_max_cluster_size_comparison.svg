@@ -1,0 +1,733 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8435" height="700">
+<rect width="100%" height="100%" fill="white"/>
+<text x="4217.5" y="35" text-anchor="middle" font-size="24" font-family="sans-serif" font-weight="bold">True mean vs random maximum cluster size by subclass</text>
+<line x1="85" y1="470.0" x2="8400" y2="470.0" stroke="#dddddd"/>
+<text x="77" y="475.0" text-anchor="end" font-size="12" font-family="sans-serif">0</text>
+<line x1="85" y1="390.0" x2="8400" y2="390.0" stroke="#dddddd"/>
+<text x="77" y="395.0" text-anchor="end" font-size="12" font-family="sans-serif">1167</text>
+<line x1="85" y1="310.0" x2="8400" y2="310.0" stroke="#dddddd"/>
+<text x="77" y="315.0" text-anchor="end" font-size="12" font-family="sans-serif">2333</text>
+<line x1="85" y1="230.0" x2="8400" y2="230.0" stroke="#dddddd"/>
+<text x="77" y="235.0" text-anchor="end" font-size="12" font-family="sans-serif">3500</text>
+<line x1="85" y1="150.0" x2="8400" y2="150.0" stroke="#dddddd"/>
+<text x="77" y="155.0" text-anchor="end" font-size="12" font-family="sans-serif">4666</text>
+<line x1="85" y1="70.0" x2="8400" y2="70.0" stroke="#dddddd"/>
+<text x="77" y="75.0" text-anchor="end" font-size="12" font-family="sans-serif">5833</text>
+<line x1="119.9" y1="469.7" x2="119.9" y2="432.0" stroke="#d97820" stroke-width="2"/>
+<rect x="104.9" y="448.5" width="30.0" height="15.8" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="104.9" y1="455.2" x2="134.9" y2="455.2" stroke="#703500" stroke-width="2"/>
+<polygon points="119.9,427.9 125.9,433.9 119.9,439.9 113.9,433.9" fill="#2878b5"/>
+<text x="119.9" y="423.9" text-anchor="middle" font-size="11" font-family="sans-serif">*</text>
+<text transform="translate(123.9,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">040 OB Trdn Gaba</text>
+<line x1="189.8" y1="416.6" x2="189.8" y2="212.0" stroke="#d97820" stroke-width="2"/>
+<rect x="174.8" y="349.7" width="30.0" height="38.5" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="174.8" y1="370.5" x2="204.8" y2="370.5" stroke="#703500" stroke-width="2"/>
+<polygon points="189.8,436.4 195.8,442.4 189.8,448.4 183.8,442.4" fill="#2878b5"/>
+<text x="189.8" y="432.4" text-anchor="middle" font-size="11" font-family="sans-serif">*</text>
+<text transform="translate(193.8,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">021 L4 RSP-ACA Glut</text>
+<line x1="259.7" y1="458.5" x2="259.7" y2="401.2" stroke="#d97820" stroke-width="2"/>
+<rect x="244.7" y="415.9" width="30.0" height="17.1" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="244.7" y1="423.4" x2="274.7" y2="423.4" stroke="#703500" stroke-width="2"/>
+<polygon points="259.7,438.1 265.7,444.1 259.7,450.1 253.7,444.1" fill="#2878b5"/>
+<text x="259.7" y="434.1" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(263.7,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">070 LSX Prdm12 Slit2 Gaba</text>
+<line x1="329.6" y1="453.9" x2="329.6" y2="401.1" stroke="#d97820" stroke-width="2"/>
+<rect x="314.6" y="416.5" width="30.0" height="16.3" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="314.6" y1="423.8" x2="344.6" y2="423.8" stroke="#703500" stroke-width="2"/>
+<polygon points="329.6,438.6 335.6,444.6 329.6,450.6 323.6,444.6" fill="#2878b5"/>
+<text x="329.6" y="434.6" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(333.6,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">142 HY Gnrh1 Glut</text>
+<line x1="399.4" y1="439.2" x2="399.4" y2="365.6" stroke="#d97820" stroke-width="2"/>
+<rect x="384.4" y="411.8" width="30.0" height="10.8" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="384.4" y1="416.7" x2="414.4" y2="416.7" stroke="#703500" stroke-width="2"/>
+<polygon points="399.4,438.7 405.4,444.7 399.4,450.7 393.4,444.7" fill="#2878b5"/>
+<text x="399.4" y="434.7" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(403.4,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">054 STR Prox1 Lhx6 Gaba</text>
+<line x1="469.3" y1="403.1" x2="469.3" y2="159.6" stroke="#d97820" stroke-width="2"/>
+<rect x="454.3" y="313.6" width="30.0" height="48.1" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="454.3" y1="339.9" x2="484.3" y2="339.9" stroke="#703500" stroke-width="2"/>
+<polygon points="469.3,438.8 475.3,444.8 469.3,450.8 463.3,444.8" fill="#2878b5"/>
+<text x="469.3" y="434.8" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(473.3,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">005 L5 IT CTX Glut</text>
+<line x1="539.2" y1="403.5" x2="539.2" y2="228.3" stroke="#d97820" stroke-width="2"/>
+<rect x="524.2" y="329.8" width="30.0" height="37.8" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="524.2" y1="351.9" x2="554.2" y2="351.9" stroke="#703500" stroke-width="2"/>
+<polygon points="539.2,439.1 545.2,445.1 539.2,451.1 533.2,445.1" fill="#2878b5"/>
+<text x="539.2" y="435.1" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(543.2,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">006 L4/5 IT CTX Glut</text>
+<line x1="609.1" y1="425.1" x2="609.1" y2="267.7" stroke="#d97820" stroke-width="2"/>
+<rect x="594.1" y="380.1" width="30.0" height="25.8" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="594.1" y1="394.3" x2="624.1" y2="394.3" stroke="#703500" stroke-width="2"/>
+<polygon points="609.1,439.4 615.1,445.4 609.1,451.4 603.1,445.4" fill="#2878b5"/>
+<text x="609.1" y="435.4" text-anchor="middle" font-size="11" font-family="sans-serif">*</text>
+<text transform="translate(613.1,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">020 L2/3 IT RSP Glut</text>
+<line x1="678.9" y1="463.9" x2="678.9" y2="421.0" stroke="#d97820" stroke-width="2"/>
+<rect x="663.9" y="433.6" width="30.0" height="11.3" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="663.9" y1="438.7" x2="693.9" y2="438.7" stroke="#703500" stroke-width="2"/>
+<polygon points="678.9,442.3 684.9,448.3 678.9,454.3 672.9,448.3" fill="#2878b5"/>
+<text x="678.9" y="438.3" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(682.9,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">203 LGv-SPFp-SPFm Nkx2-2 Tcf7l2 Gaba</text>
+<line x1="748.8" y1="401.5" x2="748.8" y2="188.9" stroke="#d97820" stroke-width="2"/>
+<rect x="733.8" y="335.7" width="30.0" height="34.6" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="733.8" y1="356.1" x2="763.8" y2="356.1" stroke="#703500" stroke-width="2"/>
+<polygon points="748.8,442.6 754.8,448.6 748.8,454.6 742.8,448.6" fill="#2878b5"/>
+<text x="748.8" y="438.6" text-anchor="middle" font-size="11" font-family="sans-serif">*</text>
+<text transform="translate(752.8,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">004 L6 IT CTX Glut</text>
+<line x1="818.7" y1="393.9" x2="818.7" y2="161.0" stroke="#d97820" stroke-width="2"/>
+<rect x="803.7" y="313.0" width="30.0" height="44.6" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="803.7" y1="336.2" x2="833.7" y2="336.2" stroke="#703500" stroke-width="2"/>
+<polygon points="818.7,442.9 824.7,448.9 818.7,454.9 812.7,448.9" fill="#2878b5"/>
+<text x="818.7" y="438.9" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(822.7,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">022 L5 ET CTX Glut</text>
+<line x1="888.6" y1="397.2" x2="888.6" y2="130.1" stroke="#d97820" stroke-width="2"/>
+<rect x="873.6" y="322.1" width="30.0" height="38.5" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="873.6" y1="344.1" x2="903.6" y2="344.1" stroke="#703500" stroke-width="2"/>
+<polygon points="888.6,443.1 894.6,449.1 888.6,455.1 882.6,449.1" fill="#2878b5"/>
+<text x="888.6" y="439.1" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(892.6,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">030 L6 CT CTX Glut</text>
+<line x1="958.4" y1="459.6" x2="958.4" y2="442.1" stroke="#d97820" stroke-width="2"/>
+<rect x="943.4" y="449.2" width="30.0" height="4.4" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="943.4" y1="451.4" x2="973.4" y2="451.4" stroke="#703500" stroke-width="2"/>
+<polygon points="958.4,443.4 964.4,449.4 958.4,455.4 952.4,449.4" fill="#2878b5"/>
+<text x="958.4" y="439.4" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(962.4,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">315 DCO UBC Glut</text>
+<line x1="1028.3" y1="461.4" x2="1028.3" y2="440.0" stroke="#d97820" stroke-width="2"/>
+<rect x="1013.3" y="448.1" width="30.0" height="5.8" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="1013.3" y1="450.5" x2="1043.3" y2="450.5" stroke="#703500" stroke-width="2"/>
+<polygon points="1028.3,443.6 1034.3,449.6 1028.3,455.6 1022.3,449.6" fill="#2878b5"/>
+<text x="1028.3" y="439.6" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(1032.3,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">071 LSX Prdm12 Zeb2 Gaba</text>
+<line x1="1098.2" y1="451.1" x2="1098.2" y2="413.2" stroke="#d97820" stroke-width="2"/>
+<rect x="1083.2" y="426.9" width="30.0" height="9.2" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="1083.2" y1="432.0" x2="1113.2" y2="432.0" stroke="#703500" stroke-width="2"/>
+<polygon points="1098.2,443.7 1104.2,449.7 1098.2,455.7 1092.2,449.7" fill="#2878b5"/>
+<text x="1098.2" y="439.7" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(1102.2,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">041 OB-in Frmd7 Gaba</text>
+<line x1="1168.0" y1="412.5" x2="1168.0" y2="251.2" stroke="#d97820" stroke-width="2"/>
+<rect x="1153.0" y="352.3" width="30.0" height="33.9" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="1153.0" y1="373.4" x2="1183.0" y2="373.4" stroke="#703500" stroke-width="2"/>
+<polygon points="1168.0,443.9 1174.0,449.9 1168.0,455.9 1162.0,449.9" fill="#2878b5"/>
+<text x="1168.0" y="439.9" text-anchor="middle" font-size="11" font-family="sans-serif">*</text>
+<text transform="translate(1172.0,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">007 L2/3 IT CTX Glut</text>
+<line x1="1237.9" y1="468.1" x2="1237.9" y2="436.3" stroke="#d97820" stroke-width="2"/>
+<rect x="1222.9" y="442.5" width="30.0" height="6.3" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="1222.9" y1="445.0" x2="1252.9" y2="445.0" stroke="#703500" stroke-width="2"/>
+<polygon points="1237.9,444.2 1243.9,450.2 1237.9,456.2 1231.9,450.2" fill="#2878b5"/>
+<text x="1237.9" y="440.2" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(1241.9,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">055 STR Lhx8 Gaba</text>
+<line x1="1307.8" y1="415.8" x2="1307.8" y2="301.2" stroke="#d97820" stroke-width="2"/>
+<rect x="1292.8" y="364.8" width="30.0" height="26.3" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="1292.8" y1="379.9" x2="1322.8" y2="379.9" stroke="#703500" stroke-width="2"/>
+<polygon points="1307.8,445.0 1313.8,451.0 1307.8,457.0 1301.8,451.0" fill="#2878b5"/>
+<text x="1307.8" y="441.0" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(1311.8,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">001 CLA-EPd-CTX Car3 Glut</text>
+<line x1="1377.7" y1="462.3" x2="1377.7" y2="442.2" stroke="#d97820" stroke-width="2"/>
+<rect x="1362.7" y="448.5" width="30.0" height="4.0" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="1362.7" y1="450.2" x2="1392.7" y2="450.2" stroke="#703500" stroke-width="2"/>
+<polygon points="1377.7,445.3 1383.7,451.3 1377.7,457.3 1371.7,451.3" fill="#2878b5"/>
+<text x="1377.7" y="441.3" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(1381.7,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">094 SCH Six6 Cdc14a Gaba</text>
+<line x1="1447.5" y1="452.5" x2="1447.5" y2="408.1" stroke="#d97820" stroke-width="2"/>
+<rect x="1432.5" y="425.1" width="30.0" height="15.0" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="1432.5" y1="433.0" x2="1462.5" y2="433.0" stroke="#703500" stroke-width="2"/>
+<polygon points="1447.5,445.9 1453.5,451.9 1447.5,457.9 1441.5,451.9" fill="#2878b5"/>
+<text x="1447.5" y="441.9" text-anchor="middle" font-size="11" font-family="sans-serif">*</text>
+<text transform="translate(1451.5,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">314 CB Granule Glut</text>
+<line x1="1517.4" y1="401.4" x2="1517.4" y2="130.2" stroke="#d97820" stroke-width="2"/>
+<rect x="1502.4" y="324.9" width="30.0" height="42.8" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="1502.4" y1="349.8" x2="1532.4" y2="349.8" stroke="#703500" stroke-width="2"/>
+<polygon points="1517.4,446.0 1523.4,452.0 1517.4,458.0 1511.4,452.0" fill="#2878b5"/>
+<text x="1517.4" y="442.0" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(1521.4,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">032 L5 NP CTX Glut</text>
+<line x1="1587.3" y1="466.9" x2="1587.3" y2="421.2" stroke="#d97820" stroke-width="2"/>
+<rect x="1572.3" y="451.3" width="30.0" height="4.6" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="1572.3" y1="453.5" x2="1602.3" y2="453.5" stroke="#703500" stroke-width="2"/>
+<polygon points="1587.3,446.8 1593.3,452.8 1587.3,458.8 1581.3,452.8" fill="#2878b5"/>
+<text x="1587.3" y="442.8" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(1591.3,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">057 NDB-SI-MA-STRv Lhx8 Gaba</text>
+<line x1="1657.2" y1="456.6" x2="1657.2" y2="405.2" stroke="#d97820" stroke-width="2"/>
+<rect x="1642.2" y="437.4" width="30.0" height="8.2" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="1642.2" y1="442.5" x2="1672.2" y2="442.5" stroke="#703500" stroke-width="2"/>
+<polygon points="1657.2,447.3 1663.2,453.3 1657.2,459.3 1651.2,453.3" fill="#2878b5"/>
+<text x="1657.2" y="443.3" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(1661.2,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">038 DG-PIR Ex IMN</text>
+<line x1="1727.0" y1="456.0" x2="1727.0" y2="359.4" stroke="#d97820" stroke-width="2"/>
+<rect x="1712.0" y="424.7" width="30.0" height="12.0" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="1712.0" y1="430.5" x2="1742.0" y2="430.5" stroke="#703500" stroke-width="2"/>
+<polygon points="1727.0,447.6 1733.0,453.6 1727.0,459.6 1721.0,453.6" fill="#2878b5"/>
+<text x="1727.0" y="443.6" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(1731.0,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">115 MS-SF Bsx Glut</text>
+<line x1="1796.9" y1="443.5" x2="1796.9" y2="411.9" stroke="#d97820" stroke-width="2"/>
+<rect x="1781.9" y="421.5" width="30.0" height="9.2" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="1781.9" y1="426.0" x2="1811.9" y2="426.0" stroke="#703500" stroke-width="2"/>
+<polygon points="1796.9,448.1 1802.9,454.1 1796.9,460.1 1790.9,454.1" fill="#2878b5"/>
+<text x="1796.9" y="444.1" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(1800.9,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">080 CEA-AAA-BST Six3 Sp9 Gaba</text>
+<line x1="1866.8" y1="460.0" x2="1866.8" y2="441.7" stroke="#d97820" stroke-width="2"/>
+<rect x="1851.8" y="448.3" width="30.0" height="5.3" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="1851.8" y1="451.5" x2="1881.8" y2="451.5" stroke="#703500" stroke-width="2"/>
+<polygon points="1866.8,450.2 1872.8,456.2 1866.8,462.2 1860.8,456.2" fill="#2878b5"/>
+<text x="1866.8" y="446.2" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(1870.8,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">097 PVHd-SBPV Six3 Prox1 Gaba</text>
+<line x1="1936.7" y1="464.4" x2="1936.7" y2="451.5" stroke="#d97820" stroke-width="2"/>
+<rect x="1921.7" y="455.4" width="30.0" height="4.7" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="1921.7" y1="457.2" x2="1951.7" y2="457.2" stroke="#703500" stroke-width="2"/>
+<polygon points="1936.7,450.4 1942.7,456.4 1936.7,462.4 1930.7,456.4" fill="#2878b5"/>
+<text x="1936.7" y="446.4" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(1940.7,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">144 MM Foxb1 Glut</text>
+<line x1="2006.5" y1="466.2" x2="2006.5" y2="451.1" stroke="#d97820" stroke-width="2"/>
+<rect x="1991.5" y="457.0" width="30.0" height="2.3" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="1991.5" y1="457.8" x2="2021.5" y2="457.8" stroke="#703500" stroke-width="2"/>
+<polygon points="2006.5,450.6 2012.5,456.6 2006.5,462.6 2000.5,456.6" fill="#2878b5"/>
+<text x="2006.5" y="446.6" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(2010.5,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">256 SPVC Mafa Glut</text>
+<line x1="2076.4" y1="446.9" x2="2076.4" y2="407.3" stroke="#d97820" stroke-width="2"/>
+<rect x="2061.4" y="424.6" width="30.0" height="10.9" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="2061.4" y1="431.5" x2="2091.4" y2="431.5" stroke="#703500" stroke-width="2"/>
+<polygon points="2076.4,450.8 2082.4,456.8 2076.4,462.8 2070.4,456.8" fill="#2878b5"/>
+<text x="2076.4" y="446.8" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(2080.4,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">063 STR D1 Sema5a Gaba</text>
+<line x1="2146.3" y1="390.6" x2="2146.3" y2="183.2" stroke="#d97820" stroke-width="2"/>
+<rect x="2131.3" y="310.1" width="30.0" height="45.5" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="2131.3" y1="333.5" x2="2161.3" y2="333.5" stroke="#703500" stroke-width="2"/>
+<polygon points="2146.3,450.9 2152.3,456.9 2146.3,462.9 2140.3,456.9" fill="#2878b5"/>
+<text x="2146.3" y="446.9" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(2150.3,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">327 Oligo NN</text>
+<line x1="2216.2" y1="454.9" x2="2216.2" y2="429.3" stroke="#d97820" stroke-width="2"/>
+<rect x="2201.2" y="442.9" width="30.0" height="4.1" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="2201.2" y1="445.2" x2="2231.2" y2="445.2" stroke="#703500" stroke-width="2"/>
+<polygon points="2216.2,451.7 2222.2,457.7 2216.2,463.7 2210.2,457.7" fill="#2878b5"/>
+<text x="2216.2" y="447.7" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(2220.2,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">043 OB-mi Frmd7 Gaba</text>
+<line x1="2286.0" y1="453.5" x2="2286.0" y2="420.9" stroke="#d97820" stroke-width="2"/>
+<rect x="2271.0" y="433.2" width="30.0" height="8.6" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="2271.0" y1="437.9" x2="2301.0" y2="437.9" stroke="#703500" stroke-width="2"/>
+<polygon points="2286.0,452.1 2292.0,458.1 2286.0,464.1 2280.0,458.1" fill="#2878b5"/>
+<text x="2286.0" y="448.1" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(2290.0,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">024 L5 PPP Glut</text>
+<line x1="2355.9" y1="445.7" x2="2355.9" y2="364.1" stroke="#d97820" stroke-width="2"/>
+<rect x="2340.9" y="421.5" width="30.0" height="13.4" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="2340.9" y1="429.9" x2="2370.9" y2="429.9" stroke="#703500" stroke-width="2"/>
+<polygon points="2355.9,452.2 2361.9,458.2 2355.9,464.2 2349.9,458.2" fill="#2878b5"/>
+<text x="2355.9" y="448.2" text-anchor="middle" font-size="11" font-family="sans-serif">*</text>
+<text transform="translate(2359.9,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">033 NP SUB Glut</text>
+<line x1="2425.8" y1="458.1" x2="2425.8" y2="400.9" stroke="#d97820" stroke-width="2"/>
+<rect x="2410.8" y="415.8" width="30.0" height="16.0" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="2410.8" y1="422.6" x2="2440.8" y2="422.6" stroke="#703500" stroke-width="2"/>
+<polygon points="2425.8,452.3 2431.8,458.3 2425.8,464.3 2419.8,458.3" fill="#2878b5"/>
+<text x="2425.8" y="448.3" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(2429.8,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">207 SCs Dmbx1 Gaba</text>
+<line x1="2495.7" y1="450.5" x2="2495.7" y2="412.3" stroke="#d97820" stroke-width="2"/>
+<rect x="2480.7" y="423.8" width="30.0" height="10.5" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="2480.7" y1="429.0" x2="2510.7" y2="429.0" stroke="#703500" stroke-width="2"/>
+<polygon points="2495.7,452.4 2501.7,458.4 2495.7,464.4 2489.7,458.4" fill="#2878b5"/>
+<text x="2495.7" y="448.4" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(2499.7,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">048 RHP-COA Ndnf Gaba</text>
+<line x1="2565.5" y1="422.0" x2="2565.5" y2="267.2" stroke="#d97820" stroke-width="2"/>
+<rect x="2550.5" y="366.4" width="30.0" height="31.2" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="2550.5" y1="383.7" x2="2580.5" y2="383.7" stroke="#703500" stroke-width="2"/>
+<polygon points="2565.5,452.5 2571.5,458.5 2565.5,464.5 2559.5,458.5" fill="#2878b5"/>
+<text x="2565.5" y="448.5" text-anchor="middle" font-size="11" font-family="sans-serif">*</text>
+<text transform="translate(2569.5,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">332 SMC NN</text>
+<line x1="2635.4" y1="463.8" x2="2635.4" y2="431.5" stroke="#d97820" stroke-width="2"/>
+<rect x="2620.4" y="440.7" width="30.0" height="7.7" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="2620.4" y1="444.5" x2="2650.4" y2="444.5" stroke="#703500" stroke-width="2"/>
+<polygon points="2635.4,452.5 2641.4,458.5 2635.4,464.5 2629.4,458.5" fill="#2878b5"/>
+<text x="2635.4" y="448.5" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(2639.4,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">101 ZI Pax6 Gaba</text>
+<line x1="2705.3" y1="429.6" x2="2705.3" y2="343.8" stroke="#d97820" stroke-width="2"/>
+<rect x="2690.3" y="395.2" width="30.0" height="18.5" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="2690.3" y1="406.0" x2="2720.3" y2="406.0" stroke="#703500" stroke-width="2"/>
+<polygon points="2705.3,452.6 2711.3,458.6 2705.3,464.6 2699.3,458.6" fill="#2878b5"/>
+<text x="2705.3" y="448.6" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(2709.3,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">029 L6b CTX Glut</text>
+<line x1="2775.1" y1="443.5" x2="2775.1" y2="405.8" stroke="#d97820" stroke-width="2"/>
+<rect x="2760.1" y="418.8" width="30.0" height="12.7" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="2760.1" y1="426.5" x2="2790.1" y2="426.5" stroke="#703500" stroke-width="2"/>
+<polygon points="2775.1,452.6 2781.1,458.6 2775.1,464.6 2769.1,458.6" fill="#2878b5"/>
+<text x="2775.1" y="448.6" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(2779.1,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">019 L2/3 IT PPP Glut</text>
+<line x1="2845.0" y1="432.6" x2="2845.0" y2="333.4" stroke="#d97820" stroke-width="2"/>
+<rect x="2830.0" y="394.0" width="30.0" height="20.3" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="2830.0" y1="405.8" x2="2860.0" y2="405.8" stroke="#703500" stroke-width="2"/>
+<polygon points="2845.0,452.8 2851.0,458.8 2845.0,464.8 2839.0,458.8" fill="#2878b5"/>
+<text x="2845.0" y="448.8" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(2849.0,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">002 IT EP-CLA Glut</text>
+<line x1="2914.9" y1="466.0" x2="2914.9" y2="454.2" stroke="#d97820" stroke-width="2"/>
+<rect x="2899.9" y="459.2" width="30.0" height="2.7" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="2899.9" y1="460.3" x2="2929.9" y2="460.3" stroke="#703500" stroke-width="2"/>
+<polygon points="2914.9,452.8 2920.9,458.8 2914.9,464.8 2908.9,458.8" fill="#2878b5"/>
+<text x="2914.9" y="448.8" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(2918.9,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">222 PB Evx2 Glut</text>
+<line x1="2984.8" y1="448.9" x2="2984.8" y2="413.6" stroke="#d97820" stroke-width="2"/>
+<rect x="2969.8" y="428.2" width="30.0" height="9.7" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="2969.8" y1="433.1" x2="2999.8" y2="433.1" stroke="#703500" stroke-width="2"/>
+<polygon points="2984.8,452.9 2990.8,458.9 2984.8,464.9 2978.8,458.9" fill="#2878b5"/>
+<text x="2984.8" y="448.9" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(2988.8,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">034 NP PPP Glut</text>
+<line x1="3054.6" y1="454.7" x2="3054.6" y2="400.7" stroke="#d97820" stroke-width="2"/>
+<rect x="3039.6" y="416.4" width="30.0" height="16.1" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="3039.6" y1="423.4" x2="3069.6" y2="423.4" stroke="#703500" stroke-width="2"/>
+<polygon points="3054.6,452.9 3060.6,458.9 3054.6,464.9 3048.6,458.9" fill="#2878b5"/>
+<text x="3054.6" y="448.9" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(3058.6,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">037 DG Glut</text>
+<line x1="3124.5" y1="442.8" x2="3124.5" y2="406.8" stroke="#d97820" stroke-width="2"/>
+<rect x="3109.5" y="415.8" width="30.0" height="13.6" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="3109.5" y1="423.3" x2="3139.5" y2="423.3" stroke="#703500" stroke-width="2"/>
+<polygon points="3124.5,453.0 3130.5,459.0 3124.5,465.0 3118.5,459.0" fill="#2878b5"/>
+<text x="3124.5" y="449.0" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(3128.5,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">044 OB Dopa-Gaba</text>
+<line x1="3194.4" y1="463.0" x2="3194.4" y2="442.0" stroke="#d97820" stroke-width="2"/>
+<rect x="3179.4" y="448.4" width="30.0" height="4.4" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="3179.4" y1="450.2" x2="3209.4" y2="450.2" stroke="#703500" stroke-width="2"/>
+<polygon points="3194.4,453.1 3200.4,459.1 3194.4,465.1 3188.4,459.1" fill="#2878b5"/>
+<text x="3194.4" y="449.1" text-anchor="middle" font-size="11" font-family="sans-serif">*</text>
+<text transform="translate(3198.4,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">014 LA-BLA-BMA-PA Glut</text>
+<line x1="3264.3" y1="468.9" x2="3264.3" y2="452.3" stroke="#d97820" stroke-width="2"/>
+<rect x="3249.3" y="458.1" width="30.0" height="3.9" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="3249.3" y1="459.4" x2="3279.3" y2="459.4" stroke="#703500" stroke-width="2"/>
+<polygon points="3264.3,453.2 3270.3,459.2 3264.3,465.2 3258.3,459.2" fill="#2878b5"/>
+<text x="3264.3" y="449.2" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(3268.3,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">100 AHN Onecut3 Gaba</text>
+<line x1="3334.1" y1="440.6" x2="3334.1" y2="296.0" stroke="#d97820" stroke-width="2"/>
+<rect x="3319.1" y="393.5" width="30.0" height="26.0" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="3319.1" y1="407.8" x2="3349.1" y2="407.8" stroke="#703500" stroke-width="2"/>
+<polygon points="3334.1,453.3 3340.1,459.3 3334.1,465.3 3328.1,459.3" fill="#2878b5"/>
+<text x="3334.1" y="449.3" text-anchor="middle" font-size="11" font-family="sans-serif">*</text>
+<text transform="translate(3338.1,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">010 IT AON-TT-DP Glut</text>
+<line x1="3404.0" y1="434.5" x2="3404.0" y2="357.7" stroke="#d97820" stroke-width="2"/>
+<rect x="3389.0" y="401.5" width="30.0" height="16.0" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="3389.0" y1="411.7" x2="3419.0" y2="411.7" stroke="#703500" stroke-width="2"/>
+<polygon points="3404.0,453.3 3410.0,459.3 3404.0,465.3 3398.0,459.3" fill="#2878b5"/>
+<text x="3404.0" y="449.3" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(3408.0,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">003 L5/6 IT TPE-ENT Glut</text>
+<line x1="3473.9" y1="440.1" x2="3473.9" y2="361.7" stroke="#d97820" stroke-width="2"/>
+<rect x="3458.9" y="410.4" width="30.0" height="10.5" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="3458.9" y1="415.0" x2="3488.9" y2="415.0" stroke="#703500" stroke-width="2"/>
+<polygon points="3473.9,453.3 3479.9,459.3 3473.9,465.3 3467.9,459.3" fill="#2878b5"/>
+<text x="3473.9" y="449.3" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(3477.9,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">337 DC NN</text>
+<line x1="3543.8" y1="400.5" x2="3543.8" y2="160.8" stroke="#d97820" stroke-width="2"/>
+<rect x="3528.8" y="319.7" width="30.0" height="45.6" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="3528.8" y1="347.3" x2="3558.8" y2="347.3" stroke="#703500" stroke-width="2"/>
+<polygon points="3543.8,453.4 3549.8,459.4 3543.8,465.4 3537.8,459.4" fill="#2878b5"/>
+<text x="3543.8" y="449.4" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(3547.8,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">052 Pvalb Gaba</text>
+<line x1="3613.6" y1="449.2" x2="3613.6" y2="417.8" stroke="#d97820" stroke-width="2"/>
+<rect x="3598.6" y="436.1" width="30.0" height="6.6" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="3598.6" y1="439.7" x2="3628.6" y2="439.7" stroke="#703500" stroke-width="2"/>
+<polygon points="3613.6,453.6 3619.6,459.6 3613.6,465.6 3607.6,459.6" fill="#2878b5"/>
+<text x="3613.6" y="449.6" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(3617.6,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">018 L2 IT PPP-APr Glut</text>
+<line x1="3683.5" y1="445.8" x2="3683.5" y2="380.0" stroke="#d97820" stroke-width="2"/>
+<rect x="3668.5" y="429.0" width="30.0" height="8.0" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="3668.5" y1="433.9" x2="3698.5" y2="433.9" stroke="#703500" stroke-width="2"/>
+<polygon points="3683.5,453.6 3689.5,459.6 3683.5,465.6 3677.5,459.6" fill="#2878b5"/>
+<text x="3683.5" y="449.6" text-anchor="middle" font-size="11" font-family="sans-serif">*</text>
+<text transform="translate(3687.5,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">064 STR-PAL Chst9 Gaba</text>
+<line x1="3753.4" y1="448.5" x2="3753.4" y2="363.8" stroke="#d97820" stroke-width="2"/>
+<rect x="3738.4" y="419.6" width="30.0" height="15.6" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="3738.4" y1="429.7" x2="3768.4" y2="429.7" stroke="#703500" stroke-width="2"/>
+<polygon points="3753.4,453.6 3759.4,459.6 3753.4,465.6 3747.4,459.6" fill="#2878b5"/>
+<text x="3753.4" y="449.6" text-anchor="middle" font-size="11" font-family="sans-serif">*</text>
+<text transform="translate(3757.4,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">027 L6b EPd Glut</text>
+<line x1="3823.3" y1="462.2" x2="3823.3" y2="437.1" stroke="#d97820" stroke-width="2"/>
+<rect x="3808.3" y="452.7" width="30.0" height="4.2" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="3808.3" y1="455.3" x2="3838.3" y2="455.3" stroke="#703500" stroke-width="2"/>
+<polygon points="3823.3,453.7 3829.3,459.7 3823.3,465.7 3817.3,459.7" fill="#2878b5"/>
+<text x="3823.3" y="449.7" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(3827.3,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">187 SCsg Pde5a Glut</text>
+<line x1="3893.1" y1="426.2" x2="3893.1" y2="316.2" stroke="#d97820" stroke-width="2"/>
+<rect x="3878.1" y="383.9" width="30.0" height="22.5" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="3878.1" y1="397.4" x2="3908.1" y2="397.4" stroke="#703500" stroke-width="2"/>
+<polygon points="3893.1,453.7 3899.1,459.7 3893.1,465.7 3887.1,459.7" fill="#2878b5"/>
+<text x="3893.1" y="449.7" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(3897.1,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">330 VLMC NN</text>
+<line x1="3963.0" y1="448.3" x2="3963.0" y2="401.5" stroke="#d97820" stroke-width="2"/>
+<rect x="3948.0" y="415.8" width="30.0" height="15.5" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="3948.0" y1="424.7" x2="3978.0" y2="424.7" stroke="#703500" stroke-width="2"/>
+<polygon points="3963.0,453.7 3969.0,459.7 3963.0,465.7 3957.0,459.7" fill="#2878b5"/>
+<text x="3963.0" y="449.7" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(3967.0,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">042 OB-out Frmd7 Gaba</text>
+<line x1="4032.9" y1="456.3" x2="4032.9" y2="420.1" stroke="#d97820" stroke-width="2"/>
+<rect x="4017.9" y="434.7" width="30.0" height="6.5" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="4017.9" y1="436.9" x2="4047.9" y2="436.9" stroke="#703500" stroke-width="2"/>
+<polygon points="4032.9,453.8 4038.9,459.8 4032.9,465.8 4026.9,459.8" fill="#2878b5"/>
+<text x="4032.9" y="449.8" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(4036.9,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">039 OB Meis2 Thsd7b Gaba</text>
+<line x1="4102.8" y1="461.2" x2="4102.8" y2="446.5" stroke="#d97820" stroke-width="2"/>
+<rect x="4087.8" y="450.4" width="30.0" height="3.6" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="4087.8" y1="452.0" x2="4117.8" y2="452.0" stroke="#703500" stroke-width="2"/>
+<polygon points="4102.8,453.8 4108.8,459.8 4102.8,465.8 4096.8,459.8" fill="#2878b5"/>
+<text x="4102.8" y="449.8" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(4106.8,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">013 COAp Grxcr2 Glut</text>
+<line x1="4172.6" y1="462.7" x2="4172.6" y2="416.4" stroke="#d97820" stroke-width="2"/>
+<rect x="4157.6" y="438.5" width="30.0" height="12.8" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="4157.6" y1="445.8" x2="4187.6" y2="445.8" stroke="#703500" stroke-width="2"/>
+<polygon points="4172.6,453.8 4178.6,459.8 4172.6,465.8 4166.6,459.8" fill="#2878b5"/>
+<text x="4172.6" y="449.8" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(4176.6,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">035 OB Eomes Ms4a15 Glut</text>
+<line x1="4242.5" y1="435.9" x2="4242.5" y2="365.3" stroke="#d97820" stroke-width="2"/>
+<rect x="4227.5" y="408.7" width="30.0" height="14.8" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="4227.5" y1="417.6" x2="4257.5" y2="417.6" stroke="#703500" stroke-width="2"/>
+<polygon points="4242.5,453.9 4248.5,459.9 4242.5,465.9 4236.5,459.9" fill="#2878b5"/>
+<text x="4242.5" y="449.9" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(4246.5,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">050 Lamp5 Lhx6 Gaba</text>
+<line x1="4312.4" y1="448.0" x2="4312.4" y2="400.5" stroke="#d97820" stroke-width="2"/>
+<rect x="4297.4" y="417.7" width="30.0" height="12.5" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="4297.4" y1="423.6" x2="4327.4" y2="423.6" stroke="#703500" stroke-width="2"/>
+<polygon points="4312.4,454.0 4318.4,460.0 4312.4,466.0 4306.4,460.0" fill="#2878b5"/>
+<text x="4312.4" y="450.0" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(4316.4,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">045 OB-STR-CTX Inh IMN</text>
+<line x1="4382.2" y1="430.1" x2="4382.2" y2="331.7" stroke="#d97820" stroke-width="2"/>
+<rect x="4367.2" y="396.5" width="30.0" height="19.7" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="4367.2" y1="407.4" x2="4397.2" y2="407.4" stroke="#703500" stroke-width="2"/>
+<polygon points="4382.2,454.0 4388.2,460.0 4382.2,466.0 4376.2,460.0" fill="#2878b5"/>
+<text x="4382.2" y="450.0" text-anchor="middle" font-size="11" font-family="sans-serif">*</text>
+<text transform="translate(4386.2,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">056 Sst Chodl Gaba</text>
+<line x1="4452.1" y1="454.3" x2="4452.1" y2="419.9" stroke="#d97820" stroke-width="2"/>
+<rect x="4437.1" y="438.4" width="30.0" height="6.5" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="4437.1" y1="441.7" x2="4467.1" y2="441.7" stroke="#703500" stroke-width="2"/>
+<polygon points="4452.1,454.0 4458.1,460.0 4452.1,466.0 4446.1,460.0" fill="#2878b5"/>
+<text x="4452.1" y="450.0" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(4456.1,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">061 STR D1 Gaba</text>
+<line x1="4522.0" y1="440.3" x2="4522.0" y2="400.4" stroke="#d97820" stroke-width="2"/>
+<rect x="4507.0" y="412.9" width="30.0" height="11.8" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="4507.0" y1="417.6" x2="4537.0" y2="417.6" stroke="#703500" stroke-width="2"/>
+<polygon points="4522.0,454.1 4528.0,460.1 4522.0,466.1 4516.0,460.1" fill="#2878b5"/>
+<text x="4522.0" y="450.1" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(4526.0,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">031 CT SUB Glut</text>
+<line x1="4591.9" y1="451.3" x2="4591.9" y2="404.0" stroke="#d97820" stroke-width="2"/>
+<rect x="4576.9" y="423.2" width="30.0" height="14.6" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="4576.9" y1="430.3" x2="4606.9" y2="430.3" stroke="#703500" stroke-width="2"/>
+<polygon points="4591.9,454.3 4597.9,460.3 4591.9,466.3 4585.9,460.3" fill="#2878b5"/>
+<text x="4591.9" y="450.3" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(4595.9,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">062 STR D2 Gaba</text>
+<line x1="4661.7" y1="388.1" x2="4661.7" y2="153.6" stroke="#d97820" stroke-width="2"/>
+<rect x="4646.7" y="302.5" width="30.0" height="48.3" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="4646.7" y1="330.0" x2="4676.7" y2="330.0" stroke="#703500" stroke-width="2"/>
+<polygon points="4661.7,454.4 4667.7,460.4 4661.7,466.4 4655.7,460.4" fill="#2878b5"/>
+<text x="4661.7" y="450.4" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(4665.7,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">333 Endo NN</text>
+<line x1="4731.6" y1="461.8" x2="4731.6" y2="420.7" stroke="#d97820" stroke-width="2"/>
+<rect x="4716.6" y="438.8" width="30.0" height="12.5" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="4716.6" y1="445.2" x2="4746.6" y2="445.2" stroke="#703500" stroke-width="2"/>
+<polygon points="4731.6,454.4 4737.6,460.4 4731.6,466.4 4725.6,460.4" fill="#2878b5"/>
+<text x="4731.6" y="450.4" text-anchor="middle" font-size="11" font-family="sans-serif">*</text>
+<text transform="translate(4735.6,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">328 OEC NN</text>
+<line x1="4801.5" y1="448.4" x2="4801.5" y2="405.8" stroke="#d97820" stroke-width="2"/>
+<rect x="4786.5" y="418.4" width="30.0" height="16.0" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="4786.5" y1="428.1" x2="4816.5" y2="428.1" stroke="#703500" stroke-width="2"/>
+<polygon points="4801.5,454.5 4807.5,460.5 4801.5,466.5 4795.5,460.5" fill="#2878b5"/>
+<text x="4801.5" y="450.5" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(4805.5,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">023 SUB-ProS Glut</text>
+<line x1="4871.4" y1="464.3" x2="4871.4" y2="442.4" stroke="#d97820" stroke-width="2"/>
+<rect x="4856.4" y="455.1" width="30.0" height="5.2" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="4856.4" y1="457.5" x2="4886.4" y2="457.5" stroke="#703500" stroke-width="2"/>
+<polygon points="4871.4,454.5 4877.4,460.5 4871.4,466.5 4865.4,460.5" fill="#2878b5"/>
+<text x="4871.4" y="450.5" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(4875.4,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">213 SCsg Gabrr2 Gaba</text>
+<line x1="4941.2" y1="438.2" x2="4941.2" y2="380.0" stroke="#d97820" stroke-width="2"/>
+<rect x="4926.2" y="412.6" width="30.0" height="10.2" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="4926.2" y1="417.8" x2="4956.2" y2="417.8" stroke="#703500" stroke-width="2"/>
+<polygon points="4941.2,454.6 4947.2,460.6 4941.2,466.6 4935.2,460.6" fill="#2878b5"/>
+<text x="4941.2" y="450.6" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(4945.2,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">318 Astro-NT NN</text>
+<line x1="5011.1" y1="468.9" x2="5011.1" y2="454.9" stroke="#d97820" stroke-width="2"/>
+<rect x="4996.1" y="464.4" width="30.0" height="3.4" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="4996.1" y1="467.5" x2="5026.1" y2="467.5" stroke="#703500" stroke-width="2"/>
+<polygon points="5011.1,454.6 5017.1,460.6 5011.1,466.6 5005.1,460.6" fill="#2878b5"/>
+<text x="5011.1" y="450.6" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(5015.1,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">325 CHOR NN</text>
+<line x1="5081.0" y1="402.7" x2="5081.0" y2="200.6" stroke="#d97820" stroke-width="2"/>
+<rect x="5066.0" y="340.6" width="30.0" height="37.5" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="5066.0" y1="362.2" x2="5096.0" y2="362.2" stroke="#703500" stroke-width="2"/>
+<polygon points="5081.0,454.6 5087.0,460.6 5081.0,466.6 5075.0,460.6" fill="#2878b5"/>
+<text x="5081.0" y="450.6" text-anchor="middle" font-size="11" font-family="sans-serif">*</text>
+<text transform="translate(5085.0,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">053 Sst Gaba</text>
+<line x1="5150.9" y1="448.8" x2="5150.9" y2="318.0" stroke="#d97820" stroke-width="2"/>
+<rect x="5135.9" y="401.7" width="30.0" height="25.5" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="5135.9" y1="416.2" x2="5165.9" y2="416.2" stroke="#703500" stroke-width="2"/>
+<polygon points="5150.9,454.6 5156.9,460.6 5150.9,466.6 5144.9,460.6" fill="#2878b5"/>
+<text x="5150.9" y="450.6" text-anchor="middle" font-size="11" font-family="sans-serif">*</text>
+<text transform="translate(5154.9,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">025 CA2-FC-IG Glut</text>
+<line x1="5220.7" y1="428.6" x2="5220.7" y2="341.5" stroke="#d97820" stroke-width="2"/>
+<rect x="5205.7" y="399.4" width="30.0" height="16.8" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="5205.7" y1="409.6" x2="5235.7" y2="409.6" stroke="#703500" stroke-width="2"/>
+<polygon points="5220.7,455.1 5226.7,461.1 5220.7,467.1 5214.7,461.1" fill="#2878b5"/>
+<text x="5220.7" y="451.1" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(5224.7,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">335 BAM NN</text>
+<line x1="5290.6" y1="458.9" x2="5290.6" y2="448.2" stroke="#d97820" stroke-width="2"/>
+<rect x="5275.6" y="452.7" width="30.0" height="2.6" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="5275.6" y1="453.7" x2="5305.6" y2="453.7" stroke="#703500" stroke-width="2"/>
+<polygon points="5290.6,455.1 5296.6,461.1 5290.6,467.1 5284.6,461.1" fill="#2878b5"/>
+<text x="5290.6" y="451.1" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(5294.6,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">336 Monocytes NN</text>
+<line x1="5360.5" y1="468.4" x2="5360.5" y2="452.0" stroke="#d97820" stroke-width="2"/>
+<rect x="5345.5" y="465.7" width="30.0" height="1.2" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="5345.5" y1="466.4" x2="5375.5" y2="466.4" stroke="#703500" stroke-width="2"/>
+<polygon points="5360.5,455.2 5366.5,461.2 5360.5,467.2 5354.5,461.2" fill="#2878b5"/>
+<text x="5360.5" y="451.2" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(5364.5,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">177 SCig-an-PPT Foxb1 Glut</text>
+<line x1="5430.4" y1="381.0" x2="5430.4" y2="112.9" stroke="#d97820" stroke-width="2"/>
+<rect x="5415.4" y="306.4" width="30.0" height="47.6" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="5415.4" y1="333.5" x2="5445.4" y2="333.5" stroke="#703500" stroke-width="2"/>
+<polygon points="5430.4,455.2 5436.4,461.2 5430.4,467.2 5424.4,461.2" fill="#2878b5"/>
+<text x="5430.4" y="451.2" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(5434.4,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">319 Astro-TE NN</text>
+<line x1="5500.2" y1="465.1" x2="5500.2" y2="439.1" stroke="#d97820" stroke-width="2"/>
+<rect x="5485.2" y="445.6" width="30.0" height="6.5" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="5485.2" y1="448.1" x2="5515.2" y2="448.1" stroke="#703500" stroke-width="2"/>
+<polygon points="5500.2,455.2 5506.2,461.2 5500.2,467.2 5494.2,461.2" fill="#2878b5"/>
+<text x="5500.2" y="451.2" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(5504.2,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">322 Tanycyte NN</text>
+<line x1="5570.1" y1="389.4" x2="5570.1" y2="193.2" stroke="#d97820" stroke-width="2"/>
+<rect x="5555.1" y="320.1" width="30.0" height="39.0" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="5555.1" y1="342.1" x2="5585.1" y2="342.1" stroke="#703500" stroke-width="2"/>
+<polygon points="5570.1,455.3 5576.1,461.3 5570.1,467.3 5564.1,461.3" fill="#2878b5"/>
+<text x="5570.1" y="451.3" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(5574.1,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">334 Microglia NN</text>
+<line x1="5640.0" y1="446.6" x2="5640.0" y2="420.1" stroke="#d97820" stroke-width="2"/>
+<rect x="5625.0" y="434.8" width="30.0" height="4.7" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="5625.0" y1="436.9" x2="5655.0" y2="436.9" stroke="#703500" stroke-width="2"/>
+<polygon points="5640.0,455.4 5646.0,461.4 5640.0,467.4 5634.0,461.4" fill="#2878b5"/>
+<text x="5640.0" y="451.4" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(5644.0,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">114 COAa-PAA-MEA Barhl2 Glut</text>
+<line x1="5709.9" y1="396.8" x2="5709.9" y2="190.8" stroke="#d97820" stroke-width="2"/>
+<rect x="5694.9" y="327.0" width="30.0" height="38.6" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="5694.9" y1="349.5" x2="5724.9" y2="349.5" stroke="#703500" stroke-width="2"/>
+<polygon points="5709.9,455.4 5715.9,461.4 5709.9,467.4 5703.9,461.4" fill="#2878b5"/>
+<text x="5709.9" y="451.4" text-anchor="middle" font-size="11" font-family="sans-serif">*</text>
+<text transform="translate(5713.9,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">326 OPC NN</text>
+<line x1="5779.7" y1="436.7" x2="5779.7" y2="369.9" stroke="#d97820" stroke-width="2"/>
+<rect x="5764.7" y="416.2" width="30.0" height="10.7" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="5764.7" y1="421.9" x2="5794.7" y2="421.9" stroke="#703500" stroke-width="2"/>
+<polygon points="5779.7,455.4 5785.7,461.4 5779.7,467.4 5773.7,461.4" fill="#2878b5"/>
+<text x="5779.7" y="451.4" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(5783.7,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">338 Lymphoid NN</text>
+<line x1="5849.6" y1="450.8" x2="5849.6" y2="413.2" stroke="#d97820" stroke-width="2"/>
+<rect x="5834.6" y="433.3" width="30.0" height="6.5" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="5834.6" y1="436.5" x2="5864.6" y2="436.5" stroke="#703500" stroke-width="2"/>
+<polygon points="5849.6,455.6 5855.6,461.6 5849.6,467.6 5843.6,461.6" fill="#2878b5"/>
+<text x="5849.6" y="451.6" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(5853.6,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">320 Astro-OLF NN</text>
+<line x1="5919.5" y1="437.5" x2="5919.5" y2="390.2" stroke="#d97820" stroke-width="2"/>
+<rect x="5904.5" y="420.0" width="30.0" height="10.3" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="5904.5" y1="425.3" x2="5934.5" y2="425.3" stroke="#703500" stroke-width="2"/>
+<polygon points="5919.5,455.6 5925.5,461.6 5919.5,467.6 5913.5,461.6" fill="#2878b5"/>
+<text x="5919.5" y="451.6" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(5923.5,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">051 Pvalb chandelier Gaba</text>
+<line x1="5989.3" y1="453.3" x2="5989.3" y2="429.6" stroke="#d97820" stroke-width="2"/>
+<rect x="5974.3" y="435.4" width="30.0" height="6.9" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="5974.3" y1="438.1" x2="6004.3" y2="438.1" stroke="#703500" stroke-width="2"/>
+<polygon points="5989.3,455.8 5995.3,461.8 5989.3,467.8 5983.3,461.8" fill="#2878b5"/>
+<text x="5989.3" y="451.8" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(5993.3,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">065 IA Mgp Gaba</text>
+<line x1="6059.2" y1="445.8" x2="6059.2" y2="391.5" stroke="#d97820" stroke-width="2"/>
+<rect x="6044.2" y="423.1" width="30.0" height="10.4" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="6044.2" y1="428.5" x2="6074.2" y2="428.5" stroke="#703500" stroke-width="2"/>
+<polygon points="6059.2,455.8 6065.2,461.8 6059.2,467.8 6053.2,461.8" fill="#2878b5"/>
+<text x="6059.2" y="451.8" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(6063.2,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">113 MEA-COA-BMA Ccdc42 Glut</text>
+<line x1="6129.1" y1="440.2" x2="6129.1" y2="404.9" stroke="#d97820" stroke-width="2"/>
+<rect x="6114.1" y="423.6" width="30.0" height="9.8" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="6114.1" y1="429.5" x2="6144.1" y2="429.5" stroke="#703500" stroke-width="2"/>
+<polygon points="6129.1,455.8 6135.1,461.8 6129.1,467.8 6123.1,461.8" fill="#2878b5"/>
+<text x="6129.1" y="451.8" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(6133.1,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">009 L2/3 IT PIR-ENTl Glut</text>
+<line x1="6199.0" y1="468.4" x2="6199.0" y2="461.2" stroke="#d97820" stroke-width="2"/>
+<rect x="6184.0" y="463.5" width="30.0" height="1.8" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="6184.0" y1="464.3" x2="6214.0" y2="464.3" stroke="#703500" stroke-width="2"/>
+<polygon points="6199.0,456.0 6205.0,462.0 6199.0,468.0 6193.0,462.0" fill="#2878b5"/>
+<text x="6199.0" y="452.0" text-anchor="middle" font-size="11" font-family="sans-serif">*</text>
+<text transform="translate(6203.0,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">128 VMH Fezf1 Glut</text>
+<line x1="6268.8" y1="464.0" x2="6268.8" y2="451.9" stroke="#d97820" stroke-width="2"/>
+<rect x="6253.8" y="458.3" width="30.0" height="3.5" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="6253.8" y1="460.5" x2="6283.8" y2="460.5" stroke="#703500" stroke-width="2"/>
+<polygon points="6268.8,456.1 6274.8,462.1 6268.8,468.1 6262.8,462.1" fill="#2878b5"/>
+<text x="6268.8" y="452.1" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(6272.8,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">211 SC Tnnt1 Gli3 Gaba</text>
+<line x1="6338.7" y1="464.6" x2="6338.7" y2="453.8" stroke="#d97820" stroke-width="2"/>
+<rect x="6323.7" y="457.0" width="30.0" height="2.5" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="6323.7" y1="458.0" x2="6353.7" y2="458.0" stroke="#703500" stroke-width="2"/>
+<polygon points="6338.7,456.2 6344.7,462.2 6338.7,468.2 6332.7,462.2" fill="#2878b5"/>
+<text x="6338.7" y="452.2" text-anchor="middle" font-size="11" font-family="sans-serif">*</text>
+<text transform="translate(6342.7,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">012 MEA Slc17a7 Glut</text>
+<line x1="6408.6" y1="403.8" x2="6408.6" y2="201.5" stroke="#d97820" stroke-width="2"/>
+<rect x="6393.6" y="339.0" width="30.0" height="34.6" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="6393.6" y1="358.1" x2="6423.6" y2="358.1" stroke="#703500" stroke-width="2"/>
+<polygon points="6408.6,456.3 6414.6,462.3 6408.6,468.3 6402.6,462.3" fill="#2878b5"/>
+<text x="6408.6" y="452.3" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(6412.6,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">331 Peri NN</text>
+<line x1="6478.5" y1="449.3" x2="6478.5" y2="418.8" stroke="#d97820" stroke-width="2"/>
+<rect x="6463.5" y="437.1" width="30.0" height="6.6" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="6463.5" y1="440.8" x2="6493.5" y2="440.8" stroke="#703500" stroke-width="2"/>
+<polygon points="6478.5,456.3 6484.5,462.3 6478.5,468.3 6472.5,462.3" fill="#2878b5"/>
+<text x="6478.5" y="452.3" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(6482.5,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">329 ABC NN</text>
+<line x1="6548.3" y1="464.7" x2="6548.3" y2="450.2" stroke="#d97820" stroke-width="2"/>
+<rect x="6533.3" y="456.8" width="30.0" height="3.5" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="6533.3" y1="458.1" x2="6563.3" y2="458.1" stroke="#703500" stroke-width="2"/>
+<polygon points="6548.3,456.3 6554.3,462.3 6548.3,468.3 6542.3,462.3" fill="#2878b5"/>
+<text x="6548.3" y="452.3" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(6552.3,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">072 LSX Sall3 Lmo1 Gaba</text>
+<line x1="6618.2" y1="416.7" x2="6618.2" y2="305.6" stroke="#d97820" stroke-width="2"/>
+<rect x="6603.2" y="379.7" width="30.0" height="21.7" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="6603.2" y1="392.8" x2="6633.2" y2="392.8" stroke="#703500" stroke-width="2"/>
+<polygon points="6618.2,456.5 6624.2,462.5 6618.2,468.5 6612.2,462.5" fill="#2878b5"/>
+<text x="6618.2" y="452.5" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(6622.2,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">049 Lamp5 Gaba</text>
+<line x1="6688.1" y1="420.3" x2="6688.1" y2="300.4" stroke="#d97820" stroke-width="2"/>
+<rect x="6673.1" y="372.6" width="30.0" height="25.9" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="6673.1" y1="387.3" x2="6703.1" y2="387.3" stroke="#703500" stroke-width="2"/>
+<polygon points="6688.1,456.5 6694.1,462.5 6688.1,468.5 6682.1,462.5" fill="#2878b5"/>
+<text x="6688.1" y="452.5" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(6692.1,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">046 Vip Gaba</text>
+<line x1="6758.0" y1="426.0" x2="6758.0" y2="314.3" stroke="#d97820" stroke-width="2"/>
+<rect x="6743.0" y="391.3" width="30.0" height="21.3" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="6743.0" y1="403.3" x2="6773.0" y2="403.3" stroke="#703500" stroke-width="2"/>
+<polygon points="6758.0,456.5 6764.0,462.5 6758.0,468.5 6752.0,462.5" fill="#2878b5"/>
+<text x="6758.0" y="452.5" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(6762.0,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">047 Sncg Gaba</text>
+<line x1="6827.8" y1="446.7" x2="6827.8" y2="387.2" stroke="#d97820" stroke-width="2"/>
+<rect x="6812.8" y="428.9" width="30.0" height="9.9" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="6812.8" y1="434.6" x2="6842.8" y2="434.6" stroke="#703500" stroke-width="2"/>
+<polygon points="6827.8,456.5 6833.8,462.5 6827.8,468.5 6821.8,462.5" fill="#2878b5"/>
+<text x="6827.8" y="452.5" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(6831.8,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">008 L2/3 IT ENT Glut</text>
+<line x1="6897.7" y1="463.1" x2="6897.7" y2="438.3" stroke="#d97820" stroke-width="2"/>
+<rect x="6882.7" y="455.2" width="30.0" height="5.8" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="6882.7" y1="459.0" x2="6912.7" y2="459.0" stroke="#703500" stroke-width="2"/>
+<polygon points="6897.7,456.5 6903.7,462.5 6897.7,468.5 6891.7,462.5" fill="#2878b5"/>
+<text x="6897.7" y="452.5" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(6901.7,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">262 Pineal Crx Glut</text>
+<line x1="6967.6" y1="466.4" x2="6967.6" y2="442.4" stroke="#d97820" stroke-width="2"/>
+<rect x="6952.6" y="454.4" width="30.0" height="10.2" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="6952.6" y1="461.4" x2="6982.6" y2="461.4" stroke="#703500" stroke-width="2"/>
+<polygon points="6967.6,456.6 6973.6,462.6 6967.6,468.6 6961.6,462.6" fill="#2878b5"/>
+<text x="6967.6" y="452.6" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(6971.6,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">208 SC Lef1 Otx2 Gaba</text>
+<line x1="7037.5" y1="466.2" x2="7037.5" y2="442.8" stroke="#d97820" stroke-width="2"/>
+<rect x="7022.5" y="452.6" width="30.0" height="6.7" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="7022.5" y1="457.5" x2="7052.5" y2="457.5" stroke="#703500" stroke-width="2"/>
+<polygon points="7037.5,456.6 7043.5,462.6 7037.5,468.6 7031.5,462.6" fill="#2878b5"/>
+<text x="7037.5" y="452.6" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(7041.5,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">060 OT D3 Folh1 Gaba</text>
+<line x1="7107.3" y1="466.6" x2="7107.3" y2="452.0" stroke="#d97820" stroke-width="2"/>
+<rect x="7092.3" y="459.0" width="30.0" height="3.8" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="7092.3" y1="460.9" x2="7122.3" y2="460.9" stroke="#703500" stroke-width="2"/>
+<polygon points="7107.3,456.7 7113.3,462.7 7107.3,468.7 7101.3,462.7" fill="#2878b5"/>
+<text x="7107.3" y="452.7" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(7111.3,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">316 Bergmann NN</text>
+<line x1="7177.2" y1="442.0" x2="7177.2" y2="359.9" stroke="#d97820" stroke-width="2"/>
+<rect x="7162.2" y="418.3" width="30.0" height="13.6" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="7162.2" y1="426.6" x2="7192.2" y2="426.6" stroke="#703500" stroke-width="2"/>
+<polygon points="7177.2,456.9 7183.2,462.9 7177.2,468.9 7171.2,462.9" fill="#2878b5"/>
+<text x="7177.2" y="452.9" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(7181.2,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">028 L6b/CT ENT Glut</text>
+<line x1="7247.1" y1="455.3" x2="7247.1" y2="427.3" stroke="#d97820" stroke-width="2"/>
+<rect x="7232.1" y="436.6" width="30.0" height="4.7" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="7232.1" y1="439.6" x2="7262.1" y2="439.6" stroke="#703500" stroke-width="2"/>
+<polygon points="7247.1,456.9 7253.1,462.9 7247.1,468.9 7241.1,462.9" fill="#2878b5"/>
+<text x="7247.1" y="452.9" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(7251.1,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">066 NDB-SI-ant Prdm12 Gaba</text>
+<line x1="7317.0" y1="458.8" x2="7317.0" y2="420.9" stroke="#d97820" stroke-width="2"/>
+<rect x="7302.0" y="441.2" width="30.0" height="11.8" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="7302.0" y1="448.4" x2="7332.0" y2="448.4" stroke="#703500" stroke-width="2"/>
+<polygon points="7317.0,457.3 7323.0,463.3 7317.0,469.3 7311.0,463.3" fill="#2878b5"/>
+<text x="7317.0" y="453.3" text-anchor="middle" font-size="11" font-family="sans-serif">*</text>
+<text transform="translate(7321.0,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">011 L2 IT ENT-po Glut</text>
+<line x1="7386.8" y1="465.3" x2="7386.8" y2="455.5" stroke="#d97820" stroke-width="2"/>
+<rect x="7371.8" y="458.1" width="30.0" height="3.2" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="7371.8" y1="459.4" x2="7401.8" y2="459.4" stroke="#703500" stroke-width="2"/>
+<polygon points="7386.8,457.3 7392.8,463.3 7386.8,469.3 7380.8,463.3" fill="#2878b5"/>
+<text x="7386.8" y="453.3" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(7390.8,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">121 MEA-BST Otp Zic2 Glut</text>
+<line x1="7456.7" y1="461.3" x2="7456.7" y2="441.9" stroke="#d97820" stroke-width="2"/>
+<rect x="7441.7" y="451.9" width="30.0" height="3.3" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="7441.7" y1="453.7" x2="7471.7" y2="453.7" stroke="#703500" stroke-width="2"/>
+<polygon points="7456.7,457.7 7462.7,463.7 7456.7,469.7 7450.7,463.7" fill="#2878b5"/>
+<text x="7456.7" y="453.7" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(7460.7,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">016 CA1-ProS Glut</text>
+<line x1="7526.6" y1="465.6" x2="7526.6" y2="451.4" stroke="#d97820" stroke-width="2"/>
+<rect x="7511.6" y="460.5" width="30.0" height="1.9" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="7511.6" y1="461.4" x2="7541.6" y2="461.4" stroke="#703500" stroke-width="2"/>
+<polygon points="7526.6,457.7 7532.6,463.7 7526.6,469.7 7520.6,463.7" fill="#2878b5"/>
+<text x="7526.6" y="453.7" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(7530.6,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">204 SC Otx2 Gcnt4 Gaba</text>
+<line x1="7596.4" y1="468.4" x2="7596.4" y2="443.5" stroke="#d97820" stroke-width="2"/>
+<rect x="7581.4" y="450.1" width="30.0" height="8.4" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="7581.4" y1="452.4" x2="7611.4" y2="452.4" stroke="#703500" stroke-width="2"/>
+<polygon points="7596.4,458.0 7602.4,464.0 7596.4,470.0 7590.4,464.0" fill="#2878b5"/>
+<text x="7596.4" y="454.0" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(7600.4,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">074 MEA-BST Lhx6 Sp9 Gaba</text>
+<line x1="7666.3" y1="467.7" x2="7666.3" y2="462.4" stroke="#d97820" stroke-width="2"/>
+<rect x="7651.3" y="464.1" width="30.0" height="1.9" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="7651.3" y1="464.7" x2="7681.3" y2="464.7" stroke="#703500" stroke-width="2"/>
+<polygon points="7666.3,458.3 7672.3,464.3 7666.3,470.3 7660.3,464.3" fill="#2878b5"/>
+<text x="7666.3" y="454.3" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(7670.3,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">117 LHA Barhl2 Glut</text>
+<line x1="7736.2" y1="467.6" x2="7736.2" y2="462.3" stroke="#d97820" stroke-width="2"/>
+<rect x="7721.2" y="464.2" width="30.0" height="1.0" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="7721.2" y1="464.9" x2="7751.2" y2="464.9" stroke="#703500" stroke-width="2"/>
+<polygon points="7736.2,458.3 7742.2,464.3 7736.2,470.3 7730.2,464.3" fill="#2878b5"/>
+<text x="7736.2" y="454.3" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(7740.2,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">164 APN C1ql4 Glut</text>
+<line x1="7806.1" y1="466.3" x2="7806.1" y2="459.7" stroke="#d97820" stroke-width="2"/>
+<rect x="7791.1" y="462.4" width="30.0" height="1.3" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="7791.1" y1="463.2" x2="7821.1" y2="463.2" stroke="#703500" stroke-width="2"/>
+<polygon points="7806.1,458.4 7812.1,464.4 7806.1,470.4 7800.1,464.4" fill="#2878b5"/>
+<text x="7806.1" y="454.4" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(7810.1,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">317 Astro-CB NN</text>
+<line x1="7875.9" y1="467.7" x2="7875.9" y2="459.0" stroke="#d97820" stroke-width="2"/>
+<rect x="7860.9" y="461.4" width="30.0" height="3.6" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="7860.9" y1="463.6" x2="7890.9" y2="463.6" stroke="#703500" stroke-width="2"/>
+<polygon points="7875.9,458.4 7881.9,464.4 7875.9,470.4 7869.9,464.4" fill="#2878b5"/>
+<text x="7875.9" y="454.4" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(7879.9,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">209 SCs Pax7 Nfia Gaba</text>
+<line x1="7945.8" y1="460.3" x2="7945.8" y2="423.3" stroke="#d97820" stroke-width="2"/>
+<rect x="7930.8" y="446.9" width="30.0" height="5.3" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="7930.8" y1="449.8" x2="7960.8" y2="449.8" stroke="#703500" stroke-width="2"/>
+<polygon points="7945.8,458.4 7951.8,464.4 7945.8,470.4 7939.8,464.4" fill="#2878b5"/>
+<text x="7945.8" y="454.4" text-anchor="middle" font-size="11" font-family="sans-serif">*</text>
+<text transform="translate(7949.8,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">036 HPF CR Glut</text>
+<line x1="8015.7" y1="461.6" x2="8015.7" y2="449.0" stroke="#d97820" stroke-width="2"/>
+<rect x="8000.7" y="455.3" width="30.0" height="2.7" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="8000.7" y1="456.6" x2="8030.7" y2="456.6" stroke="#703500" stroke-width="2"/>
+<polygon points="8015.7,458.9 8021.7,464.9 8015.7,470.9 8009.7,464.9" fill="#2878b5"/>
+<text x="8015.7" y="454.9" text-anchor="middle" font-size="11" font-family="sans-serif">**</text>
+<text transform="translate(8019.7,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">321 Astroependymal NN</text>
+<line x1="8085.6" y1="466.0" x2="8085.6" y2="456.6" stroke="#d97820" stroke-width="2"/>
+<rect x="8070.6" y="460.3" width="30.0" height="2.6" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="8070.6" y1="461.3" x2="8100.6" y2="461.3" stroke="#703500" stroke-width="2"/>
+<polygon points="8085.6,459.4 8091.6,465.4 8085.6,471.4 8079.6,465.4" fill="#2878b5"/>
+<text x="8085.6" y="455.4" text-anchor="middle" font-size="11" font-family="sans-serif">*</text>
+<text transform="translate(8089.6,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">073 MEA-BST Sox6 Gaba</text>
+<line x1="8155.4" y1="468.0" x2="8155.4" y2="460.1" stroke="#d97820" stroke-width="2"/>
+<rect x="8140.4" y="462.5" width="30.0" height="2.3" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="8140.4" y1="463.4" x2="8170.4" y2="463.4" stroke="#703500" stroke-width="2"/>
+<polygon points="8155.4,459.5 8161.4,465.5 8155.4,471.5 8149.4,465.5" fill="#2878b5"/>
+<text x="8155.4" y="455.5" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(8159.4,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">129 VMH Nr5a1 Glut</text>
+<line x1="8225.3" y1="468.9" x2="8225.3" y2="461.8" stroke="#d97820" stroke-width="2"/>
+<rect x="8210.3" y="463.8" width="30.0" height="1.6" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="8210.3" y1="464.5" x2="8240.3" y2="464.5" stroke="#703500" stroke-width="2"/>
+<polygon points="8225.3,459.5 8231.3,465.5 8225.3,471.5 8219.3,465.5" fill="#2878b5"/>
+<text x="8225.3" y="455.5" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(8229.3,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">095 DMH Prdm13 Gaba</text>
+<line x1="8295.2" y1="468.8" x2="8295.2" y2="461.4" stroke="#d97820" stroke-width="2"/>
+<rect x="8280.2" y="463.7" width="30.0" height="2.0" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="8280.2" y1="464.7" x2="8310.2" y2="464.7" stroke="#703500" stroke-width="2"/>
+<polygon points="8295.2,460.6 8301.2,466.6 8295.2,472.6 8289.2,466.6" fill="#2878b5"/>
+<text x="8295.2" y="456.6" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(8299.2,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">324 Hypendymal NN</text>
+<line x1="8365.1" y1="469.7" x2="8365.1" y2="469.0" stroke="#d97820" stroke-width="2"/>
+<rect x="8350.1" y="469.3" width="30.0" height="1.0" fill="#f5ad63" stroke="#b85c00"/>
+<line x1="8350.1" y1="469.5" x2="8380.1" y2="469.5" stroke="#703500" stroke-width="2"/>
+<polygon points="8365.1,463.6 8371.1,469.6 8365.1,475.6 8359.1,469.6" fill="#2878b5"/>
+<text x="8365.1" y="459.6" text-anchor="middle" font-size="11" font-family="sans-serif">ns</text>
+<text transform="translate(8369.1,482) rotate(55)" text-anchor="start" font-size="11" font-family="sans-serif">058 PAL-STR Gaba-Chol</text>
+<text transform="translate(20,270.0) rotate(-90)" text-anchor="middle" font-size="15" font-family="sans-serif">Cluster size (total_cell_num)</text>
+<rect x="8135" y="50" width="14" height="14" fill="#f5ad63" stroke="#b85c00"/><text x="8155" y="62" font-size="12" font-family="sans-serif">random replicate maxima</text>
+<polygon points="8280,50 8286,56 8280,62 8274,56" fill="#2878b5"/><text x="8292" y="61" font-size="12" font-family="sans-serif">true</text>
+</svg>
