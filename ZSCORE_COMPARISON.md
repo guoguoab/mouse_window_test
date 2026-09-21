@@ -43,3 +43,21 @@ python compare_subclass_enriched_cell_zscore.py \
 会输出 summary TSV、每次置换的 detail TSV，以及按 20 个 subclass 拆分的 SVG。
 若某个 subclass 少于两个随机重复，或随机均值标准差为 0，Z 值无定义，脚本会
 明确报告并跳过该 subclass。
+
+## 更保守的“随机最大 Z”版本
+
+原脚本不是只把真实 Z 与“随机 Z 的平均值”做一次二元比较：随机 Z 的均值按定义
+接近 0，图中保留完整随机 Z 箱线图，并用全部随机 Z 计算经验 P 值。如果需要更
+严格的直接门槛，可以运行：
+
+```bash
+python compare_subclass_enriched_cell_zscore_max.py \
+  --true-dir true_data \
+  --random-dir data1 \
+  --workers 20
+```
+
+新脚本对每个 subclass 计算 `max(Z_b)`，直接判断
+`Z_true > max(Z_b)`，并输出真实 Z、随机最大 Z、产生最大值的 sample、两者差值和
+是否超过最大值。这个条件等价于没有任何一次已观测随机置换达到真实值；它比与
+随机中心比较更保守，但并不产生比 `1 / (B + 1)` 更精细的 P 值。
